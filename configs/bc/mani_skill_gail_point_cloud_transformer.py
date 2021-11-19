@@ -8,7 +8,7 @@ env_cfg = dict(
 
 
 replay_cfg = dict(
-    type='ReplayMemory',
+    type='TrajReplay',
     capacity=1000000,
 )
 
@@ -16,7 +16,7 @@ train_mfrl_cfg = dict(
     total_steps=50000,
     warm_steps=0,
     n_steps=0,
-    n_updates=500,
+    n_updates=1,
     n_eval=50000,
     n_checkpoint=50000,
     init_replay_buffers='./example_mani_skill_data/OpenCabinetDrawer_1045_link_0-v0_pcd.h5',

@@ -4,14 +4,14 @@ num_heads = 4
 
 agent = dict(
     type='GAILSB',
-    batch_size=10000,
+    batch_size=32,
     nn_cfg=dict(
         type='PointNetWithInstanceInfoV0',
         stack_frame=stack_frame,
         num_objs='num_objs',
         gail_cfg = dict(
             demo_batch_size = 32,
-            total_timesteps = 1000
+            total_timesteps = 2048
         ),
         pcd_pn_cfg=dict(
             type='PointNetV0',

@@ -4,6 +4,7 @@ IRL algorithms
 
 import abc
 import torch
+from torch._C import device
 import torch.nn.functional as F
 from mani_skill_learn.env.env_utils import build_env
 from mani_skill_learn.env.wrappers import build_wrapper
@@ -76,13 +77,14 @@ class GAILSB(Adversarial):
         super().__init__(nn_cfg, obs_shape, action_shape, action_space, batch_size=batch_size)
 
         env = build_env(env_cfg)
-        env.device = self.device
+        env.device = 'cuda'
         env.set_backbone(self.backbone)
-        gen_algo = PPO("MlpPolicy", env = env, verbose=True)
+        gen_algo = PPO("MlpPolicy", env = env, verbose=True, device='cuda')
         self.model = gail.GAIL(demonstrations=None, demo_batch_size=self.gail_config['demo_batch_size'],venv=gen_algo.get_env(), gen_algo=gen_algo)
 
     def update_demo(self,demo):
         sampled_batch = demo.sample(self.batch_size)
+        
         sampled_batch = dict(obs=sampled_batch['obs'], actions=sampled_batch["actions"])
         sampled_batch = to_torch(sampled_batch, device=self.device, dtype='float32')
         for key in sampled_batch:
@@ -91,9 +93,9 @@ class GAILSB(Adversarial):
         final_obs = self.backbone(sampled_batch['obs'])
         # print(sampled_batch)
         # print(final_obs)
-        self.model.set_demonstrations([{'obs':final_obs, 'acts':sampled_batch["actions"]}])
+        self.model.set_demonstrations([{'obs':final_obs.to('cpu'), 'acts':sampled_batch["actions"].to('cpu')}])
 
-    def update_parameters(self,**kvargs):
+    def update_parameters(self,re,**kvargs):
         self.model.train(total_timesteps=self.gail_config['total_timesteps'])
         return {
             'policy_abs_error': 1,

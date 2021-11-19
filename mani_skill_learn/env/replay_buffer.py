@@ -1,3 +1,4 @@
+from argparse import Action
 import glob
 import os.path as osp
 from random import shuffle
@@ -9,6 +10,7 @@ from mani_skill_learn.utils.data import (dict_to_seq, recursive_init_dict_array,
                                          store_dict_array_to_h5,
                                          sample_element_in_dict_array, assign_single_element_in_dict_array, is_seq_of)
 from mani_skill_learn.utils.fileio import load_h5s_as_list_dict_array, load, check_md5sum
+from mani_skill_learn.utils.fileio.h5_utils import load_h5_as_dict_array
 from .builder import REPLAYS
 
 
@@ -181,3 +183,67 @@ class ReplayDisk(ReplayMemory):
         batch_idx = slice(self.memory_begin_index, self.memory_begin_index + batch_size)
         self.memory_begin_index += batch_size
         return sample_element_in_dict_array(self.memory, batch_idx)
+
+from h5py import File
+
+@REPLAYS.register_module()
+class TrajReplay:
+    """
+    Replay buffer uses dict-array as basic data structure, which can be easily saved as hdf5 file.
+    
+    See mani_skill_learn/utils/data/dict_array.py for more details.
+    """
+
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.main_memory = []
+        self.memory={'obs':{}, 'actions':np.zeros(5)}
+        self.position = 0
+        self.running_count = 0
+
+    def __getitem__(self, key):
+        return self.memory[key]
+
+    def __len__(self):
+        return len(self.main_memory)
+
+    def reset(self):
+        self.main_memory = []
+        self.position = 0
+        self.running_count = 0
+
+    def push(self, traj):
+        self.main_memory.append(traj)
+        self.running_count += 1
+        self.position = (self.position + 1) % self.capacity
+
+
+    def sample(self, batch_size):
+        batch_idx = np.random.randint(low=0, high=len(self), size=batch_size)
+        return self.main_memory[batch_idx]
+
+    def tail_mean(self, num):
+        func = lambda _, __, ___: np.mean(_[___ - __:___])
+        return map_func_to_dict_array(self.main_memory, func, num, len(self))
+
+    def get_all(self):
+        return self.main_memory
+
+    def restore(self, init_buffers, replicate_init_buffer=1, num_trajs_per_demo_file=-1):
+        buffer_keys = ['obs', 'actions', 'next_obs', 'rewards', 'dones']
+        if isinstance(init_buffers, str):
+            init_buffers = [init_buffers]
+        if isinstance(init_buffers, dict):
+            init_buffers = [init_buffers]
+
+        print('Num of datasets', len(init_buffers))
+        for _ in range(replicate_init_buffer):
+            cnt = 0
+            for init_buffer in init_buffers:
+                trajs = File(init_buffer, 'r')
+                # print(trajs.keys())
+                for key in trajs.keys():
+                    item = load_h5_as_dict_array(trajs[key])
+                    self.push(item)
+                    cnt += 1
+        print(f'Num of buffers {len(init_buffers)}, Total steps {self.running_count}')

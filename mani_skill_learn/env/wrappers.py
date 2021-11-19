@@ -169,6 +169,9 @@ class IRLWrapper(ObservationWrapper):
         # else:
         #     obs = {'agent': obs}
         if self.backbone:
+            self.backbone.to(self.device)
+            # print(self.device)
+            # print(next(self.backbone.parameters()).device)
             obs = to_torch(obs, device=self.device, dtype='float32')
             if 'pointcloud' in obs:
                 curr_obs = obs['pointcloud']    
