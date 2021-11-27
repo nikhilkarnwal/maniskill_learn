@@ -246,7 +246,8 @@ def main():
     # Set mani_skill env and get info
     if cfg.get('env_cfg', None) is not None:
         from mani_skill_learn.env import get_env_info
-        cfg.agent['env_cfg'] = deepcopy(cfg.env_cfg)
+        if cfg.agent['type']=='GAILSB':
+            cfg.agent['env_cfg'] = deepcopy(cfg.env_cfg)
         obs_shape, action_shape, action_space = get_env_info(cfg.env_cfg)
         cfg.agent['obs_shape'] = obs_shape
         cfg.agent['action_shape'] = action_shape
