@@ -15,6 +15,7 @@ dist/
 *.zip
 *.pth
 *.pkl
+*.log
 
 # Editor temporaries
 *.swn
