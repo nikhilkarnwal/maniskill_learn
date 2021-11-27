@@ -1,14 +1,20 @@
+from logging import info
+from h5py import File
 from argparse import Action
 import glob
 import os.path as osp
 from random import shuffle
 
 import h5py
+from h5py._hl.selections2 import select_read
+from imitation.algorithms.base import AnyTransitions
+from imitation.data.types import Trajectory, TrajectoryWithRew
 import numpy as np
 
 from mani_skill_learn.utils.data import (dict_to_seq, recursive_init_dict_array, map_func_to_dict_array,
                                          store_dict_array_to_h5,
                                          sample_element_in_dict_array, assign_single_element_in_dict_array, is_seq_of)
+from mani_skill_learn.utils.data.converter import to_np, to_torch
 from mani_skill_learn.utils.fileio import load_h5s_as_list_dict_array, load, check_md5sum
 from mani_skill_learn.utils.fileio.h5_utils import load_h5_as_dict_array
 from .builder import REPLAYS
@@ -18,7 +24,7 @@ from .builder import REPLAYS
 class ReplayMemory:
     """
     Replay buffer uses dict-array as basic data structure, which can be easily saved as hdf5 file.
-    
+
     See mani_skill_learn/utils/data/dict_array.py for more details.
     """
 
@@ -40,12 +46,14 @@ class ReplayMemory:
         self.running_count = 0
 
     def initialize(self, **kwargs):
-        self.memory = recursive_init_dict_array(self.memory, dict(kwargs), self.capacity, self.position)
+        self.memory = recursive_init_dict_array(
+            self.memory, dict(kwargs), self.capacity, self.position)
 
     def push(self, **kwargs):
         # assert not self.fixed, "Fix replay buffer does not support adding items!"
         self.initialize(**kwargs)
-        assign_single_element_in_dict_array(self.memory, self.position, dict(kwargs))
+        assign_single_element_in_dict_array(
+            self.memory, self.position, dict(kwargs))
         self.running_count += 1
         self.position = (self.position + 1) % self.capacity
 
@@ -53,7 +61,8 @@ class ReplayMemory:
         # assert not self.fixed, "Fix replay buffer does not support adding items!"
         kwargs = dict(kwargs)
         keys, values = dict_to_seq(kwargs)
-        batch_size = len(list(filter(lambda v: not isinstance(v, dict), values))[0])
+        batch_size = len(
+            list(filter(lambda v: not isinstance(v, dict), values))[0])
         for i in range(batch_size):
             self.push(**sample_element_in_dict_array(kwargs, i))
 
@@ -62,7 +71,7 @@ class ReplayMemory:
         return sample_element_in_dict_array(self.memory, batch_idx)
 
     def tail_mean(self, num):
-        func = lambda _, __, ___: np.mean(_[___ - __:___])
+        def func(_, __, ___): return np.mean(_[___ - __:___])
         return map_func_to_dict_array(self.memory, func, num, len(self))
 
     def get_all(self):
@@ -84,7 +93,8 @@ class ReplayMemory:
         if isinstance(init_buffers, str):
             init_buffers = [init_buffers]
         if is_seq_of(init_buffers, str):
-            init_buffers = [load_h5s_as_list_dict_array(_) for _ in init_buffers]
+            init_buffers = [load_h5s_as_list_dict_array(
+                _) for _ in init_buffers]
         if isinstance(init_buffers, dict):
             init_buffers = [init_buffers]
 
@@ -98,7 +108,8 @@ class ReplayMemory:
                     item = {key: item[key] for key in buffer_keys}
                     self.push_batch(**item)
                     cnt += 1
-        print(f'Num of buffers {len(init_buffers)}, Total steps {self.running_count}')
+        print(
+            f'Num of buffers {len(init_buffers)}, Total steps {self.running_count}')
 
 
 @REPLAYS.register_module()
@@ -109,7 +120,8 @@ class ReplayDisk(ReplayMemory):
 
     def __init__(self, capacity, keys=None):
         super(ReplayDisk, self).__init__(capacity)
-        self.keys = ['obs', 'actions', 'next_obs', 'rewards', 'dones'] if keys is None else keys
+        self.keys = ['obs', 'actions', 'next_obs',
+                     'rewards', 'dones'] if keys is None else keys
         self.h5_files = []
         self.h5_size = []
         self.h5_idx = 0
@@ -118,7 +130,8 @@ class ReplayDisk(ReplayMemory):
         self.memory_begin_index = 0
 
     def restore(self, init_buffers, replicate_init_buffer=1, num_trajs_per_demo_file=-1):
-        assert num_trajs_per_demo_file == -1, "For chunked dataset, we only support loading all trajectories"
+        assert num_trajs_per_demo_file == - \
+            1, "For chunked dataset, we only support loading all trajectories"
         assert replicate_init_buffer == 1, "Disk replay does not need to be replicated."
         if not (isinstance(init_buffers, str) and osp.exists(init_buffers) and osp.isdir(init_buffers)):
             print(f'{init_buffers} does not exist or is not a folder!')
@@ -127,8 +140,10 @@ class ReplayDisk(ReplayMemory):
             if not osp.exists(osp.join(init_buffers, 'index.pkl')):
                 print(f'the index.pkl file should be under {init_buffers}!')
                 exit(-1)
-            num_files, file_size, file_md5 = load(osp.join(init_buffers, 'index.pkl'))
-            h5_files = [osp.abspath(_) for _ in glob.glob(osp.join(init_buffers, '*.h5'))]
+            num_files, file_size, file_md5 = load(
+                osp.join(init_buffers, 'index.pkl'))
+            h5_files = [osp.abspath(_) for _ in glob.glob(
+                osp.join(init_buffers, '*.h5'))]
             print(f'{num_files} of file in index, {len(h5_files)} files in dataset!')
             if len(h5_files) != num_files:
                 print('Wrong index file!')
@@ -138,7 +153,8 @@ class ReplayDisk(ReplayMemory):
                     from mani_skill_learn.utils.data import get_one_shape
                     self.h5_files.append(h5py.File(name, 'r'))
                     length = get_one_shape(self.h5_files[-1])[0]
-                    index = eval(osp.basename(name).split('.')[0].split('_')[-1])
+                    index = eval(osp.basename(name).split('.')
+                                 [0].split('_')[-1])
                     assert file_size[index] == length
                     assert check_md5sum(name, file_md5[index])
                     self.h5_size.append(file_size[index])
@@ -168,8 +184,10 @@ class ReplayDisk(ReplayMemory):
         self.memory_begin_index = 0
         while num_to_add > 0:
             h5 = self._get_h5()
-            num_item = min(self.h5_size[self.h5_idx] - self.idx_in_h5, num_to_add)
-            item = sample_element_in_dict_array(h5, slice(self.idx_in_h5, self.idx_in_h5 + num_item))
+            num_item = min(self.h5_size[self.h5_idx] -
+                           self.idx_in_h5, num_to_add)
+            item = sample_element_in_dict_array(
+                h5, slice(self.idx_in_h5, self.idx_in_h5 + num_item))
             self.push_batch(**item)
             num_to_add -= num_item
             self.idx_in_h5 += num_item
@@ -180,26 +198,23 @@ class ReplayDisk(ReplayMemory):
     def sample(self, batch_size):
         assert self.capacity % batch_size == 0
         self._update_buffer(batch_size)
-        batch_idx = slice(self.memory_begin_index, self.memory_begin_index + batch_size)
+        batch_idx = slice(self.memory_begin_index,
+                          self.memory_begin_index + batch_size)
         self.memory_begin_index += batch_size
         return sample_element_in_dict_array(self.memory, batch_idx)
 
-from h5py import File
 
 @REPLAYS.register_module()
 class TrajReplay:
     """
     Replay buffer uses dict-array as basic data structure, which can be easily saved as hdf5 file.
-    
+
     See mani_skill_learn/utils/data/dict_array.py for more details.
     """
 
     def __init__(self, capacity):
         self.capacity = capacity
-        self.main_memory = []
-        self.memory={'obs':{}, 'actions':np.zeros(5)}
-        self.position = 0
-        self.running_count = 0
+        self.reset()
 
     def __getitem__(self, key):
         return self.memory[key]
@@ -208,22 +223,23 @@ class TrajReplay:
         return len(self.main_memory)
 
     def reset(self):
-        self.main_memory = []
+        self.main_memory = np.array([])
+        self.memory = {'obs': {}, 'actions': np.zeros(5)}
         self.position = 0
         self.running_count = 0
+        self.processed = False
 
     def push(self, traj):
-        self.main_memory.append(traj)
+        self.main_memory = np.append(self.main_memory, traj)
         self.running_count += 1
         self.position = (self.position + 1) % self.capacity
-
 
     def sample(self, batch_size):
         batch_idx = np.random.randint(low=0, high=len(self), size=batch_size)
         return self.main_memory[batch_idx]
 
     def tail_mean(self, num):
-        func = lambda _, __, ___: np.mean(_[___ - __:___])
+        def func(_, __, ___): return np.mean(_[___ - __:___])
         return map_func_to_dict_array(self.main_memory, func, num, len(self))
 
     def get_all(self):
@@ -246,4 +262,23 @@ class TrajReplay:
                     item = load_h5_as_dict_array(trajs[key])
                     self.push(item)
                     cnt += 1
-        print(f'Num of buffers {len(init_buffers)}, Total steps {self.running_count}')
+        print(
+            f'Num of buffers {len(init_buffers)}, Total steps {self.running_count}')
+
+    def process(self, backbone, device):
+        if self.processed:
+            return
+        self.processed = True
+        for i in range(self.main_memory.shape[0]):
+            sampled_batch = dict(
+                obs=self.main_memory[i]['obs'], next_obs=self.main_memory[i]['next_obs'])
+            sampled_batch = to_torch(
+                sampled_batch, device=device, dtype='float32')
+            final_obs = to_np(backbone(sampled_batch['obs'])[1])
+            final_next_obs = to_np(backbone(sampled_batch['next_obs'])[1])
+            self.main_memory[i]['obs'] = np.append(final_obs,[final_next_obs[-1]],axis=0)
+            self.main_memory[i] = TrajectoryWithRew(obs=self.main_memory[i]['obs'],
+                                                    acts=self.main_memory[i]['actions'],
+                                                    rews=self.main_memory[i]['rewards'], infos=None, terminal=True)
+
+        print(f'Processed-{self.main_memory.shape} trajs using backbone')

@@ -200,7 +200,6 @@ def train_rl(agent, rollout, evaluator, env_cfg, replay, on_policy, work_dir, to
                 steps += 1
                 total_updates += 1
                 tmp_time = time.time()
-                agent.update_demo(replay)
                 tf_logs.push(**agent.update_parameters(replay, updates=total_updates))
                 update_time += time.time() - tmp_time
         train_dict['update_time'] = update_time

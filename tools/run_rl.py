@@ -90,6 +90,7 @@ def main_mfrl_brl(cfg, args, rollout, evaluator, logger):
         raise NotImplementedError("")
 
     if cfg.get('resume_from', None) is not None:
+        print(f'resume from {cfg.resume_from}')
         load_checkpoint(agent, cfg.resume_from, map_location='cpu')
 
     if args.gpu_ids is not None and len(args.gpu_ids) > 0:
@@ -110,7 +111,7 @@ def main_mfrl_brl(cfg, args, rollout, evaluator, logger):
 
     if not args.evaluation:
         replay = build_replay(cfg.replay_cfg)
-        train_rl(agent, rollout, evaluator, cfg.env_cfg, replay, work_dir=cfg.work_dir, eval_cfg=None,
+        train_rl(agent, rollout, evaluator, cfg.env_cfg, replay, work_dir=cfg.work_dir, eval_cfg=cfg.eval_cfg,
                  **cfg.train_mfrl_cfg)
     else:
         test_name = args.test_name if args.test_name is not None else 'test'

@@ -13,6 +13,8 @@ from mani_skill_learn.methods.builder import BRL
 from mani_skill_learn.networks import build_model
 from mani_skill_learn.optimizers import build_optimizer
 from mani_skill_learn.utils.data import to_torch
+from mani_skill_learn.utils.data.converter import to_np
+from mani_skill_learn.utils.meta import logger
 from mani_skill_learn.utils.torch import BaseAgent
 from mani_skill_learn.networks.builder import build_backbone, build_dense_head
 from mani_skill_learn.networks.utils import replace_placeholder_with_args, get_kwargs_from_shape
@@ -21,21 +23,26 @@ from stable_baselines3 import PPO, ppo
 from imitation.algorithms.adversarial import gail, airl
 from imitation.util import util
 
+
 class Adversarial(BaseAgent):
-    def __init__(self,nn_cfg, obs_shape, action_shape, action_space, batch_size=128):
+    def __init__(self, policy_cfg, obs_shape, action_shape, action_space, batch_size=128):
         super().__init__()
 
         self.batch_size = batch_size
 
-        policy_optim_cfg = nn_cfg.pop("optim_cfg")
+        policy_optim_cfg = policy_cfg.pop("optim_cfg")
+        policy_cfg['obs_shape'] = obs_shape
+        policy_cfg['action_shape'] = action_shape
+        policy_cfg['action_space'] = action_space
 
-        # nn_cfg['obs_shape'] = obs_shape
-        # nn_cfg['action_shape'] = action_shape
-        # nn_cfg['action_space'] = action_space
+        self.policy = build_model(policy_cfg)
+        # # nn_cfg['obs_shape'] = obs_shape
+        # # nn_cfg['action_shape'] = action_shape
+        # # nn_cfg['action_space'] = action_space
 
-        replaceable_kwargs = get_kwargs_from_shape(obs_shape, action_shape)
-        nn_cfg = replace_placeholder_with_args(nn_cfg, **replaceable_kwargs)
-        self.backbone = build_backbone(nn_cfg)
+        # replaceable_kwargs = get_kwargs_from_shape(obs_shape, action_shape)
+        # nn_cfg = replace_placeholder_with_args(nn_cfg, **replaceable_kwargs)
+        # self.backbone = build_backbone(nn_cfg)
 
     @abc.abstractmethod
     def update_parameters():
@@ -63,7 +70,6 @@ class Adversarial(BaseAgent):
 #         self._features_dim = features_dim
 
 #     def forward(self, observations) -> th.Tensor:
-        
 
 
 #         return th.cat(encoded_tensor_list, dim=1)
@@ -71,33 +77,79 @@ class Adversarial(BaseAgent):
 @BRL.register_module()
 class GAILSB(Adversarial):
 
-    def __init__(self, nn_cfg, obs_shape, action_shape, action_space,env_cfg, batch_size=128):
-        self.gail_config = nn_cfg.pop('gail_cfg')
-
-        super().__init__(nn_cfg, obs_shape, action_shape, action_space, batch_size=batch_size)
-
-        env = build_env(env_cfg)
+    def __init__(self, policy_cfg, obs_shape, action_shape, action_space, env_cfg, batch_size=128):
+        self.gail_config = policy_cfg.pop('gail_cfg')
+        super().__init__(policy_cfg, obs_shape, action_shape,
+                         action_space, batch_size=batch_size)
+        self.env_cfg = env_cfg
+        self.gen_algo = None
+    
+    def setup_model(self):
+        env = build_env(self.env_cfg)
         env.device = 'cuda'
-        env.set_backbone(self.backbone)
-        gen_algo = PPO("MlpPolicy", env = env, verbose=True, device='cuda')
-        self.model = gail.GAIL(demonstrations=None, demo_batch_size=self.gail_config['demo_batch_size'],venv=gen_algo.get_env(), gen_algo=gen_algo)
+        env.set_backbone(self.policy.backbone)
+        self.gen_algo = PPO("MlpPolicy", env=env, verbose=True,
+                            device='cuda', tensorboard_log='GAILSB', 
+                            n_steps=self.gail_config['timesteps'], batch_size=self.gail_config['demo_batch_size'])
+        self.gail_config["policy_model"] = self.gail_config["algo"] + \
+            "_"+self.gail_config["policy_model"]
+        if self.gail_config['resume']:
+            print(f'Loading policy from -{self.gail_config["policy_model"]}')
+            self.gen_algo.load(self.gail_config['policy_model'])
 
-    def update_demo(self,demo):
-        sampled_batch = demo.sample(self.batch_size)
-        
-        sampled_batch = dict(obs=sampled_batch['obs'], actions=sampled_batch["actions"])
-        sampled_batch = to_torch(sampled_batch, device=self.device, dtype='float32')
-        for key in sampled_batch:
-            if not isinstance(sampled_batch[key], dict) and sampled_batch[key].ndim == 1:
-                sampled_batch[key] = sampled_batch[key][..., None]
-        final_obs = self.backbone(sampled_batch['obs'])
-        # print(sampled_batch)
-        # print(final_obs)
-        self.model.set_demonstrations([{'obs':final_obs.to('cpu'), 'acts':sampled_batch["actions"].to('cpu')}])
+        if self.gail_config['algo'] == 'gail':
+            self.model = gail.GAIL(demonstrations=None, demo_batch_size=self.gail_config['demo_batch_size'],
+                                   venv=self.gen_algo.get_env(), gen_algo=self.gen_algo, n_disc_updates_per_round=10)
 
-    def update_parameters(self,re,**kvargs):
-        self.model.train(total_timesteps=self.gail_config['total_timesteps'])
+        # if self.gail_config['resume'] and self.gail_config['algo'] == 'gail':
+        #     print(f'Loading reward from -{self.gail_config["reward_model"]}')
+        #     self.model._reward_net.load_state_dict(
+        #         torch.load(self.gail_config['reward_model'],'cpu'))
+        #     self.model._reward_net.to(self.device)
+
+    def update_demo(self, demo):
+        demo.process(self.policy.backbone, self.device)
+        sampled_batch = demo.get_all()  # demo.sample(self.batch_size)
+        print(f'Demo size-{sampled_batch.shape}')
+        self.model.set_demonstrations(sampled_batch)
+
+    def update_parameters(self, re, **kvargs):
+        if self.gen_algo == None:
+            self.setup_model()
+        self.policy.backbone.eval()
+        if self.gail_config['algo'] == 'gail':
+            self.update_demo(re)
+            self.model.train(
+                total_timesteps=self.gail_config['total_timesteps'])
+        else:
+            self.gen_algo.learn(
+                total_timesteps=self.gail_config['total_timesteps'])
+
+        if self.gail_config['save']:
+            print({'Saving GAIL models'})
+            self.gen_algo.save(self.gail_config['policy_model'])
+            # torch.save(self.model._reward_net.state_dict(),self.gail_config['reward_model'])
         return {
             'policy_abs_error': 1,
             'policy_loss': 1
         }
+
+    def forward(self, obs, **kwargs):
+        if self.gen_algo == None:
+            self.setup_model()
+        self.policy.backbone.eval()
+        # print(obs)
+        obs = to_torch(obs, device=self.device, dtype='float32')
+        # if 'pointcloud' in obs:
+        #     curr_obs = obs['pointcloud']
+        #     for key in curr_obs:
+        #         if not isinstance(curr_obs[key], dict):
+        #             curr_obs[key] = curr_obs[key]
+        # obs['state']=obs['state']
+        # print(obs)
+        obs = self.policy.backbone(obs)[1][0]
+        obs = to_np(obs)
+        # print(obs)
+        x = self.gen_algo.predict(obs)[0]
+        # print(x)
+        return x

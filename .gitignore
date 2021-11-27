@@ -11,6 +11,11 @@ dist/
 *.ipynb
 **/.ipynb_checkpoints/
 
+#trained model files
+*.zip
+*.pth
+*.pkl
+
 # Editor temporaries
 *.swn
 *.swo
@@ -28,6 +33,7 @@ dist/
 /full_mani_skill_data/*
 /example_mani_skill_data/*
 /work_dirs/*
+/test/*
 /data
 /outputs
 /tmp

@@ -180,10 +180,20 @@ class IRLWrapper(ObservationWrapper):
                         curr_obs[key] = curr_obs[key].unsqueeze(0)
             obs['state']=obs['state'].unsqueeze(0)
             # print(obs)
-            obs = self.backbone(obs)[0]
+            obs = self.backbone(obs)[1][0]
             obs = to_np(obs)
             # print(obs)
         return obs
+
+    def get_state(self):
+        return self.env.get_state()
+
+    def get_obs(self):
+        return self.observation( self.env._get_obs())
+
+    @property
+    def _max_episode_steps(self):
+        return self.env._max_episode_steps
 
 
 def build_wrapper(cfg, default_args=None):
