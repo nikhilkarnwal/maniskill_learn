@@ -19,7 +19,8 @@ agent = dict(
             save = True,
             policy_model = "policy",
             reward_model = "reward.pth",
-            algo = 'ppo'
+            algo = 'ppo',
+            gen_algo = 'sac'
         ),
         nn_cfg=dict(
             type='PointNetWithInstanceInfoV0',

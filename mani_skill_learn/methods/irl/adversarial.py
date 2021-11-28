@@ -19,7 +19,7 @@ from mani_skill_learn.utils.torch import BaseAgent
 from mani_skill_learn.networks.builder import build_backbone, build_dense_head
 from mani_skill_learn.networks.utils import replace_placeholder_with_args, get_kwargs_from_shape
 
-from stable_baselines3 import PPO, ppo
+from stable_baselines3 import PPO, SAC
 from imitation.algorithms.adversarial import gail, airl
 from imitation.util import util
 
@@ -107,10 +107,16 @@ class GAILSB(Adversarial):
         env = build_env(self.env_cfg)
         env.device = 'cuda'
         env.set_backbone(self.policy.backbone)
-        self.gen_algo = PPO("MlpPolicy", env=env, verbose=True,
+        if self.gail_config['gen_algo']=='ppo':
+            self.gen_algo = PPO("MlpPolicy", env=env, verbose=True,
                             device='cuda', tensorboard_log='GAILSB', 
                             n_steps=self.gail_config['timesteps'], batch_size=self.gail_config['demo_batch_size'],
-                            learning_rate=linear_schedule(0.001))
+                            learning_rate=linear_schedule(0.0003))
+        elif self.gail_config['gen_algo']=='sac':
+            self.gen_algo = SAC("MlpPolicy", env=env, verbose=True,
+                            device='cuda', tensorboard_log='GAILSB', 
+                            n_steps=self.gail_config['timesteps'], batch_size=self.gail_config['demo_batch_size'],
+                            learning_rate=linear_schedule(0.0003))
         self.gail_config["policy_model"] = self.gail_config["algo"] + \
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:
