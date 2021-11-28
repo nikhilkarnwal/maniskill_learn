@@ -110,7 +110,7 @@ class GAILSB(Adversarial):
         self.gen_algo = PPO("MlpPolicy", env=env, verbose=True,
                             device='cuda', tensorboard_log='GAILSB', 
                             n_steps=self.gail_config['timesteps'], batch_size=self.gail_config['demo_batch_size'],
-                            learning_rate=linear_schedule(0.005))
+                            learning_rate=linear_schedule(0.001))
         self.gail_config["policy_model"] = self.gail_config["algo"] + \
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:
