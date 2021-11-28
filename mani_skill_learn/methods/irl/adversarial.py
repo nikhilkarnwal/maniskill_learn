@@ -74,6 +74,25 @@ class Adversarial(BaseAgent):
 
 #         return th.cat(encoded_tensor_list, dim=1)
 
+from typing import Callable
+def linear_schedule(initial_value: float) -> Callable[[float], float]:
+    """
+    Linear learning rate schedule.
+
+    :param initial_value: Initial learning rate.
+    :return: schedule that computes
+      current learning rate depending on remaining progress
+    """
+    def func(progress_remaining: float) -> float:
+        """
+        Progress will decrease from 1 (beginning) to 0.
+
+        :param progress_remaining:
+        :return: current learning rate
+        """
+        return progress_remaining * initial_value
+
+    return func
 @BRL.register_module()
 class GAILSB(Adversarial):
 
@@ -90,7 +109,8 @@ class GAILSB(Adversarial):
         env.set_backbone(self.policy.backbone)
         self.gen_algo = PPO("MlpPolicy", env=env, verbose=True,
                             device='cuda', tensorboard_log='GAILSB', 
-                            n_steps=self.gail_config['timesteps'], batch_size=self.gail_config['demo_batch_size'])
+                            n_steps=self.gail_config['timesteps'], batch_size=self.gail_config['demo_batch_size'],
+                            learning_rate=linear_schedule(0.005))
         self.gail_config["policy_model"] = self.gail_config["algo"] + \
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:
