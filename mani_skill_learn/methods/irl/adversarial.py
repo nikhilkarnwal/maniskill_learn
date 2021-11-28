@@ -114,9 +114,7 @@ class GAILSB(Adversarial):
                             learning_rate=linear_schedule(0.0003))
         elif self.gail_config['gen_algo']=='sac':
             self.gen_algo = SAC("MlpPolicy", env=env, verbose=True,
-                            device='cuda', tensorboard_log='GAILSB', 
-                            batch_size=self.gail_config['demo_batch_size'],
-                            learning_rate=linear_schedule(0.0003))
+                            device='cuda', tensorboard_log='GAILSB')
         self.gail_config["policy_model"] = self.gail_config["algo"] + \
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:
