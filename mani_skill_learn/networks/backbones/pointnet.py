@@ -155,4 +155,4 @@ class PointNetWithInstanceInfoV0(PointBackbone):
         # print('Y', global_feature.shape)
         x = self.global_mlp(global_feature)
         # print(x)
-        return x
+        return x, global_feature
