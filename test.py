@@ -1,3 +1,4 @@
+from typing import Callable
 # from hashlib import new
 # from botocore import vendored
 # import gym
@@ -257,6 +258,25 @@ def run_gail():
 #     gen_algo._update_info_buffer(info)
 # print(gen_algo.ep_info_buffer)
 
+def linear_schedule(initial_value: float) -> Callable[[float], float]:
+    """
+    Linear learning rate schedule.
+
+    :param initial_value: Initial learning rate.
+    :return: schedule that computes
+      current learning rate depending on remaining progress
+    """
+    def func(progress_remaining: float) -> float:
+        """
+        Progress will decrease from 1 (beginning) to 0.
+
+        :param progress_remaining:
+        :return: current learning rate
+        """
+        return progress_remaining * initial_value
+
+    return func
+
 import gym
 
 from stable_baselines3 import PPO
@@ -265,7 +285,7 @@ def run_ppo():
     # Parallel environments
     env = make_vec_env("CartPole-v1", n_envs=1)
 
-    model = PPO("MlpPolicy", env, verbose=1)
+    model = PPO("MlpPolicy", env, verbose=1, learning_rate=linear_schedule(0.005))
     model.learn(total_timesteps=100000)
     model.save("ppo_cartpole")
 
@@ -274,11 +294,18 @@ def run_ppo():
     model = PPO.load("ppo_cartpole")
 
     obs = env.reset()
-    while True:
-        action, _states = model.predict(obs)
-        obs, rewards, dones, info = env.step(action)
-        env.render()
+    for i in range(10):
+        obs = env.reset()
+        cnt = 0
+        while True:
+            action, _states = model.predict(obs)
+            obs, rewards, dones, info = env.step(action)
+            cnt += 1
+            if dones:
+                print(cnt)
+                break
+#        env.render()
 
-# run_ppo()
+#run_ppo()
 
 run_gail()
