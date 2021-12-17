@@ -1,0 +1,18 @@
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 128      |
+|    gen/time/episodes    | 4        |
+|    gen/time/fps         | 85       |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 800      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 127      |
+|    gen/time/episodes    | 8        |
+|    gen/time/fps         | 242      |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 1600     |
+--------------------------------------

@@ -1,0 +1,2145 @@
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 128      |
+|    gen/time/episodes    | 4        |
+|    gen/time/fps         | 85       |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 800      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 128      |
+|    gen/time/episodes    | 8        |
+|    gen/time/fps         | 235      |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 1600     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 127      |
+|    gen/time/episodes    | 12       |
+|    gen/time/fps         | 576      |
+|    gen/time/time_ela... | 4        |
+|    gen/time/total_ti... | 2400     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 128      |
+|    gen/time/episodes    | 16       |
+|    gen/time/fps         | 2161     |
+|    gen/time/time_ela... | 1        |
+|    gen/time/total_ti... | 3200     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 129      |
+|    gen/time/episodes    | 20       |
+|    gen/time/fps         | 376      |
+|    gen/time/time_ela... | 10       |
+|    gen/time/total_ti... | 4000     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 129      |
+|    gen/time/episodes    | 24       |
+|    gen/time/fps         | 328      |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 4800     |
+|    gen/train/actor_loss | -32.4    |
+|    gen/train/critic_... | 0.522    |
+|    gen/train/ent_coef   | 0.787    |
+|    gen/train/ent_coe... | -5.19    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 799      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 130      |
+|    gen/time/episodes    | 28       |
+|    gen/time/fps         | 584      |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 5600     |
+|    gen/train/actor_loss | -45.6    |
+|    gen/train/critic_... | 0.462    |
+|    gen/train/ent_coef   | 0.621    |
+|    gen/train/ent_coe... | -10.1    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 1599     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 130      |
+|    gen/time/episodes    | 32       |
+|    gen/time/fps         | 1246     |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 6400     |
+|    gen/train/actor_loss | -53.7    |
+|    gen/train/critic_... | 0.404    |
+|    gen/train/ent_coef   | 0.49     |
+|    gen/train/ent_coe... | -14.9    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 2399     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 131      |
+|    gen/time/episodes    | 36       |
+|    gen/time/fps         | 9978     |
+|    gen/time/time_ela... | 0        |
+|    gen/time/total_ti... | 7200     |
+|    gen/train/actor_loss | -57.3    |
+|    gen/train/critic_... | 0.399    |
+|    gen/train/ent_coef   | 0.387    |
+|    gen/train/ent_coe... | -19.4    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 3199     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 131      |
+|    gen/time/episodes    | 40       |
+|    gen/time/fps         | 465      |
+|    gen/time/time_ela... | 17       |
+|    gen/time/total_ti... | 8000     |
+|    gen/train/actor_loss | -57.4    |
+|    gen/train/critic_... | 0.485    |
+|    gen/train/ent_coef   | 0.307    |
+|    gen/train/ent_coe... | -23.5    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 3999     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 131      |
+|    gen/time/episodes    | 44       |
+|    gen/time/fps         | 657      |
+|    gen/time/time_ela... | 13       |
+|    gen/time/total_ti... | 8800     |
+|    gen/train/actor_loss | -55.8    |
+|    gen/train/critic_... | 0.585    |
+|    gen/train/ent_coef   | 0.242    |
+|    gen/train/ent_coe... | -28      |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 4799     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 48       |
+|    gen/time/fps         | 1176     |
+|    gen/time/time_ela... | 8        |
+|    gen/time/total_ti... | 9600     |
+|    gen/train/actor_loss | -53.2    |
+|    gen/train/critic_... | 0.279    |
+|    gen/train/ent_coef   | 0.192    |
+|    gen/train/ent_coe... | -31      |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 5599     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 52       |
+|    gen/time/fps         | 3275     |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 10400    |
+|    gen/train/actor_loss | -49.1    |
+|    gen/train/critic_... | 0.229    |
+|    gen/train/ent_coef   | 0.152    |
+|    gen/train/ent_coe... | -34.9    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 6399     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 56       |
+|    gen/time/fps         | 556      |
+|    gen/time/time_ela... | 20       |
+|    gen/time/total_ti... | 11200    |
+|    gen/train/actor_loss | -45      |
+|    gen/train/critic_... | 0.191    |
+|    gen/train/ent_coef   | 0.121    |
+|    gen/train/ent_coe... | -37.6    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 7199     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 60       |
+|    gen/time/fps         | 785      |
+|    gen/time/time_ela... | 15       |
+|    gen/time/total_ti... | 12000    |
+|    gen/train/actor_loss | -40.7    |
+|    gen/train/critic_... | 0.148    |
+|    gen/train/ent_coef   | 0.0962   |
+|    gen/train/ent_coe... | -40.5    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 7999     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 64       |
+|    gen/time/fps         | 1187     |
+|    gen/time/time_ela... | 10       |
+|    gen/time/total_ti... | 12800    |
+|    gen/train/actor_loss | -36.6    |
+|    gen/train/critic_... | 0.129    |
+|    gen/train/ent_coef   | 0.0765   |
+|    gen/train/ent_coe... | -42.4    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 8799     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 68       |
+|    gen/time/fps         | 2284     |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 13600    |
+|    gen/train/actor_loss | -32.7    |
+|    gen/train/critic_... | 0.111    |
+|    gen/train/ent_coef   | 0.0612   |
+|    gen/train/ent_coe... | -42.1    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 9599     |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 72       |
+|    gen/time/fps         | 10030    |
+|    gen/time/time_ela... | 1        |
+|    gen/time/total_ti... | 14400    |
+|    gen/train/actor_loss | -29.2    |
+|    gen/train/critic_... | 0.177    |
+|    gen/train/ent_coef   | 0.0489   |
+|    gen/train/ent_coe... | -43.1    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 10399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 76       |
+|    gen/time/fps         | 829      |
+|    gen/time/time_ela... | 18       |
+|    gen/time/total_ti... | 15200    |
+|    gen/train/actor_loss | -25.8    |
+|    gen/train/critic_... | 0.105    |
+|    gen/train/ent_coef   | 0.0392   |
+|    gen/train/ent_coe... | -44.3    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 11199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 131      |
+|    gen/time/episodes    | 80       |
+|    gen/time/fps         | 1189     |
+|    gen/time/time_ela... | 13       |
+|    gen/time/total_ti... | 16000    |
+|    gen/train/actor_loss | -23.1    |
+|    gen/train/critic_... | 0.075    |
+|    gen/train/ent_coef   | 0.0315   |
+|    gen/train/ent_coe... | -42.3    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 11999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 131      |
+|    gen/time/episodes    | 84       |
+|    gen/time/fps         | 1921     |
+|    gen/time/time_ela... | 8        |
+|    gen/time/total_ti... | 16800    |
+|    gen/train/actor_loss | -20.5    |
+|    gen/train/critic_... | 0.0808   |
+|    gen/train/ent_coef   | 0.0254   |
+|    gen/train/ent_coe... | -41.7    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 12799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 133      |
+|    gen/time/episodes    | 88       |
+|    gen/time/fps         | 4625     |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 17600    |
+|    gen/train/actor_loss | -18.6    |
+|    gen/train/critic_... | 0.0568   |
+|    gen/train/ent_coef   | 0.0206   |
+|    gen/train/ent_coe... | -36.5    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 13599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 133      |
+|    gen/time/episodes    | 92       |
+|    gen/time/fps         | 880      |
+|    gen/time/time_ela... | 20       |
+|    gen/time/total_ti... | 18400    |
+|    gen/train/actor_loss | -16.9    |
+|    gen/train/critic_... | 0.149    |
+|    gen/train/ent_coef   | 0.0169   |
+|    gen/train/ent_coe... | -34      |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 14399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 133      |
+|    gen/time/episodes    | 96       |
+|    gen/time/fps         | 1209     |
+|    gen/time/time_ela... | 15       |
+|    gen/time/total_ti... | 19200    |
+|    gen/train/actor_loss | -15.4    |
+|    gen/train/critic_... | 0.0455   |
+|    gen/train/ent_coef   | 0.0139   |
+|    gen/train/ent_coe... | -30.2    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 15199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 134      |
+|    gen/time/episodes    | 100      |
+|    gen/time/fps         | 1569     |
+|    gen/time/time_ela... | 12       |
+|    gen/time/total_ti... | 20000    |
+|    gen/train/actor_loss | -13.9    |
+|    gen/train/critic_... | 0.128    |
+|    gen/train/ent_coef   | 0.0115   |
+|    gen/train/ent_coe... | -24.1    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 15999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 134      |
+|    gen/time/episodes    | 104      |
+|    gen/time/fps         | 3148     |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 20800    |
+|    gen/train/actor_loss | -12.9    |
+|    gen/train/critic_... | 0.0463   |
+|    gen/train/ent_coef   | 0.00965  |
+|    gen/train/ent_coe... | -17.8    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 16799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 133      |
+|    gen/time/episodes    | 108      |
+|    gen/time/fps         | 8771     |
+|    gen/time/time_ela... | 2        |
+|    gen/time/total_ti... | 21600    |
+|    gen/train/actor_loss | -12      |
+|    gen/train/critic_... | 0.0429   |
+|    gen/train/ent_coef   | 0.00827  |
+|    gen/train/ent_coe... | -14.6    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 17599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 133      |
+|    gen/time/episodes    | 112      |
+|    gen/time/fps         | 1175     |
+|    gen/time/time_ela... | 19       |
+|    gen/time/total_ti... | 22400    |
+|    gen/train/actor_loss | -11.2    |
+|    gen/train/critic_... | 0.0319   |
+|    gen/train/ent_coef   | 0.00726  |
+|    gen/train/ent_coe... | -9.13    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 18399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 116      |
+|    gen/time/fps         | 1679     |
+|    gen/time/time_ela... | 13       |
+|    gen/time/total_ti... | 23200    |
+|    gen/train/actor_loss | -10.4    |
+|    gen/train/critic_... | 0.0297   |
+|    gen/train/ent_coef   | 0.00653  |
+|    gen/train/ent_coe... | -5.11    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 19199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 120      |
+|    gen/time/fps         | 2501     |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 24000    |
+|    gen/train/actor_loss | -9.8     |
+|    gen/train/critic_... | 0.0289   |
+|    gen/train/ent_coef   | 0.00607  |
+|    gen/train/ent_coe... | -4.42    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 19999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 124      |
+|    gen/time/fps         | 5119     |
+|    gen/time/time_ela... | 4        |
+|    gen/time/total_ti... | 24800    |
+|    gen/train/actor_loss | -9.24    |
+|    gen/train/critic_... | 0.0263   |
+|    gen/train/ent_coef   | 0.00572  |
+|    gen/train/ent_coe... | -2.25    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 20799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 131      |
+|    gen/time/episodes    | 128      |
+|    gen/time/fps         | 1214     |
+|    gen/time/time_ela... | 21       |
+|    gen/time/total_ti... | 25600    |
+|    gen/train/actor_loss | -8.6     |
+|    gen/train/critic_... | 0.026    |
+|    gen/train/ent_coef   | 0.00535  |
+|    gen/train/ent_coe... | -1.39    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 21599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 130      |
+|    gen/time/episodes    | 132      |
+|    gen/time/fps         | 1559     |
+|    gen/time/time_ela... | 16       |
+|    gen/time/total_ti... | 26400    |
+|    gen/train/actor_loss | -8.2     |
+|    gen/train/critic_... | 0.0275   |
+|    gen/train/ent_coef   | 0.0051   |
+|    gen/train/ent_coe... | 1.53     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 22399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 131      |
+|    gen/time/episodes    | 136      |
+|    gen/time/fps         | 2243     |
+|    gen/time/time_ela... | 12       |
+|    gen/time/total_ti... | 27200    |
+|    gen/train/actor_loss | -7.74    |
+|    gen/train/critic_... | 0.0246   |
+|    gen/train/ent_coef   | 0.00495  |
+|    gen/train/ent_coe... | -2.54    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 23199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 131      |
+|    gen/time/episodes    | 140      |
+|    gen/time/fps         | 3733     |
+|    gen/time/time_ela... | 7        |
+|    gen/time/total_ti... | 28000    |
+|    gen/train/actor_loss | -7.52    |
+|    gen/train/critic_... | 0.0275   |
+|    gen/train/ent_coef   | 0.0048   |
+|    gen/train/ent_coe... | 1.23     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 23999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 144      |
+|    gen/time/fps         | 11270    |
+|    gen/time/time_ela... | 2        |
+|    gen/time/total_ti... | 28800    |
+|    gen/train/actor_loss | -7.21    |
+|    gen/train/critic_... | 0.0221   |
+|    gen/train/ent_coef   | 0.00465  |
+|    gen/train/ent_coe... | 1.11     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 24799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 148      |
+|    gen/time/fps         | 1522     |
+|    gen/time/time_ela... | 19       |
+|    gen/time/total_ti... | 29600    |
+|    gen/train/actor_loss | -6.84    |
+|    gen/train/critic_... | 0.0215   |
+|    gen/train/ent_coef   | 0.00442  |
+|    gen/train/ent_coe... | 0.94     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 25599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 130      |
+|    gen/time/episodes    | 152      |
+|    gen/time/fps         | 2088     |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 30400    |
+|    gen/train/actor_loss | -6.56    |
+|    gen/train/critic_... | 0.02     |
+|    gen/train/ent_coef   | 0.00427  |
+|    gen/train/ent_coe... | -1.47    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 26399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 129      |
+|    gen/time/episodes    | 156      |
+|    gen/time/fps         | 3050     |
+|    gen/time/time_ela... | 10       |
+|    gen/time/total_ti... | 31200    |
+|    gen/train/actor_loss | -6.26    |
+|    gen/train/critic_... | 0.0176   |
+|    gen/train/ent_coef   | 0.00418  |
+|    gen/train/ent_coe... | 0.438    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 27199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 129      |
+|    gen/time/episodes    | 160      |
+|    gen/time/fps         | 6056     |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 32000    |
+|    gen/train/actor_loss | -5.96    |
+|    gen/train/critic_... | 0.0202   |
+|    gen/train/ent_coef   | 0.004    |
+|    gen/train/ent_coe... | 0.445    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 27999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 128      |
+|    gen/time/episodes    | 164      |
+|    gen/time/fps         | 42023    |
+|    gen/time/time_ela... | 0        |
+|    gen/time/total_ti... | 32800    |
+|    gen/train/actor_loss | -5.74    |
+|    gen/train/critic_... | 0.0179   |
+|    gen/train/ent_coef   | 0.00394  |
+|    gen/train/ent_coe... | -1.46    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 28799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 126      |
+|    gen/time/episodes    | 168      |
+|    gen/time/fps         | 1900     |
+|    gen/time/time_ela... | 17       |
+|    gen/time/total_ti... | 33600    |
+|    gen/train/actor_loss | -5.54    |
+|    gen/train/critic_... | 0.0154   |
+|    gen/train/ent_coef   | 0.00385  |
+|    gen/train/ent_coe... | 1.36     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 29599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 124      |
+|    gen/time/episodes    | 172      |
+|    gen/time/fps         | 2570     |
+|    gen/time/time_ela... | 13       |
+|    gen/time/total_ti... | 34400    |
+|    gen/train/actor_loss | -5.37    |
+|    gen/train/critic_... | 0.0151   |
+|    gen/train/ent_coef   | 0.00369  |
+|    gen/train/ent_coe... | 1.17     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 30399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 122      |
+|    gen/time/episodes    | 176      |
+|    gen/time/fps         | 4332     |
+|    gen/time/time_ela... | 8        |
+|    gen/time/total_ti... | 35200    |
+|    gen/train/actor_loss | -5.05    |
+|    gen/train/critic_... | 0.0142   |
+|    gen/train/ent_coef   | 0.00357  |
+|    gen/train/ent_coe... | -1.43    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 31199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 120      |
+|    gen/time/episodes    | 180      |
+|    gen/time/fps         | 11416    |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 36000    |
+|    gen/train/actor_loss | -4.99    |
+|    gen/train/critic_... | 0.0138   |
+|    gen/train/ent_coef   | 0.0034   |
+|    gen/train/ent_coe... | 1.04     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 31999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 118      |
+|    gen/time/episodes    | 184      |
+|    gen/time/fps         | 1746     |
+|    gen/time/time_ela... | 21       |
+|    gen/time/total_ti... | 36800    |
+|    gen/train/actor_loss | -4.83    |
+|    gen/train/critic_... | 0.0604   |
+|    gen/train/ent_coef   | 0.00327  |
+|    gen/train/ent_coe... | -2.33    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 32799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 115      |
+|    gen/time/episodes    | 188      |
+|    gen/time/fps         | 2366     |
+|    gen/time/time_ela... | 15       |
+|    gen/time/total_ti... | 37600    |
+|    gen/train/actor_loss | -4.65    |
+|    gen/train/critic_... | 0.0136   |
+|    gen/train/ent_coef   | 0.00315  |
+|    gen/train/ent_coe... | -1.28    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 33599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 112      |
+|    gen/time/episodes    | 192      |
+|    gen/time/fps         | 3319     |
+|    gen/time/time_ela... | 11       |
+|    gen/time/total_ti... | 38400    |
+|    gen/train/actor_loss | -4.4     |
+|    gen/train/critic_... | 0.0125   |
+|    gen/train/ent_coef   | 0.00306  |
+|    gen/train/ent_coe... | -4.7     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 34399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 109      |
+|    gen/time/episodes    | 196      |
+|    gen/time/fps         | 6407     |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 39200    |
+|    gen/train/actor_loss | -4.31    |
+|    gen/train/critic_... | 0.0128   |
+|    gen/train/ent_coef   | 0.00294  |
+|    gen/train/ent_coe... | 2.68     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 35199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 107      |
+|    gen/time/episodes    | 200      |
+|    gen/time/fps         | 32357    |
+|    gen/time/time_ela... | 1        |
+|    gen/time/total_ti... | 40000    |
+|    gen/train/actor_loss | -4.16    |
+|    gen/train/critic_... | 0.0123   |
+|    gen/train/ent_coef   | 0.00292  |
+|    gen/train/ent_coe... | -0.755   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 35999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 104      |
+|    gen/time/episodes    | 204      |
+|    gen/time/fps         | 2239     |
+|    gen/time/time_ela... | 18       |
+|    gen/time/total_ti... | 40800    |
+|    gen/train/actor_loss | -4.04    |
+|    gen/train/critic_... | 0.0101   |
+|    gen/train/ent_coef   | 0.00281  |
+|    gen/train/ent_coe... | -0.189   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 36799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 102      |
+|    gen/time/episodes    | 208      |
+|    gen/time/fps         | 3140     |
+|    gen/time/time_ela... | 13       |
+|    gen/time/total_ti... | 41600    |
+|    gen/train/actor_loss | -3.9     |
+|    gen/train/critic_... | 0.0103   |
+|    gen/train/ent_coef   | 0.00271  |
+|    gen/train/ent_coe... | -0.873   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 37599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 99.8     |
+|    gen/time/episodes    | 212      |
+|    gen/time/fps         | 5078     |
+|    gen/time/time_ela... | 8        |
+|    gen/time/total_ti... | 42400    |
+|    gen/train/actor_loss | -3.86    |
+|    gen/train/critic_... | 0.00961  |
+|    gen/train/ent_coef   | 0.00266  |
+|    gen/train/ent_coe... | 1.02     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 38399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 97.9     |
+|    gen/time/episodes    | 216      |
+|    gen/time/fps         | 10215    |
+|    gen/time/time_ela... | 4        |
+|    gen/time/total_ti... | 43200    |
+|    gen/train/actor_loss | -3.62    |
+|    gen/train/critic_... | 0.0101   |
+|    gen/train/ent_coef   | 0.00258  |
+|    gen/train/ent_coe... | -0.182   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 39199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 95.7     |
+|    gen/time/episodes    | 220      |
+|    gen/time/fps         | 2099     |
+|    gen/time/time_ela... | 20       |
+|    gen/time/total_ti... | 44000    |
+|    gen/train/actor_loss | -3.53    |
+|    gen/train/critic_... | 0.0359   |
+|    gen/train/ent_coef   | 0.00254  |
+|    gen/train/ent_coe... | -3.46    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 39999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 94.4     |
+|    gen/time/episodes    | 224      |
+|    gen/time/fps         | 2684     |
+|    gen/time/time_ela... | 16       |
+|    gen/time/total_ti... | 44800    |
+|    gen/train/actor_loss | -3.54    |
+|    gen/train/critic_... | 0.0117   |
+|    gen/train/ent_coef   | 0.00254  |
+|    gen/train/ent_coe... | 1.13     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 40799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 92.7     |
+|    gen/time/episodes    | 228      |
+|    gen/time/fps         | 3967     |
+|    gen/time/time_ela... | 11       |
+|    gen/time/total_ti... | 45600    |
+|    gen/train/actor_loss | -3.49    |
+|    gen/train/critic_... | 0.0109   |
+|    gen/train/ent_coef   | 0.00256  |
+|    gen/train/ent_coe... | -0.0713  |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 41599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 89.9     |
+|    gen/time/episodes    | 232      |
+|    gen/time/fps         | 7072     |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 46400    |
+|    gen/train/actor_loss | -3.45    |
+|    gen/train/critic_... | 0.0105   |
+|    gen/train/ent_coef   | 0.00246  |
+|    gen/train/ent_coe... | 1.62     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 42399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 86.7     |
+|    gen/time/episodes    | 236      |
+|    gen/time/fps         | 25856    |
+|    gen/time/time_ela... | 1        |
+|    gen/time/total_ti... | 47200    |
+|    gen/train/actor_loss | -3.3     |
+|    gen/train/critic_... | 0.00954  |
+|    gen/train/ent_coef   | 0.0024   |
+|    gen/train/ent_coe... | -3.23    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 43199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 85.1     |
+|    gen/time/episodes    | 240      |
+|    gen/time/fps         | 2588     |
+|    gen/time/time_ela... | 18       |
+|    gen/time/total_ti... | 48000    |
+|    gen/train/actor_loss | -3.34    |
+|    gen/train/critic_... | 0.0102   |
+|    gen/train/ent_coef   | 0.00235  |
+|    gen/train/ent_coe... | 3.09     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 43999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 81.5     |
+|    gen/time/episodes    | 244      |
+|    gen/time/fps         | 3470     |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 48800    |
+|    gen/train/actor_loss | -3.2     |
+|    gen/train/critic_... | 0.00992  |
+|    gen/train/ent_coef   | 0.00225  |
+|    gen/train/ent_coe... | 5.46     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 44799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 77.8     |
+|    gen/time/episodes    | 248      |
+|    gen/time/fps         | 5456     |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 49600    |
+|    gen/train/actor_loss | -3.21    |
+|    gen/train/critic_... | 0.00948  |
+|    gen/train/ent_coef   | 0.00221  |
+|    gen/train/ent_coe... | -1.8     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 45599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 75.3     |
+|    gen/time/episodes    | 252      |
+|    gen/time/fps         | 9999     |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 50400    |
+|    gen/train/actor_loss | -3.06    |
+|    gen/train/critic_... | 0.00927  |
+|    gen/train/ent_coef   | 0.00221  |
+|    gen/train/ent_coe... | 0.426    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 46399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 73.7     |
+|    gen/time/episodes    | 256      |
+|    gen/time/fps         | 2323     |
+|    gen/time/time_ela... | 22       |
+|    gen/time/total_ti... | 51200    |
+|    gen/train/actor_loss | -3.07    |
+|    gen/train/critic_... | 0.0112   |
+|    gen/train/ent_coef   | 0.00213  |
+|    gen/train/ent_coe... | -1.23    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 47199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 72.1     |
+|    gen/time/episodes    | 260      |
+|    gen/time/fps         | 2998     |
+|    gen/time/time_ela... | 17       |
+|    gen/time/total_ti... | 52000    |
+|    gen/train/actor_loss | -2.98    |
+|    gen/train/critic_... | 0.00804  |
+|    gen/train/ent_coef   | 0.00206  |
+|    gen/train/ent_coe... | 1.49     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 47999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 69.5     |
+|    gen/time/episodes    | 264      |
+|    gen/time/fps         | 4231     |
+|    gen/time/time_ela... | 12       |
+|    gen/time/total_ti... | 52800    |
+|    gen/train/actor_loss | -2.96    |
+|    gen/train/critic_... | 0.0077   |
+|    gen/train/ent_coef   | 0.00203  |
+|    gen/train/ent_coe... | 0.0803   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 48799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 68.9     |
+|    gen/time/episodes    | 268      |
+|    gen/time/fps         | 7111     |
+|    gen/time/time_ela... | 7        |
+|    gen/time/total_ti... | 53600    |
+|    gen/train/actor_loss | -2.93    |
+|    gen/train/critic_... | 0.00995  |
+|    gen/train/ent_coef   | 0.00194  |
+|    gen/train/ent_coe... | -1.65    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 49599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 67.1     |
+|    gen/time/episodes    | 272      |
+|    gen/time/fps         | 19045    |
+|    gen/time/time_ela... | 2        |
+|    gen/time/total_ti... | 54400    |
+|    gen/train/actor_loss | -2.84    |
+|    gen/train/critic_... | 0.00793  |
+|    gen/train/ent_coef   | 0.00192  |
+|    gen/train/ent_coe... | -1.52    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 50399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 65.1     |
+|    gen/time/episodes    | 276      |
+|    gen/time/fps         | 2731     |
+|    gen/time/time_ela... | 20       |
+|    gen/time/total_ti... | 55200    |
+|    gen/train/actor_loss | -2.83    |
+|    gen/train/critic_... | 0.0126   |
+|    gen/train/ent_coef   | 0.00187  |
+|    gen/train/ent_coe... | -0.878   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 51199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 63.2     |
+|    gen/time/episodes    | 280      |
+|    gen/time/fps         | 3799     |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 56000    |
+|    gen/train/actor_loss | -2.79    |
+|    gen/train/critic_... | 0.00929  |
+|    gen/train/ent_coef   | 0.00183  |
+|    gen/train/ent_coe... | 1.91     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 51999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 61.8     |
+|    gen/time/episodes    | 284      |
+|    gen/time/fps         | 5389     |
+|    gen/time/time_ela... | 10       |
+|    gen/time/total_ti... | 56800    |
+|    gen/train/actor_loss | -2.63    |
+|    gen/train/critic_... | 0.00693  |
+|    gen/train/ent_coef   | 0.00182  |
+|    gen/train/ent_coe... | -0.635   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 52799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 60.2     |
+|    gen/time/episodes    | 288      |
+|    gen/time/fps         | 10824    |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 57600    |
+|    gen/train/actor_loss | -2.69    |
+|    gen/train/critic_... | 0.00946  |
+|    gen/train/ent_coef   | 0.00177  |
+|    gen/train/ent_coe... | -0.537   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 53599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 58.9     |
+|    gen/time/episodes    | 292      |
+|    gen/time/fps         | 94185    |
+|    gen/time/time_ela... | 0        |
+|    gen/time/total_ti... | 58400    |
+|    gen/train/actor_loss | -2.64    |
+|    gen/train/critic_... | 0.00755  |
+|    gen/train/ent_coef   | 0.0017   |
+|    gen/train/ent_coe... | -0.258   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 54399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 57.4     |
+|    gen/time/episodes    | 296      |
+|    gen/time/fps         | 3374     |
+|    gen/time/time_ela... | 17       |
+|    gen/time/total_ti... | 59200    |
+|    gen/train/actor_loss | -2.6     |
+|    gen/train/critic_... | 0.00652  |
+|    gen/train/ent_coef   | 0.00169  |
+|    gen/train/ent_coe... | -2.68    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 55199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 56       |
+|    gen/time/episodes    | 300      |
+|    gen/time/fps         | 4698     |
+|    gen/time/time_ela... | 12       |
+|    gen/time/total_ti... | 60000    |
+|    gen/train/actor_loss | -2.5     |
+|    gen/train/critic_... | 0.0097   |
+|    gen/train/ent_coef   | 0.00167  |
+|    gen/train/ent_coe... | -1.63    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 55999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 54.3     |
+|    gen/time/episodes    | 304      |
+|    gen/time/fps         | 6872     |
+|    gen/time/time_ela... | 8        |
+|    gen/time/total_ti... | 60800    |
+|    gen/train/actor_loss | -2.49    |
+|    gen/train/critic_... | 0.00569  |
+|    gen/train/ent_coef   | 0.00162  |
+|    gen/train/ent_coe... | 1.16     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 56799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 52.8     |
+|    gen/time/episodes    | 308      |
+|    gen/time/fps         | 17334    |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 61600    |
+|    gen/train/actor_loss | -2.44    |
+|    gen/train/critic_... | 0.00523  |
+|    gen/train/ent_coef   | 0.00159  |
+|    gen/train/ent_coe... | 2.78     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 57599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 50.9     |
+|    gen/time/episodes    | 312      |
+|    gen/time/fps         | 3072     |
+|    gen/time/time_ela... | 20       |
+|    gen/time/total_ti... | 62400    |
+|    gen/train/actor_loss | -2.36    |
+|    gen/train/critic_... | 0.0049   |
+|    gen/train/ent_coef   | 0.00155  |
+|    gen/train/ent_coe... | 0.66     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 58399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 49.3     |
+|    gen/time/episodes    | 316      |
+|    gen/time/fps         | 3678     |
+|    gen/time/time_ela... | 17       |
+|    gen/time/total_ti... | 63200    |
+|    gen/train/actor_loss | -2.23    |
+|    gen/train/critic_... | 0.00448  |
+|    gen/train/ent_coef   | 0.00147  |
+|    gen/train/ent_coe... | 0.0196   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 59199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 47.3     |
+|    gen/time/episodes    | 320      |
+|    gen/time/fps         | 5667     |
+|    gen/time/time_ela... | 11       |
+|    gen/time/total_ti... | 64000    |
+|    gen/train/actor_loss | -2.27    |
+|    gen/train/critic_... | 0.00474  |
+|    gen/train/ent_coef   | 0.0014   |
+|    gen/train/ent_coe... | 0.116    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 59999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 44.8     |
+|    gen/time/episodes    | 324      |
+|    gen/time/fps         | 9675     |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 64800    |
+|    gen/train/actor_loss | -2.26    |
+|    gen/train/critic_... | 0.00427  |
+|    gen/train/ent_coef   | 0.00139  |
+|    gen/train/ent_coe... | -1.07    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 60799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 42.6     |
+|    gen/time/episodes    | 328      |
+|    gen/time/fps         | 47033    |
+|    gen/time/time_ela... | 1        |
+|    gen/time/total_ti... | 65600    |
+|    gen/train/actor_loss | -2.16    |
+|    gen/train/critic_... | 0.00379  |
+|    gen/train/ent_coef   | 0.00133  |
+|    gen/train/ent_coe... | -1.66    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 61599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 41.7     |
+|    gen/time/episodes    | 332      |
+|    gen/time/fps         | 3554     |
+|    gen/time/time_ela... | 18       |
+|    gen/time/total_ti... | 66400    |
+|    gen/train/actor_loss | -2.14    |
+|    gen/train/critic_... | 0.00433  |
+|    gen/train/ent_coef   | 0.00129  |
+|    gen/train/ent_coe... | -0.515   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 62399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 39.6     |
+|    gen/time/episodes    | 336      |
+|    gen/time/fps         | 4850     |
+|    gen/time/time_ela... | 13       |
+|    gen/time/total_ti... | 67200    |
+|    gen/train/actor_loss | -2.07    |
+|    gen/train/critic_... | 0.00354  |
+|    gen/train/ent_coef   | 0.00126  |
+|    gen/train/ent_coe... | -1.68    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 63199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 36.6     |
+|    gen/time/episodes    | 340      |
+|    gen/time/fps         | 7653     |
+|    gen/time/time_ela... | 8        |
+|    gen/time/total_ti... | 68000    |
+|    gen/train/actor_loss | -2.02    |
+|    gen/train/critic_... | 0.00397  |
+|    gen/train/ent_coef   | 0.00122  |
+|    gen/train/ent_coe... | -1.58    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 63999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 34.4     |
+|    gen/time/episodes    | 344      |
+|    gen/time/fps         | 17300    |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 68800    |
+|    gen/train/actor_loss | -2       |
+|    gen/train/critic_... | 0.00491  |
+|    gen/train/ent_coef   | 0.00117  |
+|    gen/train/ent_coe... | -2.15    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 64799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 33.3     |
+|    gen/time/episodes    | 348      |
+|    gen/time/fps         | 3363     |
+|    gen/time/time_ela... | 20       |
+|    gen/time/total_ti... | 69600    |
+|    gen/train/actor_loss | -1.98    |
+|    gen/train/critic_... | 0.00363  |
+|    gen/train/ent_coef   | 0.00115  |
+|    gen/train/ent_coe... | 0.769    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 65599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 32.3     |
+|    gen/time/episodes    | 352      |
+|    gen/time/fps         | 4475     |
+|    gen/time/time_ela... | 15       |
+|    gen/time/total_ti... | 70400    |
+|    gen/train/actor_loss | -1.95    |
+|    gen/train/critic_... | 0.00376  |
+|    gen/train/ent_coef   | 0.00111  |
+|    gen/train/ent_coe... | 2.35     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 66399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 30.6     |
+|    gen/time/episodes    | 356      |
+|    gen/time/fps         | 5904     |
+|    gen/time/time_ela... | 12       |
+|    gen/time/total_ti... | 71200    |
+|    gen/train/actor_loss | -1.85    |
+|    gen/train/critic_... | 0.00354  |
+|    gen/train/ent_coef   | 0.00108  |
+|    gen/train/ent_coe... | -1.54    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 67199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 27.7     |
+|    gen/time/episodes    | 360      |
+|    gen/time/fps         | 9245     |
+|    gen/time/time_ela... | 7        |
+|    gen/time/total_ti... | 72000    |
+|    gen/train/actor_loss | -1.83    |
+|    gen/train/critic_... | 0.00309  |
+|    gen/train/ent_coef   | 0.00106  |
+|    gen/train/ent_coe... | -0.267   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 67999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 27.2     |
+|    gen/time/episodes    | 364      |
+|    gen/time/fps         | 33898    |
+|    gen/time/time_ela... | 2        |
+|    gen/time/total_ti... | 72800    |
+|    gen/train/actor_loss | -1.82    |
+|    gen/train/critic_... | 0.00345  |
+|    gen/train/ent_coef   | 0.00102  |
+|    gen/train/ent_coe... | 2.08     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 68799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 25       |
+|    gen/time/episodes    | 368      |
+|    gen/time/fps         | 3747     |
+|    gen/time/time_ela... | 19       |
+|    gen/time/total_ti... | 73600    |
+|    gen/train/actor_loss | -1.75    |
+|    gen/train/critic_... | 0.00289  |
+|    gen/train/ent_coef   | 0.00102  |
+|    gen/train/ent_coe... | -3.31    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 69599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 23.8     |
+|    gen/time/episodes    | 372      |
+|    gen/time/fps         | 4893     |
+|    gen/time/time_ela... | 15       |
+|    gen/time/total_ti... | 74400    |
+|    gen/train/actor_loss | -1.73    |
+|    gen/train/critic_... | 0.00377  |
+|    gen/train/ent_coef   | 0.000995 |
+|    gen/train/ent_coe... | -1.43    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 70399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 22.6     |
+|    gen/time/episodes    | 376      |
+|    gen/time/fps         | 7615     |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 75200    |
+|    gen/train/actor_loss | -1.65    |
+|    gen/train/critic_... | 0.00256  |
+|    gen/train/ent_coef   | 0.000955 |
+|    gen/train/ent_coe... | 1.82     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 71199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 21.9     |
+|    gen/time/episodes    | 380      |
+|    gen/time/fps         | 15141    |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 76000    |
+|    gen/train/actor_loss | -1.63    |
+|    gen/train/critic_... | 0.00307  |
+|    gen/train/ent_coef   | 0.000901 |
+|    gen/train/ent_coe... | -1.19    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 71999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 21.2     |
+|    gen/time/episodes    | 384      |
+|    gen/time/fps         | 3419     |
+|    gen/time/time_ela... | 22       |
+|    gen/time/total_ti... | 76800    |
+|    gen/train/actor_loss | -1.62    |
+|    gen/train/critic_... | 0.00224  |
+|    gen/train/ent_coef   | 0.000885 |
+|    gen/train/ent_coe... | 1.53     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 72799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 20.1     |
+|    gen/time/episodes    | 388      |
+|    gen/time/fps         | 4690     |
+|    gen/time/time_ela... | 16       |
+|    gen/time/total_ti... | 77600    |
+|    gen/train/actor_loss | -1.58    |
+|    gen/train/critic_... | 0.00301  |
+|    gen/train/ent_coef   | 0.000873 |
+|    gen/train/ent_coe... | -2.03    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 73599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 18.8     |
+|    gen/time/episodes    | 392      |
+|    gen/time/fps         | 6486     |
+|    gen/time/time_ela... | 12       |
+|    gen/time/total_ti... | 78400    |
+|    gen/train/actor_loss | -1.49    |
+|    gen/train/critic_... | 0.00335  |
+|    gen/train/ent_coef   | 0.000827 |
+|    gen/train/ent_coe... | -3.99    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 74399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 17.9     |
+|    gen/time/episodes    | 396      |
+|    gen/time/fps         | 10728    |
+|    gen/time/time_ela... | 7        |
+|    gen/time/total_ti... | 79200    |
+|    gen/train/actor_loss | -1.46    |
+|    gen/train/critic_... | 0.0032   |
+|    gen/train/ent_coef   | 0.00081  |
+|    gen/train/ent_coe... | -5.61    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 75199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 16.9     |
+|    gen/time/episodes    | 400      |
+|    gen/time/fps         | 28570    |
+|    gen/time/time_ela... | 2        |
+|    gen/time/total_ti... | 80000    |
+|    gen/train/actor_loss | -1.44    |
+|    gen/train/critic_... | 0.00289  |
+|    gen/train/ent_coef   | 0.000789 |
+|    gen/train/ent_coe... | 1.74     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 75999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 16.4     |
+|    gen/time/episodes    | 404      |
+|    gen/time/fps         | 3912     |
+|    gen/time/time_ela... | 20       |
+|    gen/time/total_ti... | 80800    |
+|    gen/train/actor_loss | -1.35    |
+|    gen/train/critic_... | 0.00207  |
+|    gen/train/ent_coef   | 0.00076  |
+|    gen/train/ent_coe... | -3.99    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 76799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 15.7     |
+|    gen/time/episodes    | 408      |
+|    gen/time/fps         | 5658     |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 81600    |
+|    gen/train/actor_loss | -1.39    |
+|    gen/train/critic_... | 0.00249  |
+|    gen/train/ent_coef   | 0.000757 |
+|    gen/train/ent_coe... | -1.15    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 77599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 15.2     |
+|    gen/time/episodes    | 412      |
+|    gen/time/fps         | 8538     |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 82400    |
+|    gen/train/actor_loss | -1.36    |
+|    gen/train/critic_... | 0.00237  |
+|    gen/train/ent_coef   | 0.000746 |
+|    gen/train/ent_coe... | 3.08     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 78399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 14.6     |
+|    gen/time/episodes    | 416      |
+|    gen/time/fps         | 16294    |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 83200    |
+|    gen/train/actor_loss | -1.3     |
+|    gen/train/critic_... | 0.00197  |
+|    gen/train/ent_coef   | 0.000719 |
+|    gen/train/ent_coe... | 2.38     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 79199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 14.1     |
+|    gen/time/episodes    | 420      |
+|    gen/time/fps         | 126894   |
+|    gen/time/time_ela... | 0        |
+|    gen/time/total_ti... | 84000    |
+|    gen/train/actor_loss | -1.25    |
+|    gen/train/critic_... | 0.00172  |
+|    gen/train/ent_coef   | 0.000697 |
+|    gen/train/ent_coe... | -2.76    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 79999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 13.2     |
+|    gen/time/episodes    | 424      |
+|    gen/time/fps         | 4785     |
+|    gen/time/time_ela... | 17       |
+|    gen/time/total_ti... | 84800    |
+|    gen/train/actor_loss | -1.26    |
+|    gen/train/critic_... | 0.00213  |
+|    gen/train/ent_coef   | 0.000694 |
+|    gen/train/ent_coe... | -1.12    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 80799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 12.9     |
+|    gen/time/episodes    | 428      |
+|    gen/time/fps         | 6114     |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 85600    |
+|    gen/train/actor_loss | -1.24    |
+|    gen/train/critic_... | 0.00246  |
+|    gen/train/ent_coef   | 0.000665 |
+|    gen/train/ent_coe... | -1.83    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 81599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 12.2     |
+|    gen/time/episodes    | 432      |
+|    gen/time/fps         | 11641    |
+|    gen/time/time_ela... | 7        |
+|    gen/time/total_ti... | 86400    |
+|    gen/train/actor_loss | -1.26    |
+|    gen/train/critic_... | 0.00214  |
+|    gen/train/ent_coef   | 0.000636 |
+|    gen/train/ent_coe... | 0.546    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 82399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 12.1     |
+|    gen/time/episodes    | 436      |
+|    gen/time/fps         | 27320    |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 87200    |
+|    gen/train/actor_loss | -1.22    |
+|    gen/train/critic_... | 0.00187  |
+|    gen/train/ent_coef   | 0.000617 |
+|    gen/train/ent_coe... | 0.276    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 83199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 11.8     |
+|    gen/time/episodes    | 440      |
+|    gen/time/fps         | 4490     |
+|    gen/time/time_ela... | 19       |
+|    gen/time/total_ti... | 88000    |
+|    gen/train/actor_loss | -1.19    |
+|    gen/train/critic_... | 0.00156  |
+|    gen/train/ent_coef   | 0.000607 |
+|    gen/train/ent_coe... | -1.64    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 83999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 11.7     |
+|    gen/time/episodes    | 444      |
+|    gen/time/fps         | 5724     |
+|    gen/time/time_ela... | 15       |
+|    gen/time/total_ti... | 88800    |
+|    gen/train/actor_loss | -1.16    |
+|    gen/train/critic_... | 0.00158  |
+|    gen/train/ent_coef   | 0.000586 |
+|    gen/train/ent_coe... | 3.24     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 84799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 11.3     |
+|    gen/time/episodes    | 448      |
+|    gen/time/fps         | 8322     |
+|    gen/time/time_ela... | 10       |
+|    gen/time/total_ti... | 89600    |
+|    gen/train/actor_loss | -1.13    |
+|    gen/train/critic_... | 0.00167  |
+|    gen/train/ent_coef   | 0.000589 |
+|    gen/train/ent_coe... | 0.278    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 85599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 11       |
+|    gen/time/episodes    | 452      |
+|    gen/time/fps         | 13600    |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 90400    |
+|    gen/train/actor_loss | -1.12    |
+|    gen/train/critic_... | 0.00164  |
+|    gen/train/ent_coef   | 0.000576 |
+|    gen/train/ent_coe... | 0.422    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 86399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 10.6     |
+|    gen/time/episodes    | 456      |
+|    gen/time/fps         | 61202    |
+|    gen/time/time_ela... | 1        |
+|    gen/time/total_ti... | 91200    |
+|    gen/train/actor_loss | -1.11    |
+|    gen/train/critic_... | 0.00201  |
+|    gen/train/ent_coef   | 0.000574 |
+|    gen/train/ent_coe... | -1.49    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 87199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 10.2     |
+|    gen/time/episodes    | 460      |
+|    gen/time/fps         | 5353     |
+|    gen/time/time_ela... | 17       |
+|    gen/time/total_ti... | 92000    |
+|    gen/train/actor_loss | -1.09    |
+|    gen/train/critic_... | 0.00156  |
+|    gen/train/ent_coef   | 0.000564 |
+|    gen/train/ent_coe... | -5.32    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 87999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 9.53     |
+|    gen/time/episodes    | 464      |
+|    gen/time/fps         | 6606     |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 92800    |
+|    gen/train/actor_loss | -1.06    |
+|    gen/train/critic_... | 0.00165  |
+|    gen/train/ent_coef   | 0.000559 |
+|    gen/train/ent_coe... | 4.13     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 88799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 9.44     |
+|    gen/time/episodes    | 468      |
+|    gen/time/fps         | 10323    |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 93600    |
+|    gen/train/actor_loss | -1.06    |
+|    gen/train/critic_... | 0.00152  |
+|    gen/train/ent_coef   | 0.00056  |
+|    gen/train/ent_coe... | 2.22     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 89599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 9.16     |
+|    gen/time/episodes    | 472      |
+|    gen/time/fps         | 21720    |
+|    gen/time/time_ela... | 4        |
+|    gen/time/total_ti... | 94400    |
+|    gen/train/actor_loss | -1.05    |
+|    gen/train/critic_... | 0.00186  |
+|    gen/train/ent_coef   | 0.00055  |
+|    gen/train/ent_coe... | 3.68     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 90399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 8.95     |
+|    gen/time/episodes    | 476      |
+|    gen/time/fps         | 4451     |
+|    gen/time/time_ela... | 21       |
+|    gen/time/total_ti... | 95200    |
+|    gen/train/actor_loss | -1.05    |
+|    gen/train/critic_... | 0.00149  |
+|    gen/train/ent_coef   | 0.00054  |
+|    gen/train/ent_coe... | -0.832   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 91199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 8.6      |
+|    gen/time/episodes    | 480      |
+|    gen/time/fps         | 5737     |
+|    gen/time/time_ela... | 16       |
+|    gen/time/total_ti... | 96000    |
+|    gen/train/actor_loss | -1.06    |
+|    gen/train/critic_... | 0.0017   |
+|    gen/train/ent_coef   | 0.000531 |
+|    gen/train/ent_coe... | 3.44     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 91999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 7.77     |
+|    gen/time/episodes    | 484      |
+|    gen/time/fps         | 8345     |
+|    gen/time/time_ela... | 11       |
+|    gen/time/total_ti... | 96800    |
+|    gen/train/actor_loss | -1.04    |
+|    gen/train/critic_... | 0.00204  |
+|    gen/train/ent_coef   | 0.000528 |
+|    gen/train/ent_coe... | 1.87     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 92799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 7.61     |
+|    gen/time/episodes    | 488      |
+|    gen/time/fps         | 14425    |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 97600    |
+|    gen/train/actor_loss | -1.02    |
+|    gen/train/critic_... | 0.00179  |
+|    gen/train/ent_coef   | 0.000527 |
+|    gen/train/ent_coe... | -3.54    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 93599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 7.46     |
+|    gen/time/episodes    | 492      |
+|    gen/time/fps         | 46162    |
+|    gen/time/time_ela... | 2        |
+|    gen/time/total_ti... | 98400    |
+|    gen/train/actor_loss | -1.01    |
+|    gen/train/critic_... | 0.00176  |
+|    gen/train/ent_coef   | 0.000522 |
+|    gen/train/ent_coe... | -2.11    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 94399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 7.22     |
+|    gen/time/episodes    | 496      |
+|    gen/time/fps         | 5147     |
+|    gen/time/time_ela... | 19       |
+|    gen/time/total_ti... | 99200    |
+|    gen/train/actor_loss | -1.04    |
+|    gen/train/critic_... | 0.00188  |
+|    gen/train/ent_coef   | 0.000522 |
+|    gen/train/ent_coe... | -5.77    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 95199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 6.95     |
+|    gen/time/episodes    | 500      |
+|    gen/time/fps         | 6945     |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 100000   |
+|    gen/train/actor_loss | -1       |
+|    gen/train/critic_... | 0.00207  |
+|    gen/train/ent_coef   | 0.000514 |
+|    gen/train/ent_coe... | -1.34    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 95999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 6.78     |
+|    gen/time/episodes    | 504      |
+|    gen/time/fps         | 10238    |
+|    gen/time/time_ela... | 9        |
+|    gen/time/total_ti... | 100800   |
+|    gen/train/actor_loss | -1.09    |
+|    gen/train/critic_... | 0.00194  |
+|    gen/train/ent_coef   | 0.000525 |
+|    gen/train/ent_coe... | 5.03     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 96799    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 6.66     |
+|    gen/time/episodes    | 508      |
+|    gen/time/fps         | 19599    |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 101600   |
+|    gen/train/actor_loss | -0.966   |
+|    gen/train/critic_... | 0.00197  |
+|    gen/train/ent_coef   | 0.000541 |
+|    gen/train/ent_coe... | -3.37    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 97599    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 6.43     |
+|    gen/time/episodes    | 512      |
+|    gen/time/fps         | 4490     |
+|    gen/time/time_ela... | 22       |
+|    gen/time/total_ti... | 102400   |
+|    gen/train/actor_loss | -1       |
+|    gen/train/critic_... | 0.00194  |
+|    gen/train/ent_coef   | 0.000543 |
+|    gen/train/ent_coe... | -1.3     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 98399    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 6.18     |
+|    gen/time/episodes    | 516      |
+|    gen/time/fps         | 6173     |
+|    gen/time/time_ela... | 16       |
+|    gen/time/total_ti... | 103200   |
+|    gen/train/actor_loss | -1.05    |
+|    gen/train/critic_... | 0.00245  |
+|    gen/train/ent_coef   | 0.000543 |
+|    gen/train/ent_coe... | -2.5     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 99199    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 5.99     |
+|    gen/time/episodes    | 520      |
+|    gen/time/fps         | 8337     |
+|    gen/time/time_ela... | 12       |
+|    gen/time/total_ti... | 104000   |
+|    gen/train/actor_loss | -1.07    |
+|    gen/train/critic_... | 0.00209  |
+|    gen/train/ent_coef   | 0.000546 |
+|    gen/train/ent_coe... | -4.75    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 99999    |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 5.85     |
+|    gen/time/episodes    | 524      |
+|    gen/time/fps         | 14637    |
+|    gen/time/time_ela... | 7        |
+|    gen/time/total_ti... | 104800   |
+|    gen/train/actor_loss | -1.09    |
+|    gen/train/critic_... | 0.00229  |
+|    gen/train/ent_coef   | 0.000546 |
+|    gen/train/ent_coe... | -0.0386  |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 100799   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 5.71     |
+|    gen/time/episodes    | 528      |
+|    gen/time/fps         | 40541    |
+|    gen/time/time_ela... | 2        |
+|    gen/time/total_ti... | 105600   |
+|    gen/train/actor_loss | -1.13    |
+|    gen/train/critic_... | 0.00217  |
+|    gen/train/ent_coef   | 0.000548 |
+|    gen/train/ent_coe... | 4.8      |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 101599   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 5.44     |
+|    gen/time/episodes    | 532      |
+|    gen/time/fps         | 5546     |
+|    gen/time/time_ela... | 19       |
+|    gen/time/total_ti... | 106400   |
+|    gen/train/actor_loss | -1.17    |
+|    gen/train/critic_... | 0.00254  |
+|    gen/train/ent_coef   | 0.000556 |
+|    gen/train/ent_coe... | -0.231   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 102399   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 5.29     |
+|    gen/time/episodes    | 536      |
+|    gen/time/fps         | 7303     |
+|    gen/time/time_ela... | 14       |
+|    gen/time/total_ti... | 107200   |
+|    gen/train/actor_loss | -1.18    |
+|    gen/train/critic_... | 0.00232  |
+|    gen/train/ent_coef   | 0.000558 |
+|    gen/train/ent_coe... | 2.8      |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 103199   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.99     |
+|    gen/time/episodes    | 540      |
+|    gen/time/fps         | 10462    |
+|    gen/time/time_ela... | 10       |
+|    gen/time/total_ti... | 108000   |
+|    gen/train/actor_loss | -1.07    |
+|    gen/train/critic_... | 0.00227  |
+|    gen/train/ent_coef   | 0.000549 |
+|    gen/train/ent_coe... | -2.83    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 103999   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.64     |
+|    gen/time/episodes    | 544      |
+|    gen/time/fps         | 21334    |
+|    gen/time/time_ela... | 5        |
+|    gen/time/total_ti... | 108800   |
+|    gen/train/actor_loss | -1.15    |
+|    gen/train/critic_... | 0.00288  |
+|    gen/train/ent_coef   | 0.000558 |
+|    gen/train/ent_coe... | -0.00279 |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 104799   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.53     |
+|    gen/time/episodes    | 548      |
+|    gen/time/fps         | 114111   |
+|    gen/time/time_ela... | 0        |
+|    gen/time/total_ti... | 109600   |
+|    gen/train/actor_loss | -1.13    |
+|    gen/train/critic_... | 0.00262  |
+|    gen/train/ent_coef   | 0.00057  |
+|    gen/train/ent_coe... | 1.94     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 105599   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.5      |
+|    gen/time/episodes    | 552      |
+|    gen/time/fps         | 6400     |
+|    gen/time/time_ela... | 17       |
+|    gen/time/total_ti... | 110400   |
+|    gen/train/actor_loss | -1.19    |
+|    gen/train/critic_... | 0.00296  |
+|    gen/train/ent_coef   | 0.000576 |
+|    gen/train/ent_coe... | -0.874   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 106399   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.45     |
+|    gen/time/episodes    | 556      |
+|    gen/time/fps         | 8979     |
+|    gen/time/time_ela... | 12       |
+|    gen/time/total_ti... | 111200   |
+|    gen/train/actor_loss | -1.17    |
+|    gen/train/critic_... | 0.00239  |
+|    gen/train/ent_coef   | 0.000584 |
+|    gen/train/ent_coe... | 0.872    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 107199   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.43     |
+|    gen/time/episodes    | 560      |
+|    gen/time/fps         | 14513    |
+|    gen/time/time_ela... | 7        |
+|    gen/time/total_ti... | 112000   |
+|    gen/train/actor_loss | -1.11    |
+|    gen/train/critic_... | 0.00236  |
+|    gen/train/ent_coef   | 0.000598 |
+|    gen/train/ent_coe... | -4.29    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 107999   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.44     |
+|    gen/time/episodes    | 564      |
+|    gen/time/fps         | 31288    |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 112800   |
+|    gen/train/actor_loss | -1.22    |
+|    gen/train/critic_... | 0.0028   |
+|    gen/train/ent_coef   | 0.000586 |
+|    gen/train/ent_coe... | 0.174    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 108799   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.7      |
+|    gen/time/episodes    | 568      |
+|    gen/time/fps         | 5098     |
+|    gen/time/time_ela... | 22       |
+|    gen/time/total_ti... | 113600   |
+|    gen/train/actor_loss | -1.2     |
+|    gen/train/critic_... | 0.00283  |
+|    gen/train/ent_coef   | 0.000578 |
+|    gen/train/ent_coe... | 3.94     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 109599   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.58     |
+|    gen/time/episodes    | 572      |
+|    gen/time/fps         | 7514     |
+|    gen/time/time_ela... | 15       |
+|    gen/time/total_ti... | 114400   |
+|    gen/train/actor_loss | -1.25    |
+|    gen/train/critic_... | 0.00273  |
+|    gen/train/ent_coef   | 0.00058  |
+|    gen/train/ent_coe... | 2.33     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 110399   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.51     |
+|    gen/time/episodes    | 576      |
+|    gen/time/fps         | 10947    |
+|    gen/time/time_ela... | 10       |
+|    gen/time/total_ti... | 115200   |
+|    gen/train/actor_loss | -1.2     |
+|    gen/train/critic_... | 0.00283  |
+|    gen/train/ent_coef   | 0.000593 |
+|    gen/train/ent_coe... | 3.34     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 111199   |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 4.42     |
+|    gen/time/episodes    | 580      |
+|    gen/time/fps         | 18151    |
+|    gen/time/time_ela... | 6        |
+|    gen/time/total_ti... | 116000   |
+|    gen/train/actor_loss | -1.21    |
+|    gen/train/critic_... | 0.00246  |
+|    gen/train/ent_coef   | 0.000595 |
+|    gen/train/ent_coe... | -4.13    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 111999   |
+--------------------------------------

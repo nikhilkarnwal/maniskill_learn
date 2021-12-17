@@ -14,13 +14,20 @@ agent = dict(
         gail_cfg = dict(
             demo_batch_size = 64,
             timesteps = 2048,
-            total_timesteps = 1000000,
+            total_timesteps = 2*1000000,
             resume = False,
             save = True,
             policy_model = "policy",
             reward_model = "reward.pth",
-            algo = 'ppo',
-            gen_algo = 'sac'
+            algo = 'sac',
+            gen_algo = 'sac',
+            sac_algo = dict(
+                buffer_size = 1000000,
+                learning_rate = 0.0003,
+                learning_starts = 4000,
+                batch_size = 1024,
+                gamma = 0.95
+            )
         ),
         nn_cfg=dict(
             type='PointNetWithInstanceInfoV0',

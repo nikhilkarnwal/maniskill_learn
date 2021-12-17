@@ -6,6 +6,7 @@ env_cfg = dict(
     unwrapped=False,
     # obs_mode='custom',
     reward_type='dense',
+    obs_mode='state'
 )
 
 agent = dict(
@@ -59,7 +60,7 @@ replay_cfg = dict(
 )
 
 train_mfrl_cfg = dict(
-    total_steps=1000000,
+    total_steps=2*1000000,
     warm_steps=4000,
     n_eval=200000,
     n_checkpoint=200000,

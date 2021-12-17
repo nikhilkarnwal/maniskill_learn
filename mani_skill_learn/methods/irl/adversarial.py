@@ -2,6 +2,7 @@
 IRL algorithms
 '''
 
+from datetime import datetime
 import abc
 import torch
 from torch._C import device
@@ -114,7 +115,7 @@ class GAILSB(Adversarial):
                             learning_rate=linear_schedule(0.0003))
         elif self.gail_config['gen_algo']=='sac':
             self.gen_algo = SAC("MlpPolicy", env=env, verbose=True,
-                            device='cuda', tensorboard_log='GAILSB')
+                            device='cuda', tensorboard_log='GAILSB', **self.gail_config["sac_algo"])
         self.gail_config["policy_model"] = self.gail_config["algo"] + \
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:
@@ -150,8 +151,10 @@ class GAILSB(Adversarial):
                 total_timesteps=self.gail_config['total_timesteps'])
 
         if self.gail_config['save']:
-            print({'Saving GAIL models'})
-            self.gen_algo.save(self.gail_config['policy_model'])
+            now = datetime.now()
+            current_time = now.strftime("%d_%m_%Y-%H_%M_%S")
+            print('Saving GAIL models',current_time+"_"+self.gail_config['policy_model'])
+            self.gen_algo.save(current_time+"_"+self.gail_config['policy_model'])
             # torch.save(self.model._reward_net.state_dict(),self.gail_config['reward_model'])
         return {
             'policy_abs_error': 1,

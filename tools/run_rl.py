@@ -243,10 +243,11 @@ def main():
             logger.info(f'Get model {latest_name}')
             cfg.resume_from = latest_name
 
+    from mani_skill_learn.methods.builder import MFRL, BRL
     # Set mani_skill env and get info
     if cfg.get('env_cfg', None) is not None:
         from mani_skill_learn.env import get_env_info
-        if cfg.agent['type']=='GAILSB':
+        if cfg.agent.type in BRL:
             cfg.agent['env_cfg'] = deepcopy(cfg.env_cfg)
         obs_shape, action_shape, action_space = get_env_info(cfg.env_cfg)
         cfg.agent['obs_shape'] = obs_shape
@@ -254,7 +255,6 @@ def main():
         cfg.agent['action_space'] = action_space
         logger.info(f'State shape:{obs_shape}, action shape:{action_space}')
 
-    from mani_skill_learn.methods.builder import MFRL, BRL
     if cfg.agent.type in MFRL or cfg.agent.type in BRL:
         main_mfrl_brl(cfg, args, rollout, evaluator, logger)
     else:

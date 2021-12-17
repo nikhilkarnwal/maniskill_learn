@@ -1,4 +1,5 @@
 from logging import info
+from typing import ItemsView
 from h5py import File
 from argparse import Action
 import glob
@@ -10,6 +11,7 @@ from h5py._hl.selections2 import select_read
 from imitation.algorithms.base import AnyTransitions
 from imitation.data.types import Trajectory, TrajectoryWithRew
 import numpy as np
+from pynvml.nvml import nvmlShutdown
 
 from mani_skill_learn.utils.data import (dict_to_seq, recursive_init_dict_array, map_func_to_dict_array,
                                          store_dict_array_to_h5,
@@ -259,9 +261,12 @@ class TrajReplay:
                 trajs = File(init_buffer, 'r')
                 # print(trajs.keys())
                 for key in trajs.keys():
-                    item = load_h5_as_dict_array(trajs[key])
+                    all_item = load_h5_as_dict_array(trajs[key])
+                    item = {buf_key:all_item[buf_key] for buf_key in buffer_keys}
                     self.push(item)
                     cnt += 1
+                # if self.running_count >=3000:
+                #     break
         print(
             f'Num of buffers {len(init_buffers)}, Total steps {self.running_count}')
 
@@ -276,6 +281,26 @@ class TrajReplay:
                 sampled_batch, device=device, dtype='float32')
             final_obs = to_np(backbone(sampled_batch['obs'])[1])
             final_next_obs = to_np(backbone(sampled_batch['next_obs'])[1])
+            self.main_memory[i]['obs'] = np.append(final_obs,[final_next_obs[-1]],axis=0)
+            self.main_memory[i] = TrajectoryWithRew(obs=self.main_memory[i]['obs'],
+                                                    acts=self.main_memory[i]['actions'],
+                                                    rews=self.main_memory[i]['rewards'], infos=None, terminal=True)
+
+        print(f'Processed-{self.main_memory.shape} trajs using backbone')
+
+@REPLAYS.register_module()
+class TrajReplayState(TrajReplay):
+
+    def __init__(self, capacity):
+        super().__init__(capacity)
+
+    def process(self, backbone = None, device = None):
+        if self.processed:
+            return
+        self.processed = True
+        for i in range(self.main_memory.shape[0]):
+            final_obs = self.main_memory[i]['obs']
+            final_next_obs = self.main_memory[i]['next_obs']
             self.main_memory[i]['obs'] = np.append(final_obs,[final_next_obs[-1]],axis=0)
             self.main_memory[i] = TrajectoryWithRew(obs=self.main_memory[i]['obs'],
                                                     acts=self.main_memory[i]['actions'],

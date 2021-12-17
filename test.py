@@ -1,4 +1,4 @@
-from typing import Callable
+# from typing import Callable
 # from hashlib import new
 # from botocore import vendored
 # import gym
@@ -16,25 +16,31 @@ from typing import Callable
 # print(env.observation_space) # this shows the observation structure in Openai Gym's format
 # print(env.action_space) # this shows the action space in Openai Gym's format
 # obs = env.reset()
+# # env.render('human')
+# print(obs['pointcloud']['seg'])
 # for level_idx in range(0, 5): # level_idx is a random seed
 #     obs = env.reset(level=level_idx)
-#     print('#### Level {:d}'.format(level_idx))
-#     for i_step in range(100):
+#     # print('#### Level {:d}'.format(level_idx))
+#     for i_step in range(10000):
 #         # env.render('human') # a display is required to use this function; note that rendering will slow down the running speed
 #         action = env.action_space.sample()
+#         env.render("human")
 #         obs, reward, done, info = env.step(action) # take a random action
 #         print('{:d}: reward {:.4f}, done {}, info {}'.format(i_step, reward, done,info))
 #         if done:
 #             break
 # env.close()
 
-# from h5py import File
 
-# from mani_skill_learn.utils.fileio.h5_utils import load_h5_as_dict_array
-# f = File('./full_mani_skill_data/OpenCabinetDrawer/OpenCabinetDrawer_1056_link_0-v0.h5', 'r')
-# # f is a h5py.Group with keys traj_0 ... traj_n
-# print(f['traj_0'].keys())
-# print(load_h5_as_dict_array(f['traj_0']))
+from h5py import File
+
+from mani_skill_learn.utils.fileio.h5_utils import load_h5_as_dict_array, load_h5s_as_list_dict_array
+f = File('./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_0-v0.h5', 'r')
+# f is a h5py.Group with keys traj_0 ... traj_n
+print(f['traj_0'].keys())
+print(load_h5_as_dict_array(f['traj_0'])['obs'].shape)
+
+print(load_h5_as_dict_array(f['traj_0']['obs']).shape)
 
 
 # import gym
@@ -258,7 +264,7 @@ def run_gail():
 #     gen_algo._update_info_buffer(info)
 # print(gen_algo.ep_info_buffer)
 
-def linear_schedule(initial_value: float) -> Callable[[float], float]:
+def linear_schedule(initial_value: float):
     """
     Linear learning rate schedule.
 
@@ -308,4 +314,15 @@ def run_ppo():
 
 #run_ppo()
 
-run_gail()
+# run_gail()
+
+# from datetime import datetime
+
+# # datetime object containing current date and time
+# now = datetime.now()
+ 
+# print("now =", now)
+
+# # dd/mm/YY H:M:S
+# dt_string = now.strftime("%d_%m_%Y-%H_%M_%S")
+# print("date and time =", dt_string)	

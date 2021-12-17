@@ -1,0 +1,2712 @@
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.52     |
+|    disc/disc_acc_expert | 0.0469   |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.688    |
+|    disc/disc_loss       | 0.725    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 1        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.523    |
+|    disc/disc_acc_expert | 0.0547   |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.689    |
+|    disc/disc_loss       | 0.717    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 1        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.648    |
+|    disc/disc_acc_expert | 0.312    |
+|    disc/disc_acc_gen    | 0.984    |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.689    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 2        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.719    |
+|    disc/disc_acc_expert | 0.461    |
+|    disc/disc_acc_gen    | 0.977    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.678    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 2        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.75     |
+|    disc/disc_acc_expert | 0.531    |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.666    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 3        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.742    |
+|    disc/disc_acc_expert | 0.555    |
+|    disc/disc_acc_gen    | 0.93     |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.664    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 3        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.75     |
+|    disc/disc_acc_expert | 0.578    |
+|    disc/disc_acc_gen    | 0.922    |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.656    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 4        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.816    |
+|    disc/disc_acc_expert | 0.719    |
+|    disc/disc_acc_gen    | 0.914    |
+|    disc/disc_entropy    | 0.689    |
+|    disc/disc_loss       | 0.643    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 4        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.84     |
+|    disc/disc_acc_expert | 0.797    |
+|    disc/disc_acc_gen    | 0.883    |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.641    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 5        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.84     |
+|    disc/disc_acc_expert | 0.82     |
+|    disc/disc_acc_gen    | 0.859    |
+|    disc/disc_entropy    | 0.688    |
+|    disc/disc_loss       | 0.632    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 5        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.793    |
+|    disc/disc_acc_expert | 0.891    |
+|    disc/disc_acc_gen    | 0.695    |
+|    disc/disc_entropy    | 0.686    |
+|    disc/disc_loss       | 0.625    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 6        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.832    |
+|    disc/disc_acc_expert | 0.906    |
+|    disc/disc_acc_gen    | 0.758    |
+|    disc/disc_entropy    | 0.685    |
+|    disc/disc_loss       | 0.617    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 6        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.859    |
+|    disc/disc_acc_expert | 0.93     |
+|    disc/disc_acc_gen    | 0.789    |
+|    disc/disc_entropy    | 0.683    |
+|    disc/disc_loss       | 0.606    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 7        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.84     |
+|    disc/disc_acc_expert | 0.953    |
+|    disc/disc_acc_gen    | 0.727    |
+|    disc/disc_entropy    | 0.68     |
+|    disc/disc_loss       | 0.596    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 7        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.906    |
+|    disc/disc_acc_expert | 0.961    |
+|    disc/disc_acc_gen    | 0.852    |
+|    disc/disc_entropy    | 0.679    |
+|    disc/disc_loss       | 0.586    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 8        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.906    |
+|    disc/disc_acc_expert | 0.984    |
+|    disc/disc_acc_gen    | 0.828    |
+|    disc/disc_entropy    | 0.676    |
+|    disc/disc_loss       | 0.576    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 8        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.789    |
+|    disc/disc_acc_expert | 0.969    |
+|    disc/disc_acc_gen    | 0.609    |
+|    disc/disc_entropy    | 0.674    |
+|    disc/disc_loss       | 0.582    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 9        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.762    |
+|    disc/disc_acc_expert | 0.992    |
+|    disc/disc_acc_gen    | 0.531    |
+|    disc/disc_entropy    | 0.67     |
+|    disc/disc_loss       | 0.575    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 9        |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.855    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.711    |
+|    disc/disc_entropy    | 0.667    |
+|    disc/disc_loss       | 0.553    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 10       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.867    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.734    |
+|    disc/disc_entropy    | 0.666    |
+|    disc/disc_loss       | 0.548    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 10       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.902    |
+|    disc/disc_acc_expert | 0.992    |
+|    disc/disc_acc_gen    | 0.812    |
+|    disc/disc_entropy    | 0.663    |
+|    disc/disc_loss       | 0.546    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 11       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.879    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.758    |
+|    disc/disc_entropy    | 0.658    |
+|    disc/disc_loss       | 0.536    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 11       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.812    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.625    |
+|    disc/disc_entropy    | 0.659    |
+|    disc/disc_loss       | 0.545    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 12       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.867    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.734    |
+|    disc/disc_entropy    | 0.648    |
+|    disc/disc_loss       | 0.517    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 12       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.852    |
+|    disc/disc_acc_expert | 0.992    |
+|    disc/disc_acc_gen    | 0.711    |
+|    disc/disc_entropy    | 0.644    |
+|    disc/disc_loss       | 0.514    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 13       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.887    |
+|    disc/disc_acc_expert | 0.992    |
+|    disc/disc_acc_gen    | 0.781    |
+|    disc/disc_entropy    | 0.646    |
+|    disc/disc_loss       | 0.515    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 13       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.828    |
+|    disc/disc_acc_expert | 0.992    |
+|    disc/disc_acc_gen    | 0.664    |
+|    disc/disc_entropy    | 0.637    |
+|    disc/disc_loss       | 0.507    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 14       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.832    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.664    |
+|    disc/disc_entropy    | 0.636    |
+|    disc/disc_loss       | 0.508    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 14       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.957    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.914    |
+|    disc/disc_entropy    | 0.627    |
+|    disc/disc_loss       | 0.475    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 15       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.922    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.844    |
+|    disc/disc_entropy    | 0.617    |
+|    disc/disc_loss       | 0.466    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 15       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.973    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.945    |
+|    disc/disc_entropy    | 0.612    |
+|    disc/disc_loss       | 0.449    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 16       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.934    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.867    |
+|    disc/disc_entropy    | 0.612    |
+|    disc/disc_loss       | 0.454    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 16       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.676    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.352    |
+|    disc/disc_entropy    | 0.591    |
+|    disc/disc_loss       | 0.519    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 17       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.668    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.336    |
+|    disc/disc_entropy    | 0.585    |
+|    disc/disc_loss       | 0.527    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 17       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.699    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.398    |
+|    disc/disc_entropy    | 0.593    |
+|    disc/disc_loss       | 0.494    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 18       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.699    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.398    |
+|    disc/disc_entropy    | 0.591    |
+|    disc/disc_loss       | 0.483    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 18       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.816    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.633    |
+|    disc/disc_entropy    | 0.596    |
+|    disc/disc_loss       | 0.471    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 19       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.812    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.625    |
+|    disc/disc_entropy    | 0.574    |
+|    disc/disc_loss       | 0.45     |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 19       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.766    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.531    |
+|    disc/disc_entropy    | 0.582    |
+|    disc/disc_loss       | 0.456    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 20       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.844    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.688    |
+|    disc/disc_entropy    | 0.574    |
+|    disc/disc_loss       | 0.433    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 20       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.895    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.789    |
+|    disc/disc_entropy    | 0.553    |
+|    disc/disc_loss       | 0.391    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 21       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.879    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.758    |
+|    disc/disc_entropy    | 0.551    |
+|    disc/disc_loss       | 0.401    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 21       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.945    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.891    |
+|    disc/disc_entropy    | 0.54     |
+|    disc/disc_loss       | 0.383    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 22       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.938    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.875    |
+|    disc/disc_entropy    | 0.551    |
+|    disc/disc_loss       | 0.389    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 22       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.953    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.906    |
+|    disc/disc_entropy    | 0.537    |
+|    disc/disc_loss       | 0.373    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 23       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.938    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.875    |
+|    disc/disc_entropy    | 0.536    |
+|    disc/disc_loss       | 0.375    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 23       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.879    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.758    |
+|    disc/disc_entropy    | 0.534    |
+|    disc/disc_loss       | 0.394    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 24       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.875    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.75     |
+|    disc/disc_entropy    | 0.531    |
+|    disc/disc_loss       | 0.389    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 24       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.984    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.524    |
+|    disc/disc_loss       | 0.362    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 25       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.969    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.938    |
+|    disc/disc_entropy    | 0.502    |
+|    disc/disc_loss       | 0.352    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 25       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.824    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.648    |
+|    disc/disc_entropy    | 0.495    |
+|    disc/disc_loss       | 0.404    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 26       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.84     |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.68     |
+|    disc/disc_entropy    | 0.492    |
+|    disc/disc_loss       | 0.393    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 26       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.871    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.742    |
+|    disc/disc_entropy    | 0.502    |
+|    disc/disc_loss       | 0.374    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 27       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.875    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.75     |
+|    disc/disc_entropy    | 0.497    |
+|    disc/disc_loss       | 0.369    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 27       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.738    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.477    |
+|    disc/disc_entropy    | 0.494    |
+|    disc/disc_loss       | 0.445    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 28       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.758    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.516    |
+|    disc/disc_entropy    | 0.484    |
+|    disc/disc_loss       | 0.419    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 28       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.816    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.633    |
+|    disc/disc_entropy    | 0.497    |
+|    disc/disc_loss       | 0.385    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 29       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.852    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.703    |
+|    disc/disc_entropy    | 0.51     |
+|    disc/disc_loss       | 0.391    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 29       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.984    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.475    |
+|    disc/disc_loss       | 0.286    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 30       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.988    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.977    |
+|    disc/disc_entropy    | 0.463    |
+|    disc/disc_loss       | 0.274    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 30       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.879    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.758    |
+|    disc/disc_entropy    | 0.49     |
+|    disc/disc_loss       | 0.38     |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 31       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.926    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.852    |
+|    disc/disc_entropy    | 0.484    |
+|    disc/disc_loss       | 0.344    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 31       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.945    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.891    |
+|    disc/disc_entropy    | 0.488    |
+|    disc/disc_loss       | 0.317    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 32       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.973    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.945    |
+|    disc/disc_entropy    | 0.467    |
+|    disc/disc_loss       | 0.286    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 32       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.447    |
+|    disc/disc_loss       | 0.251    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 33       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.452    |
+|    disc/disc_loss       | 0.249    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 33       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.463    |
+|    disc/disc_loss       | 0.272    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 34       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.471    |
+|    disc/disc_loss       | 0.277    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 34       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.448    |
+|    disc/disc_loss       | 0.246    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 35       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.439    |
+|    disc/disc_loss       | 0.241    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 35       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.988    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.977    |
+|    disc/disc_entropy    | 0.43     |
+|    disc/disc_loss       | 0.235    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 36       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.98     |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.961    |
+|    disc/disc_entropy    | 0.435    |
+|    disc/disc_loss       | 0.24     |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 36       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.984    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.415    |
+|    disc/disc_loss       | 0.225    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 37       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.411    |
+|    disc/disc_loss       | 0.221    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 37       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.407    |
+|    disc/disc_loss       | 0.217    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 38       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.402    |
+|    disc/disc_loss       | 0.211    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 38       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.405    |
+|    disc/disc_loss       | 0.212    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 39       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.388    |
+|    disc/disc_loss       | 0.197    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 39       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.373    |
+|    disc/disc_loss       | 0.181    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 40       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.385    |
+|    disc/disc_loss       | 0.185    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 40       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.984    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.372    |
+|    disc/disc_loss       | 0.195    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 41       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.992    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.984    |
+|    disc/disc_entropy    | 0.385    |
+|    disc/disc_loss       | 0.198    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 41       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.366    |
+|    disc/disc_loss       | 0.183    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 42       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.355    |
+|    disc/disc_loss       | 0.169    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 42       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.949    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.898    |
+|    disc/disc_entropy    | 0.362    |
+|    disc/disc_loss       | 0.245    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 43       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.953    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.906    |
+|    disc/disc_entropy    | 0.352    |
+|    disc/disc_loss       | 0.222    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 43       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.953    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.906    |
+|    disc/disc_entropy    | 0.354    |
+|    disc/disc_loss       | 0.222    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 44       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.973    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.945    |
+|    disc/disc_entropy    | 0.354    |
+|    disc/disc_loss       | 0.202    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 44       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.315    |
+|    disc/disc_loss       | 0.134    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 45       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.305    |
+|    disc/disc_loss       | 0.13     |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 45       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.984    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.356    |
+|    disc/disc_loss       | 0.198    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 46       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.984    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.345    |
+|    disc/disc_loss       | 0.186    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 46       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.938    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.875    |
+|    disc/disc_entropy    | 0.352    |
+|    disc/disc_loss       | 0.218    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 47       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.949    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.898    |
+|    disc/disc_entropy    | 0.353    |
+|    disc/disc_loss       | 0.208    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 47       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.988    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.977    |
+|    disc/disc_entropy    | 0.292    |
+|    disc/disc_loss       | 0.128    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 48       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.965    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.93     |
+|    disc/disc_entropy    | 0.308    |
+|    disc/disc_loss       | 0.166    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 48       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.302    |
+|    disc/disc_loss       | 0.125    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 49       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.305    |
+|    disc/disc_loss       | 0.124    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 49       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.945    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.891    |
+|    disc/disc_entropy    | 0.309    |
+|    disc/disc_loss       | 0.162    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 50       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.977    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.953    |
+|    disc/disc_entropy    | 0.316    |
+|    disc/disc_loss       | 0.146    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 50       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.965    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.93     |
+|    disc/disc_entropy    | 0.289    |
+|    disc/disc_loss       | 0.188    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 51       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.953    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.906    |
+|    disc/disc_entropy    | 0.279    |
+|    disc/disc_loss       | 0.183    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 51       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.973    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.945    |
+|    disc/disc_entropy    | 0.307    |
+|    disc/disc_loss       | 0.15     |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 52       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.988    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.977    |
+|    disc/disc_entropy    | 0.325    |
+|    disc/disc_loss       | 0.158    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 52       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.304    |
+|    disc/disc_loss       | 0.125    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 53       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.299    |
+|    disc/disc_loss       | 0.119    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 53       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.293    |
+|    disc/disc_loss       | 0.119    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 54       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.286    |
+|    disc/disc_loss       | 0.113    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 54       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.984    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.281    |
+|    disc/disc_loss       | 0.114    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 55       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.977    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.953    |
+|    disc/disc_entropy    | 0.281    |
+|    disc/disc_loss       | 0.116    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 55       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.286    |
+|    disc/disc_loss       | 0.107    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 56       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.271    |
+|    disc/disc_loss       | 0.101    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 56       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.294    |
+|    disc/disc_loss       | 0.122    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 57       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.276    |
+|    disc/disc_loss       | 0.114    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 57       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.268    |
+|    disc/disc_loss       | 0.109    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 58       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.267    |
+|    disc/disc_loss       | 0.106    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 58       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.215    |
+|    disc/disc_loss       | 0.069    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 59       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.23     |
+|    disc/disc_loss       | 0.0758   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 59       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.201    |
+|    disc/disc_loss       | 0.0636   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 60       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.22     |
+|    disc/disc_loss       | 0.079    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 60       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.216    |
+|    disc/disc_loss       | 0.0712   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 61       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.212    |
+|    disc/disc_loss       | 0.0697   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 61       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.214    |
+|    disc/disc_loss       | 0.0708   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 62       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.203    |
+|    disc/disc_loss       | 0.0683   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 62       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.221    |
+|    disc/disc_loss       | 0.0864   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 63       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.205    |
+|    disc/disc_loss       | 0.0735   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 63       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.168    |
+|    disc/disc_loss       | 0.0489   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 64       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.166    |
+|    disc/disc_loss       | 0.0512   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 64       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.202    |
+|    disc/disc_loss       | 0.0711   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 65       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.199    |
+|    disc/disc_loss       | 0.0694   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 65       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.157    |
+|    disc/disc_loss       | 0.0454   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 66       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.157    |
+|    disc/disc_loss       | 0.0452   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 66       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.161    |
+|    disc/disc_loss       | 0.0476   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 67       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.165    |
+|    disc/disc_loss       | 0.0489   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 67       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.159    |
+|    disc/disc_loss       | 0.0469   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 68       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.161    |
+|    disc/disc_loss       | 0.0489   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 68       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.155    |
+|    disc/disc_loss       | 0.0471   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 69       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.144    |
+|    disc/disc_loss       | 0.0403   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 69       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.128    |
+|    disc/disc_loss       | 0.0356   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 70       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.13     |
+|    disc/disc_loss       | 0.0356   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 70       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.992    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.984    |
+|    disc/disc_entropy    | 0.148    |
+|    disc/disc_loss       | 0.0523   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 71       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.992    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.984    |
+|    disc/disc_entropy    | 0.129    |
+|    disc/disc_loss       | 0.0554   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 71       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.106    |
+|    disc/disc_loss       | 0.0268   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 72       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.114    |
+|    disc/disc_loss       | 0.0293   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 72       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.11     |
+|    disc/disc_loss       | 0.0315   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 73       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.109    |
+|    disc/disc_loss       | 0.0312   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 73       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.123    |
+|    disc/disc_loss       | 0.0342   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 74       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.116    |
+|    disc/disc_loss       | 0.0317   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 74       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.984    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.969    |
+|    disc/disc_entropy    | 0.133    |
+|    disc/disc_loss       | 0.0583   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 75       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.992    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.984    |
+|    disc/disc_entropy    | 0.121    |
+|    disc/disc_loss       | 0.0512   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 75       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0952   |
+|    disc/disc_loss       | 0.0238   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 76       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.103    |
+|    disc/disc_loss       | 0.0256   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 76       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.126    |
+|    disc/disc_loss       | 0.0331   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 77       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.116    |
+|    disc/disc_loss       | 0.0302   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 77       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0994   |
+|    disc/disc_loss       | 0.0249   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 78       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.0992   |
+|    disc/disc_loss       | 0.0309   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 78       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.106    |
+|    disc/disc_loss       | 0.0273   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 79       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.106    |
+|    disc/disc_loss       | 0.0275   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 79       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.109    |
+|    disc/disc_loss       | 0.0296   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 80       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.114    |
+|    disc/disc_loss       | 0.0303   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 80       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.106    |
+|    disc/disc_loss       | 0.0264   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 81       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.104    |
+|    disc/disc_loss       | 0.0262   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 81       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0995   |
+|    disc/disc_loss       | 0.0255   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 82       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.102    |
+|    disc/disc_loss       | 0.0259   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 82       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0918   |
+|    disc/disc_loss       | 0.0227   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 83       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0946   |
+|    disc/disc_loss       | 0.0238   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 83       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0988   |
+|    disc/disc_loss       | 0.0256   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 84       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0859   |
+|    disc/disc_loss       | 0.0203   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 84       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.1      |
+|    disc/disc_loss       | 0.0256   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 85       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0961   |
+|    disc/disc_loss       | 0.0245   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 85       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.119    |
+|    disc/disc_loss       | 0.0325   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 86       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.106    |
+|    disc/disc_loss       | 0.0277   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 86       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.11     |
+|    disc/disc_loss       | 0.0304   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 87       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.111    |
+|    disc/disc_loss       | 0.0316   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 87       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0669   |
+|    disc/disc_loss       | 0.0149   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 88       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0666   |
+|    disc/disc_loss       | 0.0149   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 88       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0848   |
+|    disc/disc_loss       | 0.0197   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 89       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.079    |
+|    disc/disc_loss       | 0.0183   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 89       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0677   |
+|    disc/disc_loss       | 0.0154   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 90       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0623   |
+|    disc/disc_loss       | 0.0135   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 90       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0733   |
+|    disc/disc_loss       | 0.0175   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 91       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0724   |
+|    disc/disc_loss       | 0.0168   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 91       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0682   |
+|    disc/disc_loss       | 0.016    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 92       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0703   |
+|    disc/disc_loss       | 0.0165   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 92       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0659   |
+|    disc/disc_loss       | 0.0145   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 93       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.058    |
+|    disc/disc_loss       | 0.0126   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 93       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0685   |
+|    disc/disc_loss       | 0.018    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 94       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0669   |
+|    disc/disc_loss       | 0.0176   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 94       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0581   |
+|    disc/disc_loss       | 0.0129   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 95       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.06     |
+|    disc/disc_loss       | 0.0137   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 95       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0618   |
+|    disc/disc_loss       | 0.0133   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 96       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0591   |
+|    disc/disc_loss       | 0.0125   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 96       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0676   |
+|    disc/disc_loss       | 0.0152   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 97       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0643   |
+|    disc/disc_loss       | 0.0146   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 97       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0589   |
+|    disc/disc_loss       | 0.0134   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 98       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0582   |
+|    disc/disc_loss       | 0.0129   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 98       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0664   |
+|    disc/disc_loss       | 0.0152   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 99       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0703   |
+|    disc/disc_loss       | 0.0173   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 99       |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0457   |
+|    disc/disc_loss       | 0.00941  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 100      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0459   |
+|    disc/disc_loss       | 0.0094   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 100      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0521   |
+|    disc/disc_loss       | 0.0107   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 101      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.045    |
+|    disc/disc_loss       | 0.0088   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 101      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.051    |
+|    disc/disc_loss       | 0.0105   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 102      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0448   |
+|    disc/disc_loss       | 0.00911  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 102      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0529   |
+|    disc/disc_loss       | 0.0108   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 103      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0482   |
+|    disc/disc_loss       | 0.00967  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 103      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0631   |
+|    disc/disc_loss       | 0.0138   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 104      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0655   |
+|    disc/disc_loss       | 0.015    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 104      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0463   |
+|    disc/disc_loss       | 0.00937  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 105      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0474   |
+|    disc/disc_loss       | 0.00961  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 105      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0511   |
+|    disc/disc_loss       | 0.0109   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 106      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0467   |
+|    disc/disc_loss       | 0.00937  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 106      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.0513   |
+|    disc/disc_loss       | 0.016    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 107      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0407   |
+|    disc/disc_loss       | 0.00807  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 107      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0629   |
+|    disc/disc_loss       | 0.014    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 108      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0602   |
+|    disc/disc_loss       | 0.0133   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 108      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0511   |
+|    disc/disc_loss       | 0.011    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 109      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0579   |
+|    disc/disc_loss       | 0.0126   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 109      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 0.992    |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0634   |
+|    disc/disc_loss       | 0.0213   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 110      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0556   |
+|    disc/disc_loss       | 0.0136   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 110      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.996    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.992    |
+|    disc/disc_entropy    | 0.0709   |
+|    disc/disc_loss       | 0.027    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 111      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 0.988    |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 0.977    |
+|    disc/disc_entropy    | 0.0763   |
+|    disc/disc_loss       | 0.0381   |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 111      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0438   |
+|    disc/disc_loss       | 0.00901  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 112      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0382   |
+|    disc/disc_loss       | 0.00735  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 112      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0345   |
+|    disc/disc_loss       | 0.00655  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 113      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------
+--------------------------------------
+| raw/                    |          |
+|    disc/disc_acc        | 1        |
+|    disc/disc_acc_expert | 1        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.0322   |
+|    disc/disc_loss       | 0.00604  |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 113      |
+|    disc/n_expert        | 128      |
+|    disc/n_generated     | 128      |
+--------------------------------------

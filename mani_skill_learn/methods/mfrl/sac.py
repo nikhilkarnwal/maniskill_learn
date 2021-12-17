@@ -59,6 +59,7 @@ class SAC(BaseAgent):
         for key in sampled_batch:
             if not isinstance(sampled_batch[key], dict) and sampled_batch[key].ndim == 1:
                 sampled_batch[key] = sampled_batch[key][..., None]
+        # print(sampled_batch['next_obs'])
         with torch.no_grad():
             next_action, next_log_prob = self.policy(sampled_batch['next_obs'], mode='all')[:2]
             q_next_target = self.target_critic(sampled_batch['next_obs'], next_action)
