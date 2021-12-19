@@ -24,10 +24,21 @@ model_list=$(python -c "import mani_skill, os, os.path as osp; print(osp.abspath
 # 	"agent.policy_cfg.gail_cfg.algo=gail"
 
 
-# train airl using states only
+# train using states only
+replay_buff = "[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_0-v0.h5\", \"./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_1-v0.h5\"]"
+
+# #train airl
+# python -m tools.run_rl configs/v2/irl_s3_state.py --gpu-ids=0 \
+# 	--work-dir=./work_dirs/irl_drawer/irl/v0/airl_sac_env1000/ \
+# 	--cfg-options "train_mfrl_cfg.total_steps=1" \
+# 	"env_cfg.env_name=OpenCabinetDrawer_1000-v0" "train_mfrl_cfg.init_replay_buffers=$replay_buff" \
+# 	"agent.policy_cfg.gail_cfg.algo=airl"
+# 	# "train_mfrl_cfg.init_replay_with_split=[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/\",\"$model_list\"]" \
+
+# train gail
 python -m tools.run_rl configs/v2/irl_s3_state.py --gpu-ids=0 \
-	--work-dir=./work_dirs/irl_drawer/irl/airl_sac_env1000/ \
+	--work-dir=./work_dirs/irl_drawer/irl/v0/gail_sac_env1000/ \
 	--cfg-options "train_mfrl_cfg.total_steps=1" \
-	"env_cfg.env_name=OpenCabinetDrawer_1000-v0" "train_mfrl_cfg.init_replay_buffers=" \
-	"train_mfrl_cfg.init_replay_with_split=[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/\",\"$model_list\"]" \
-	"agent.policy_cfg.gail_cfg.algo=airl"
+	"env_cfg.env_name=OpenCabinetDrawer_1000-v0" "train_mfrl_cfg.init_replay_buffers=$replay_buff" \
+	"agent.policy_cfg.gail_cfg.algo=gail"
+	# "train_mfrl_cfg.init_replay_with_split=[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/\",\"$model_list\"]" \
