@@ -41,11 +41,9 @@ class IRLStateSB(BaseAgent):
         if self.gail_config['gen_algo'] == 'ppo':
             self.gen_algo = PPO(env=env, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
                                 self.gail_config["ppo_algo"])
-            self.gen_algo.evaluate
         elif self.gail_config['gen_algo'] == 'sac':
             self.gen_algo = SAC(env=env, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
                                 self.gail_config["sac_algo"])
-            self.gen_algo.predict()
         self.gail_config["policy_model"] = self.gail_config["gen_algo"] + \
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:

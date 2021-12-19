@@ -25,7 +25,7 @@ model_list=$(python -c "import mani_skill, os, os.path as osp; print(osp.abspath
 
 
 # train using states only
-replay_buff = "[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_0-v0.h5\", \"./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_1-v0.h5\"]"
+replay_buff = $"[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_0-v0.h5\", \"./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_1-v0.h5\"]"
 
 # #train airl
 # python -m tools.run_rl configs/v2/irl_s3_state.py --gpu-ids=0 \
