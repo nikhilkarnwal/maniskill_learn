@@ -1,0 +1,1 @@
+Namespace(env='Walker2d-v2', gen='sac', gen_trajs=False, irl=True, num_trajs=1000, trajs='test_env/Walker2d-v2/22_12_2021-18_21_55/trajs')

@@ -1,0 +1,1 @@
+Namespace(env='Walker2d-v2', gen='ppo', gen_traj=False, irl=False, trajs=None)

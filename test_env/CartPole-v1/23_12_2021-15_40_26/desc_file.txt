@@ -1,0 +1,1 @@
+Namespace(env='CartPole-v1', gen='ppo', gen_trajs=True, irl=True, num_trajs=1000, test_trajs=False, trajs=None)

@@ -1,0 +1,49 @@
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 18.1     |
+|    gen/rollout/ep_re... | -1.08    |
+|    gen/time/fps         | 483      |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 4        |
+|    gen/time/total_ti... | 2048     |
+--------------------------------------
+----------------------------------------
+| raw/                    |            |
+|    gen/rollout/ep_le... | 18.9       |
+|    gen/rollout/ep_re... | 12.5       |
+|    gen/time/fps         | 1021       |
+|    gen/time/iterations  | 1          |
+|    gen/time/time_ela... | 4          |
+|    gen/time/total_ti... | 4096       |
+|    gen/train/approx_kl  | 0.01201902 |
+|    gen/train/clip_fr... | 0.124      |
+|    gen/train/clip_range | 0.2        |
+|    gen/train/entropy... | -8.49      |
+|    gen/train/explain... | -1.46      |
+|    gen/train/learnin... | 0.0003     |
+|    gen/train/loss       | 0.0467     |
+|    gen/train/n_updates  | 10         |
+|    gen/train/policy_... | -0.019     |
+|    gen/train/std        | 0.993      |
+|    gen/train/value_loss | 0.789      |
+----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 23.8        |
+|    gen/rollout/ep_re... | 13          |
+|    gen/time/fps         | 1516        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 4           |
+|    gen/time/total_ti... | 6144        |
+|    gen/train/approx_kl  | 0.020264557 |
+|    gen/train/clip_fr... | 0.207       |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -8.46       |
+|    gen/train/explain... | 0.43        |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0401      |
+|    gen/train/n_updates  | 20          |
+|    gen/train/policy_... | -0.0351     |
+|    gen/train/std        | 0.99        |
+|    gen/train/value_loss | 0.242       |
+-----------------------------------------

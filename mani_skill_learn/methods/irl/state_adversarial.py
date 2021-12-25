@@ -38,6 +38,7 @@ class IRLStateSB(BaseAgent):
 
     def setup_model(self):
         env = build_env(self.env_cfg)
+        self.env = env
         if self.gail_config['gen_algo'] == 'ppo':
             self.gen_algo = PPO(env=env, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
                                 self.gail_config["ppo_algo"])
@@ -63,6 +64,9 @@ class IRLStateSB(BaseAgent):
                                    gen_algo=self.gen_algo, log_dir = self.work_dir,
                                    **self.gail_config["irl_algo"])
 
+        if self.gail_config['true_reward']:
+            self.gen_algo.set_env(env)
+
         if self.gail_config['resume'] and self.gail_config['algo'] == 'gail':
             print(f'Loading reward from -{self.gail_config["reward_model"]}')
             self.model._reward_net.load_state_dict(
@@ -79,6 +83,13 @@ class IRLStateSB(BaseAgent):
         if self.gen_algo == None:
             self.setup_model()
         self.update_demo(re)
+        if self.gail_config['pretrain']:
+            print("Pretraining started!")
+            curr_env = self.model.gen_algo.get_env()
+            self.gen_algo.set_env(self.env)
+            self.gen_algo.learn(total_timesteps=self.gail_config['total_timesteps']//100)
+            self.gen_algo.set_env(curr_env)
+            print("Pretraining done!")
         self.model.train(
             total_timesteps=self.gail_config['total_timesteps'])
         print(self.model.gen_train_timesteps)

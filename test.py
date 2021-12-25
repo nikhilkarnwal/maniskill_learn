@@ -32,15 +32,15 @@
 # env.close()
 
 
-from h5py import File
+# from h5py import File
 
-from mani_skill_learn.utils.fileio.h5_utils import load_h5_as_dict_array, load_h5s_as_list_dict_array
-f = File('./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_0-v0.h5', 'r')
-# f is a h5py.Group with keys traj_0 ... traj_n
-print(f['traj_0'].keys())
-print(load_h5_as_dict_array(f['traj_0'])['obs'].shape)
+# from mani_skill_learn.utils.fileio.h5_utils import load_h5_as_dict_array, load_h5s_as_list_dict_array
+# f = File('./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_0-v0.h5', 'r')
+# # f is a h5py.Group with keys traj_0 ... traj_n
+# print(f['traj_0'].keys())
+# print(load_h5_as_dict_array(f['traj_0'])['obs'].shape)
 
-print(load_h5_as_dict_array(f['traj_0']['obs']).shape)
+# print(load_h5_as_dict_array(f['traj_0']['obs']).shape)
 
 
 # import gym
@@ -106,7 +106,6 @@ print(load_h5_as_dict_array(f['traj_0']['obs']).shape)
 # # vec_extract_dict_obs.VecExtractDictObs
 
 
-
 # import numpy as np
 
 # class NewEnv(gym.ObservationWrapper):
@@ -134,13 +133,13 @@ print(load_h5_as_dict_array(f['traj_0']['obs']).shape)
 #             new_obs = {}
 #             for key in obs.keys():
 #                 if isinstance(obs[key],dict):
-#                     new_obs.update(obs[key])    
+#                     new_obs.update(obs[key])
 #             if 'agent' in obs.keys():
 #                 new_obs['agent']=obs['agent']
 #             obs = new_obs
 #         else:
 #             obs = {'agent':obs}
-#         return obs 
+#         return obs
 
 # def func1(temp:gym.spaces.Space):
 #     print(temp.spaces)
@@ -171,63 +170,90 @@ print(load_h5_as_dict_array(f['traj_0']['obs']).shape)
 
 """Trains BC, GAIL and AIRL models on saved CartPole-v1 demonstrations."""
 
-def run_gail():
-        
-    import pathlib
-    import pickle
-    import tempfile
+import argparse
+import os
+import numpy as np
+import gym
+from imitation.data.types import TrajectoryWithRew, save, load
+from stable_baselines3.common.env_util import make_vec_env
+from stable_baselines3 import PPO
+from datetime import datetime
+import pathlib
+import pickle
+import tempfile
 
-    import stable_baselines3 as sb3
+import stable_baselines3 as sb3
 
-    from imitation.algorithms import bc
-    from imitation.algorithms.adversarial import airl, gail
-    from imitation.data import rollout
-    from imitation.util import logger, util
-    from stable_baselines3.common.utils import obs_as_tensor
+from imitation.algorithms import bc
+from imitation.algorithms.adversarial import airl, gail
+from imitation.data import rollout
+from imitation.util import logger, util
+import stable_baselines3.common.utils as s3utils
 
-    # Load pickled test demonstrations.
-    with open("./final.pkl", "rb") as f:
-        # This is a list of `imitation.data.types.Trajectory`, where
-        # every instance contains observations and actions for a single expert
-        # demonstration.
-        trajectories = pickle.load(f)
 
-    # Convert List[types.Trajectory] to an instance of `imitation.data.types.Transitions`.
-    # This is a more general dataclass containing unordered
-    # (observation, actions, next_observation) transitions.
-    transitions = rollout.flatten_trajectories(trajectories)
+def run_gail(name, transitions, args, work_dir):
+    # # Load pickled test demonstrations.
+    # with open("./final.pkl", "rb") as f:
+    #     # This is a list of `imitation.data.types.Trajectory`, where
+    #     # every instance contains observations and actions for a single expert
+    #     # demonstration.
+    #     trajectories = pickle.load(f)
 
-    venv = util.make_vec_env("CartPole-v0", n_envs=1)
+    # # Convert List[types.Trajectory] to an instance of `imitation.data.types.Transitions`.
+    # # This is a more general dataclass containing unordered
+    # # (observation, actions, next_observation) transitions.
+    # transitions = rollout.flatten_trajectories(trajectories)
+    print(transitions[0])
 
-    tempdir = tempfile.TemporaryDirectory(prefix="quickstart")
-    tempdir_path = pathlib.Path(tempdir.name)
-    print(f"All Tensorboards and logging are being written inside {tempdir_path}/.")
+    venv = util.make_vec_env(name, n_envs=1)
+
+    tempdir_path = pathlib.Path(work_dir)
+    print(
+        f"All Tensorboards and logging are being written inside {tempdir_path}/.")
 
     # Train BC on expert data.
     # BC also accepts as `demonstrations` any PyTorch-style DataLoader that iterates over
     # dictionaries containing observations and actions.
-    bc_logger = logger.configure(tempdir_path / "BC/")
-    bc_trainer = bc.BC(
-        observation_space=venv.observation_space,
-        action_space=venv.action_space,
-        demonstrations=transitions,
-        custom_logger=bc_logger,
-    )
+    # bc_logger = logger.configure(tempdir_path / "BC/")
+    # bc_trainer = bc.BC(
+    #     observation_space=venv.observation_space,
+    #     action_space=venv.action_space,
+    #     demonstrations=transitions,
+    #     custom_logger=bc_logger,
+    # )
     # bc_trainer.train(n_epochs=1)
 
     # Train GAIL on expert data.
     # GAIL, and AIRL also accept as `demonstrations` any Pytorch-style DataLoader that
     # iterates over dictionaries containing observations, actions, and next_observations.
     gail_logger = logger.configure(tempdir_path / "GAIL/")
-    gen_algo=sb3.PPO("MlpPolicy", venv, verbose=1, n_steps=2048)
+    if args.gen == 'ppo':
+        gen_algo = sb3.PPO("MlpPolicy", venv, verbose=1, n_steps=2048)
+    else:
+        sac_algo = dict(
+            buffer_size=1000000,
+            learning_rate=0.0003,
+            learning_starts=500,
+            batch_size=1024,
+            gamma=0.95,
+            verbose=1,
+            seed=101,
+            policy='MlpPolicy'
+        )
+        gen_algo = sb3.SAC(env=venv, **sac_algo)
+    # gen_algo.learn(100000)
+    # gen_algo.collect_rollouts()
     gail_trainer = gail.GAIL(
         venv=venv,
         demonstrations=transitions,
         demo_batch_size=32,
         gen_algo=gen_algo,
-        custom_logger=gail_logger,n_disc_updates_per_round=2,normalize_reward=False,normalize_obs=False
+        custom_logger=gail_logger, n_disc_updates_per_round=2, normalize_reward=True, normalize_obs=True,
+        init_tensorboard_graph=True,
+        allow_variable_horizon=True,gen_train_timesteps = 1*1024,
+        # disc_opt_kwargs={'lr': 3e-5},
     )
-    gail_trainer.allow_variable_horizon=True
+    gail_trainer.allow_variable_horizon = True
     gail_trainer.train(total_timesteps=100000)
 
     # Train AIRL on expert data.
@@ -248,7 +274,6 @@ def run_gail():
         obs, rewards, dones, info = venv.step(action)
         venv.render()
 
-    
 
 # gen_algo=sb3.PPO("MlpPolicy", venv, verbose=1, n_steps=1024)
 # gen_algo.learn(2048)
@@ -283,46 +308,146 @@ def linear_schedule(initial_value: float):
 
     return func
 
-import gym
 
-from stable_baselines3 import PPO
-from stable_baselines3.common.env_util import make_vec_env
-def run_ppo():
+def run_gen(name,args , work_dir="temp"):
     # Parallel environments
-    env = make_vec_env("CartPole-v1", n_envs=1)
+    env = make_vec_env(name, n_envs=1)
 
-    model = PPO("MlpPolicy", env, verbose=1, learning_rate=linear_schedule(0.005))
-    model.learn(total_timesteps=100000)
-    model.save("ppo_cartpole")
+    if args.gen == 'ppo':
+        model = PPO("MlpPolicy", env, verbose=1,
+                    learning_rate=linear_schedule(0.003),tensorboard_log=work_dir)
+    else:
+        sac_algo = dict(
+            buffer_size=1000000,
+            learning_rate=0.0003,
+            learning_starts=4000,
+            batch_size=1024,
+            gamma=0.95,
+            verbose=1,
+            seed=101,
+            policy='MlpPolicy'
+        )
+        model = sb3.SAC(env=env,tensorboard_log=work_dir, **sac_algo)
+    model.learn(total_timesteps=500000)
+    model.save(f"{work_dir}/model")
+    return model
 
-    del model # remove to demonstrate saving and loading
 
-    model = PPO.load("ppo_cartpole")
-
-    obs = env.reset()
-    for i in range(10):
-        obs = env.reset()
+def get_traj(name, model, num, render=5):
+    trajs = []
+    traj_len = []
+    env = gym.make(name)
+    # Parallel environments
+    venv = make_vec_env(name, n_envs=1)
+    for i in range(num):
+        obs_list = []
+        rew_list = []
+        actions_list = []
+        obs = venv.reset()
         cnt = 0
-        while True:
+        while cnt < env.spec.max_episode_steps:
             action, _states = model.predict(obs)
-            obs, rewards, dones, info = env.step(action)
+            obs_list.append(obs[0])
+            actions_list.append(action[0])
+            if i < render:
+                venv.render()
+            obs, rewards, dones, info = venv.step(action)
+            rew_list.append(rewards[0])
             cnt += 1
-            if dones:
-                print(cnt)
+            if dones[0]:
+                # print(cnt)
                 break
-#        env.render()
+        obs_list.append(obs[0])
+        term = True
+        traj_len.append(cnt)
+        if cnt == env.spec.max_episode_steps:
+            term = False
+        trajs.append(TrajectoryWithRew(obs=np.array(obs_list), acts=np.array(actions_list),
+                                       rews=np.reshape(rew_list, [len(rew_list), ]), infos=None, terminal=True))
+    venv.close()
+    print(f'Mean len-{np.mean(traj_len)}')
+    return trajs
 
-#run_ppo()
 
-# run_gail()
+def test_traj(trajs):
+    traj_len = []
+    traj_rew = []
+    for traj in trajs:
+        traj_len.append(traj.obs.shape[0])
+        traj_rew.append(traj.rews.shape[0])
+    print(f"Testing traj: Len - {np.mean(traj_len)}, Rew - {np.mean(traj_rew)}")
 
-# from datetime import datetime
+def main():
+    # datetime object containing current date and time
+    now = datetime.now()
 
-# # datetime object containing current date and time
-# now = datetime.now()
- 
-# print("now =", now)
+    # dd/mm/YY H:M:S
+    dt_string = now.strftime("%d_%m_%Y-%H_%M_%S")
 
-# # dd/mm/YY H:M:S
-# dt_string = now.strftime("%d_%m_%Y-%H_%M_%S")
-# print("date and time =", dt_string)	
+    parser = argparse.ArgumentParser(description='Run RL training code')
+    # Configurations
+    parser.add_argument('--gen', help='gn algo', type=str, default='ppo')
+    parser.add_argument('--irl', action='store_true', default=False)
+    parser.add_argument('--env', type=str, default="Walker2d-v2")
+    parser.add_argument('--trajs', type=str, default=None)
+    parser.add_argument('--gen_trajs', action='store_true', default=False)
+    parser.add_argument('--test_trajs', action='store_true', default=False)
+    parser.add_argument('--num_trajs', help='num of traj to gen',
+                        type=int, default=1000)
+    args = parser.parse_args()
+    name = args.env
+
+    # name = "CartPole-v1"
+    work_dir = f"test_env/{name}/{dt_string}/"
+    if not os.path.exists(work_dir):
+        os.makedirs(work_dir)
+        print(f"Creating dir-{work_dir}")
+    print(f"Storing at {work_dir}")
+    with open(f'{work_dir}/desc_file.txt', 'w') as fd:
+        fd.write(args.__str__())
+
+    if args.trajs == None:
+        args.trajs = 'trajs'
+
+    if args.gen_trajs:
+        model = run_gen(name, args, work_dir)
+        trajs = get_traj(name, model, args.num_trajs, 0)
+        save(f"{work_dir}/{args.trajs}", trajs)
+        print("Saved trajs")
+    else:
+        trajs = load(args.trajs)
+
+    if args.test_trajs:
+        test_traj(trajs)
+        return 
+
+    if args.irl:
+        run_gail(name, trajs, args, work_dir)
+
+
+main()
+
+
+# sac_algo = dict(
+#         buffer_size=1000000,
+#         learning_rate=0.0003,
+#         learning_starts=4000,
+#         batch_size=1024,
+#         gamma=0.95,
+#         verbose=1,
+#         seed=101,
+#         policy='MlpPolicy'
+#     )
+#     gen_algo = sb3.SAC(env=venv, **sac_algo)
+# # gen_algo.learn(100000)
+# # gen_algo.collect_rollouts()
+# gail_trainer = gail.GAIL(
+#     venv=venv,
+#     demonstrations=None,
+#     demo_batch_size=32,
+#     gen_algo=gen_algo,
+#     custom_logger='../temp', n_disc_updates_per_round=2, normalize_reward=True, normalize_obs=True,
+#     init_tensorboard_graph=True,
+#     allow_variable_horizon=True,
+#     disc_opt_kwargs={'lr': 3e-5},
+# )

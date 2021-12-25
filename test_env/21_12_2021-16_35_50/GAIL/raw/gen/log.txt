@@ -1,0 +1,902 @@
+--------------------------------------
+| raw/                    |          |
+|    gen/rollout/ep_le... | 23.6     |
+|    gen/rollout/ep_re... | 23.6     |
+|    gen/time/fps         | 633      |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 2048     |
+--------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 29.2        |
+|    gen/rollout/ep_re... | 16.8        |
+|    gen/time/fps         | 1278        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 4096        |
+|    gen/train/approx_kl  | 0.014381377 |
+|    gen/train/clip_fr... | 0.175       |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.683      |
+|    gen/train/explain... | -0.0477     |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0265      |
+|    gen/train/n_updates  | 10          |
+|    gen/train/policy_... | -0.0184     |
+|    gen/train/value_loss | 0.571       |
+-----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 41.9        |
+|    gen/rollout/ep_re... | 20.7        |
+|    gen/time/fps         | 1922        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 6144        |
+|    gen/train/approx_kl  | 0.019303933 |
+|    gen/train/clip_fr... | 0.242       |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.639      |
+|    gen/train/explain... | 0.353       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0557      |
+|    gen/train/n_updates  | 20          |
+|    gen/train/policy_... | -0.0345     |
+|    gen/train/value_loss | 0.233       |
+-----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 54.1        |
+|    gen/rollout/ep_re... | 29.6        |
+|    gen/time/fps         | 2636        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 8192        |
+|    gen/train/approx_kl  | 0.016874218 |
+|    gen/train/clip_fr... | 0.199       |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.596      |
+|    gen/train/explain... | 0.535       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0546      |
+|    gen/train/n_updates  | 30          |
+|    gen/train/policy_... | -0.0302     |
+|    gen/train/value_loss | 0.22        |
+-----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 71.5        |
+|    gen/rollout/ep_re... | 38.1        |
+|    gen/time/fps         | 3285        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 10240       |
+|    gen/train/approx_kl  | 0.026439527 |
+|    gen/train/clip_fr... | 0.198       |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.544      |
+|    gen/train/explain... | 0.683       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.048       |
+|    gen/train/n_updates  | 40          |
+|    gen/train/policy_... | -0.0269     |
+|    gen/train/value_loss | 0.156       |
+-----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 88.7        |
+|    gen/rollout/ep_re... | 49.9        |
+|    gen/time/fps         | 3649        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 12288       |
+|    gen/train/approx_kl  | 0.013458259 |
+|    gen/train/clip_fr... | 0.182       |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.548      |
+|    gen/train/explain... | 0.887       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | -0.00621    |
+|    gen/train/n_updates  | 50          |
+|    gen/train/policy_... | -0.0146     |
+|    gen/train/value_loss | 0.0566      |
+-----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 105         |
+|    gen/rollout/ep_re... | 61.6        |
+|    gen/time/fps         | 4627        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 14336       |
+|    gen/train/approx_kl  | 0.007751784 |
+|    gen/train/clip_fr... | 0.101       |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.508      |
+|    gen/train/explain... | 0.405       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.129       |
+|    gen/train/n_updates  | 60          |
+|    gen/train/policy_... | -0.0058     |
+|    gen/train/value_loss | 0.233       |
+-----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 122          |
+|    gen/rollout/ep_re... | 72.6         |
+|    gen/time/fps         | 5284         |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 16384        |
+|    gen/train/approx_kl  | 0.0044199405 |
+|    gen/train/clip_fr... | 0.0387       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.518       |
+|    gen/train/explain... | 0.395        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.188        |
+|    gen/train/n_updates  | 70           |
+|    gen/train/policy_... | -0.00242     |
+|    gen/train/value_loss | 0.24         |
+------------------------------------------
+----------------------------------------
+| raw/                    |            |
+|    gen/rollout/ep_le... | 141        |
+|    gen/rollout/ep_re... | 84.7       |
+|    gen/time/fps         | 5933       |
+|    gen/time/iterations  | 1          |
+|    gen/time/time_ela... | 3          |
+|    gen/time/total_ti... | 18432      |
+|    gen/train/approx_kl  | 0.00354714 |
+|    gen/train/clip_fr... | 0.0356     |
+|    gen/train/clip_range | 0.2        |
+|    gen/train/entropy... | -0.517     |
+|    gen/train/explain... | 0.364      |
+|    gen/train/learnin... | 0.0003     |
+|    gen/train/loss       | 0.113      |
+|    gen/train/n_updates  | 80         |
+|    gen/train/policy_... | -0.00288   |
+|    gen/train/value_loss | 0.208      |
+----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 156         |
+|    gen/rollout/ep_re... | 97.2        |
+|    gen/time/fps         | 6607        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 20480       |
+|    gen/train/approx_kl  | 0.005483941 |
+|    gen/train/clip_fr... | 0.0331      |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.497      |
+|    gen/train/explain... | 0.522       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0273      |
+|    gen/train/n_updates  | 90          |
+|    gen/train/policy_... | -0.00223    |
+|    gen/train/value_loss | 0.17        |
+-----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 169          |
+|    gen/rollout/ep_re... | 108          |
+|    gen/time/fps         | 7253         |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 22528        |
+|    gen/train/approx_kl  | 0.0058982098 |
+|    gen/train/clip_fr... | 0.0528       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.504       |
+|    gen/train/explain... | 0.786        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0208       |
+|    gen/train/n_updates  | 100          |
+|    gen/train/policy_... | -0.00317     |
+|    gen/train/value_loss | 0.0905       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 181          |
+|    gen/rollout/ep_re... | 117          |
+|    gen/time/fps         | 7913         |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 24576        |
+|    gen/train/approx_kl  | 0.0031537083 |
+|    gen/train/clip_fr... | 0.0223       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.524       |
+|    gen/train/explain... | 0.929        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0078       |
+|    gen/train/n_updates  | 110          |
+|    gen/train/policy_... | -0.00288     |
+|    gen/train/value_loss | 0.0375       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 191          |
+|    gen/rollout/ep_re... | 125          |
+|    gen/time/fps         | 8333         |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 26624        |
+|    gen/train/approx_kl  | 0.0016334511 |
+|    gen/train/clip_fr... | 0.0202       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.502       |
+|    gen/train/explain... | 0.864        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0366       |
+|    gen/train/n_updates  | 120          |
+|    gen/train/policy_... | -0.00184     |
+|    gen/train/value_loss | 0.0483       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 199          |
+|    gen/rollout/ep_re... | 132          |
+|    gen/time/fps         | 9096         |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 28672        |
+|    gen/train/approx_kl  | 0.0067035174 |
+|    gen/train/clip_fr... | 0.0516       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.485       |
+|    gen/train/explain... | 0.923        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | -0.00906     |
+|    gen/train/n_updates  | 130          |
+|    gen/train/policy_... | -0.00416     |
+|    gen/train/value_loss | 0.0396       |
+------------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 200         |
+|    gen/rollout/ep_re... | 138         |
+|    gen/time/fps         | 9847        |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 30720       |
+|    gen/train/approx_kl  | 0.002163447 |
+|    gen/train/clip_fr... | 0.00913     |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.447      |
+|    gen/train/explain... | 0.816       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.00584     |
+|    gen/train/n_updates  | 140         |
+|    gen/train/policy_... | -0.00253    |
+|    gen/train/value_loss | 0.0702      |
+-----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 137          |
+|    gen/time/fps         | 10596        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 32768        |
+|    gen/train/approx_kl  | 0.0071278634 |
+|    gen/train/clip_fr... | 0.0603       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.446       |
+|    gen/train/explain... | 0.956        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | -0.000838    |
+|    gen/train/n_updates  | 150          |
+|    gen/train/policy_... | -0.00443     |
+|    gen/train/value_loss | 0.0256       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 136          |
+|    gen/time/fps         | 11259        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 34816        |
+|    gen/train/approx_kl  | 0.0061155786 |
+|    gen/train/clip_fr... | 0.0479       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.415       |
+|    gen/train/explain... | 0.822        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0367       |
+|    gen/train/n_updates  | 160          |
+|    gen/train/policy_... | -0.00229     |
+|    gen/train/value_loss | 0.0784       |
+------------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 200         |
+|    gen/rollout/ep_re... | 135         |
+|    gen/time/fps         | 11915       |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 36864       |
+|    gen/train/approx_kl  | 0.003328145 |
+|    gen/train/clip_fr... | 0.0436      |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.413      |
+|    gen/train/explain... | 0.898       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0179      |
+|    gen/train/n_updates  | 170         |
+|    gen/train/policy_... | -0.00201    |
+|    gen/train/value_loss | 0.0568      |
+-----------------------------------------
+----------------------------------------
+| raw/                    |            |
+|    gen/rollout/ep_le... | 200        |
+|    gen/rollout/ep_re... | 134        |
+|    gen/time/fps         | 12574      |
+|    gen/time/iterations  | 1          |
+|    gen/time/time_ela... | 3          |
+|    gen/time/total_ti... | 38912      |
+|    gen/train/approx_kl  | 0.00606509 |
+|    gen/train/clip_fr... | 0.0736     |
+|    gen/train/clip_range | 0.2        |
+|    gen/train/entropy... | -0.408     |
+|    gen/train/explain... | 0.911      |
+|    gen/train/learnin... | 0.0003     |
+|    gen/train/loss       | 0.00758    |
+|    gen/train/n_updates  | 180        |
+|    gen/train/policy_... | -0.00445   |
+|    gen/train/value_loss | 0.0536     |
+----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 133          |
+|    gen/time/fps         | 13276        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 40960        |
+|    gen/train/approx_kl  | 0.0059914105 |
+|    gen/train/clip_fr... | 0.0643       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.381       |
+|    gen/train/explain... | 0.876        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0184       |
+|    gen/train/n_updates  | 190          |
+|    gen/train/policy_... | -0.0026      |
+|    gen/train/value_loss | 0.0582       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 131          |
+|    gen/time/fps         | 13901        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 43008        |
+|    gen/train/approx_kl  | 0.0038714511 |
+|    gen/train/clip_fr... | 0.04         |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.361       |
+|    gen/train/explain... | 0.654        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0824       |
+|    gen/train/n_updates  | 200          |
+|    gen/train/policy_... | -0.00189     |
+|    gen/train/value_loss | 0.139        |
+------------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 200         |
+|    gen/rollout/ep_re... | 128         |
+|    gen/time/fps         | 14562       |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 45056       |
+|    gen/train/approx_kl  | 0.004273879 |
+|    gen/train/clip_fr... | 0.0521      |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.364      |
+|    gen/train/explain... | 0.649       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0539      |
+|    gen/train/n_updates  | 210         |
+|    gen/train/policy_... | -0.00371    |
+|    gen/train/value_loss | 0.184       |
+-----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 127          |
+|    gen/time/fps         | 15243        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 47104        |
+|    gen/train/approx_kl  | 0.0025765335 |
+|    gen/train/clip_fr... | 0.0219       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.361       |
+|    gen/train/explain... | 0.713        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0916       |
+|    gen/train/n_updates  | 220          |
+|    gen/train/policy_... | -0.00187     |
+|    gen/train/value_loss | 0.148        |
+------------------------------------------
+----------------------------------------
+| raw/                    |            |
+|    gen/rollout/ep_le... | 200        |
+|    gen/rollout/ep_re... | 124        |
+|    gen/time/fps         | 15808      |
+|    gen/time/iterations  | 1          |
+|    gen/time/time_ela... | 3          |
+|    gen/time/total_ti... | 49152      |
+|    gen/train/approx_kl  | 0.00240664 |
+|    gen/train/clip_fr... | 0.0289     |
+|    gen/train/clip_range | 0.2        |
+|    gen/train/entropy... | -0.362     |
+|    gen/train/explain... | 0.374      |
+|    gen/train/learnin... | 0.0003     |
+|    gen/train/loss       | 0.125      |
+|    gen/train/n_updates  | 230        |
+|    gen/train/policy_... | -0.00255   |
+|    gen/train/value_loss | 0.223      |
+----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 123          |
+|    gen/time/fps         | 16506        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 51200        |
+|    gen/train/approx_kl  | 0.0052603427 |
+|    gen/train/clip_fr... | 0.0557       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.363       |
+|    gen/train/explain... | 0.509        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.118        |
+|    gen/train/n_updates  | 240          |
+|    gen/train/policy_... | -0.00524     |
+|    gen/train/value_loss | 0.186        |
+------------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 200         |
+|    gen/rollout/ep_re... | 121         |
+|    gen/time/fps         | 16776       |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 53248       |
+|    gen/train/approx_kl  | 0.008682547 |
+|    gen/train/clip_fr... | 0.127       |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.41       |
+|    gen/train/explain... | 0.789       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0422      |
+|    gen/train/n_updates  | 250         |
+|    gen/train/policy_... | -0.0108     |
+|    gen/train/value_loss | 0.0805      |
+-----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 200         |
+|    gen/rollout/ep_re... | 119         |
+|    gen/time/fps         | 17515       |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 55296       |
+|    gen/train/approx_kl  | 0.006055969 |
+|    gen/train/clip_fr... | 0.0967      |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.398      |
+|    gen/train/explain... | 0.889       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.0215      |
+|    gen/train/n_updates  | 260         |
+|    gen/train/policy_... | -0.00625    |
+|    gen/train/value_loss | 0.0544      |
+-----------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 199         |
+|    gen/rollout/ep_re... | 117         |
+|    gen/time/fps         | 18105       |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 57344       |
+|    gen/train/approx_kl  | 0.005367089 |
+|    gen/train/clip_fr... | 0.0539      |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.425      |
+|    gen/train/explain... | 0.978       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.00644     |
+|    gen/train/n_updates  | 270         |
+|    gen/train/policy_... | -0.00363    |
+|    gen/train/value_loss | 0.0117      |
+-----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 199          |
+|    gen/rollout/ep_re... | 114          |
+|    gen/time/fps         | 18651        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 59392        |
+|    gen/train/approx_kl  | 0.0018162376 |
+|    gen/train/clip_fr... | 0.00937      |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.387       |
+|    gen/train/explain... | 0.968        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0276       |
+|    gen/train/n_updates  | 280          |
+|    gen/train/policy_... | -0.000609    |
+|    gen/train/value_loss | 0.0183       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 199          |
+|    gen/rollout/ep_re... | 112          |
+|    gen/time/fps         | 19127        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 61440        |
+|    gen/train/approx_kl  | 0.0037841874 |
+|    gen/train/clip_fr... | 0.0547       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.384       |
+|    gen/train/explain... | 0.963        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | -0.00148     |
+|    gen/train/n_updates  | 290          |
+|    gen/train/policy_... | -0.00332     |
+|    gen/train/value_loss | 0.021        |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 198          |
+|    gen/rollout/ep_re... | 109          |
+|    gen/time/fps         | 19770        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 63488        |
+|    gen/train/approx_kl  | 0.0034626941 |
+|    gen/train/clip_fr... | 0.023        |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.381       |
+|    gen/train/explain... | 0.982        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0084       |
+|    gen/train/n_updates  | 300          |
+|    gen/train/policy_... | -0.00165     |
+|    gen/train/value_loss | 0.00944      |
+------------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 198         |
+|    gen/rollout/ep_re... | 106         |
+|    gen/time/fps         | 20459       |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 65536       |
+|    gen/train/approx_kl  | 0.004186987 |
+|    gen/train/clip_fr... | 0.0371      |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.379      |
+|    gen/train/explain... | 0.988       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | -0.000345   |
+|    gen/train/n_updates  | 310         |
+|    gen/train/policy_... | -0.00266    |
+|    gen/train/value_loss | 0.00672     |
+-----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 198          |
+|    gen/rollout/ep_re... | 104          |
+|    gen/time/fps         | 20993        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 67584        |
+|    gen/train/approx_kl  | 0.0023565504 |
+|    gen/train/clip_fr... | 0.0172       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.347       |
+|    gen/train/explain... | 0.974        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.00213      |
+|    gen/train/n_updates  | 320          |
+|    gen/train/policy_... | -0.0015      |
+|    gen/train/value_loss | 0.0167       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 198          |
+|    gen/rollout/ep_re... | 101          |
+|    gen/time/fps         | 22481        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 69632        |
+|    gen/train/approx_kl  | 0.0042548305 |
+|    gen/train/clip_fr... | 0.0305       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.35        |
+|    gen/train/explain... | 0.983        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.00135      |
+|    gen/train/n_updates  | 330          |
+|    gen/train/policy_... | -0.00216     |
+|    gen/train/value_loss | 0.0113       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 198          |
+|    gen/rollout/ep_re... | 98.5         |
+|    gen/time/fps         | 23030        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 71680        |
+|    gen/train/approx_kl  | 0.0063306987 |
+|    gen/train/clip_fr... | 0.0844       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.341       |
+|    gen/train/explain... | 0.984        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | -0.00284     |
+|    gen/train/n_updates  | 340          |
+|    gen/train/policy_... | -0.00538     |
+|    gen/train/value_loss | 0.0133       |
+------------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 198         |
+|    gen/rollout/ep_re... | 96.8        |
+|    gen/time/fps         | 23849       |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 73728       |
+|    gen/train/approx_kl  | 0.008795849 |
+|    gen/train/clip_fr... | 0.0619      |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.338      |
+|    gen/train/explain... | 0.968       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.00997     |
+|    gen/train/n_updates  | 350         |
+|    gen/train/policy_... | -0.00311    |
+|    gen/train/value_loss | 0.0165      |
+-----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 199          |
+|    gen/rollout/ep_re... | 94.4         |
+|    gen/time/fps         | 24534        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 75776        |
+|    gen/train/approx_kl  | 0.0041707344 |
+|    gen/train/clip_fr... | 0.0552       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.349       |
+|    gen/train/explain... | 0.971        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.00273      |
+|    gen/train/n_updates  | 360          |
+|    gen/train/policy_... | -0.00402     |
+|    gen/train/value_loss | 0.0204       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 199          |
+|    gen/rollout/ep_re... | 92.7         |
+|    gen/time/fps         | 25144        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 77824        |
+|    gen/train/approx_kl  | 0.0057689575 |
+|    gen/train/clip_fr... | 0.0767       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.358       |
+|    gen/train/explain... | 0.958        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | -0.00616     |
+|    gen/train/n_updates  | 370          |
+|    gen/train/policy_... | -0.00553     |
+|    gen/train/value_loss | 0.0316       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 199          |
+|    gen/rollout/ep_re... | 90.8         |
+|    gen/time/fps         | 25757        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 79872        |
+|    gen/train/approx_kl  | 0.0029052224 |
+|    gen/train/clip_fr... | 0.0223       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.32        |
+|    gen/train/explain... | 0.93         |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0137       |
+|    gen/train/n_updates  | 380          |
+|    gen/train/policy_... | -0.00251     |
+|    gen/train/value_loss | 0.0422       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 89.7         |
+|    gen/time/fps         | 26458        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 81920        |
+|    gen/train/approx_kl  | 0.0027197134 |
+|    gen/train/clip_fr... | 0.0333       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.274       |
+|    gen/train/explain... | 0.879        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0242       |
+|    gen/train/n_updates  | 390          |
+|    gen/train/policy_... | -0.00209     |
+|    gen/train/value_loss | 0.058        |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 88.7         |
+|    gen/time/fps         | 27067        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 83968        |
+|    gen/train/approx_kl  | 0.0046113897 |
+|    gen/train/clip_fr... | 0.0682       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.298       |
+|    gen/train/explain... | 0.914        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0293       |
+|    gen/train/n_updates  | 400          |
+|    gen/train/policy_... | -0.00537     |
+|    gen/train/value_loss | 0.0646       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 88           |
+|    gen/time/fps         | 27780        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 86016        |
+|    gen/train/approx_kl  | 0.0034918436 |
+|    gen/train/clip_fr... | 0.0399       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.263       |
+|    gen/train/explain... | 0.868        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0174       |
+|    gen/train/n_updates  | 410          |
+|    gen/train/policy_... | -0.00311     |
+|    gen/train/value_loss | 0.0767       |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 87.2         |
+|    gen/time/fps         | 28478        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 88064        |
+|    gen/train/approx_kl  | 0.0034789573 |
+|    gen/train/clip_fr... | 0.0479       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.261       |
+|    gen/train/explain... | 0.774        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.151        |
+|    gen/train/n_updates  | 420          |
+|    gen/train/policy_... | -0.00282     |
+|    gen/train/value_loss | 0.145        |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 87.2         |
+|    gen/time/fps         | 29109        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 90112        |
+|    gen/train/approx_kl  | 0.0030525713 |
+|    gen/train/clip_fr... | 0.0382       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.248       |
+|    gen/train/explain... | 0.402        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0973       |
+|    gen/train/n_updates  | 430          |
+|    gen/train/policy_... | -0.00282     |
+|    gen/train/value_loss | 0.219        |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 87.4         |
+|    gen/time/fps         | 29563        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 92160        |
+|    gen/train/approx_kl  | 0.0036079262 |
+|    gen/train/clip_fr... | 0.0553       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.25        |
+|    gen/train/explain... | 0.414        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.192        |
+|    gen/train/n_updates  | 440          |
+|    gen/train/policy_... | -0.00448     |
+|    gen/train/value_loss | 0.246        |
+------------------------------------------
+-----------------------------------------
+| raw/                    |             |
+|    gen/rollout/ep_le... | 200         |
+|    gen/rollout/ep_re... | 87.6        |
+|    gen/time/fps         | 30406       |
+|    gen/time/iterations  | 1           |
+|    gen/time/time_ela... | 3           |
+|    gen/time/total_ti... | 94208       |
+|    gen/train/approx_kl  | 0.003640378 |
+|    gen/train/clip_fr... | 0.0437      |
+|    gen/train/clip_range | 0.2         |
+|    gen/train/entropy... | -0.255      |
+|    gen/train/explain... | 0.475       |
+|    gen/train/learnin... | 0.0003      |
+|    gen/train/loss       | 0.154       |
+|    gen/train/n_updates  | 450         |
+|    gen/train/policy_... | -0.00252    |
+|    gen/train/value_loss | 0.196       |
+-----------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 87.5         |
+|    gen/time/fps         | 31064        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 96256        |
+|    gen/train/approx_kl  | 0.0028468315 |
+|    gen/train/clip_fr... | 0.0233       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.251       |
+|    gen/train/explain... | 0.602        |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0838       |
+|    gen/train/n_updates  | 460          |
+|    gen/train/policy_... | -0.00212     |
+|    gen/train/value_loss | 0.196        |
+------------------------------------------
+------------------------------------------
+| raw/                    |              |
+|    gen/rollout/ep_le... | 200          |
+|    gen/rollout/ep_re... | 88           |
+|    gen/time/fps         | 31686        |
+|    gen/time/iterations  | 1            |
+|    gen/time/time_ela... | 3            |
+|    gen/time/total_ti... | 98304        |
+|    gen/train/approx_kl  | 0.0017340434 |
+|    gen/train/clip_fr... | 0.0131       |
+|    gen/train/clip_range | 0.2          |
+|    gen/train/entropy... | -0.244       |
+|    gen/train/explain... | 0.34         |
+|    gen/train/learnin... | 0.0003       |
+|    gen/train/loss       | 0.0945       |
+|    gen/train/n_updates  | 470          |
+|    gen/train/policy_... | -0.000517    |
+|    gen/train/value_loss | 0.176        |
+------------------------------------------

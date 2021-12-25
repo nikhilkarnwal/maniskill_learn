@@ -1,0 +1,146 @@
+Running with `allow_variable_horizon` set to True. Some algorithms are biased towards shorter or longer episodes, which may significantly confound results. Additionally, even unbiased algorithms can exploit the information leak from the termination condition, producing spuriously high performance. See https://imitation.readthedocs.io/en/latest/guide/variable_horizon.html for more information.
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.508    |
+|    disc/disc_acc_expert | 0.0156   |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.674    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 1        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 17.8     |
+|    gen/rollout/ep_re... | -0.522   |
+|    gen/time/fps         | 510      |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 4        |
+|    gen/time/total_ti... | 2.05e+03 |
+|    gen/train/approx_kl  | 0.0154   |
+|    gen/train/clip_fr... | 0.168    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.5     |
+|    gen/train/explain... | -0.339   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0814   |
+|    gen/train/n_updates  | 10       |
+|    gen/train/policy_... | -0.0229  |
+|    gen/train/std        | 0.995    |
+|    gen/train/value_loss | 0.649    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.516    |
+|    disc/disc_acc_expert | 0.0312   |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.676    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 2        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 20.5     |
+|    gen/rollout/ep_re... | 10.7     |
+|    gen/time/fps         | 1.04e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 4.1e+03  |
+|    gen/train/approx_kl  | 0.017    |
+|    gen/train/clip_fr... | 0.166    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.46    |
+|    gen/train/explain... | 0.483    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0746   |
+|    gen/train/n_updates  | 20       |
+|    gen/train/policy_... | -0.0298  |
+|    gen/train/std        | 0.989    |
+|    gen/train/value_loss | 0.287    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.508    |
+|    disc/disc_acc_expert | 0.0156   |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.679    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 3        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 27.6     |
+|    gen/rollout/ep_re... | 12.3     |
+|    gen/time/fps         | 1.55e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 6.14e+03 |
+|    gen/train/approx_kl  | 0.0205   |
+|    gen/train/clip_fr... | 0.245    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.44    |
+|    gen/train/explain... | 0.579    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0992   |
+|    gen/train/n_updates  | 30       |
+|    gen/train/policy_... | -0.04    |
+|    gen/train/std        | 0.988    |
+|    gen/train/value_loss | 0.353    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.516    |
+|    disc/disc_acc_expert | 0.0312   |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.68     |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 4        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 34.4     |
+|    gen/rollout/ep_re... | 16.7     |
+|    gen/time/fps         | 2.00e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 4        |
+|    gen/time/total_ti... | 8.19e+03 |
+|    gen/train/approx_kl  | 0.0196   |
+|    gen/train/clip_fr... | 0.239    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.41    |
+|    gen/train/explain... | 0.615    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.106    |
+|    gen/train/n_updates  | 40       |
+|    gen/train/policy_... | -0.0369  |
+|    gen/train/std        | 0.98     |
+|    gen/train/value_loss | 0.385    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.5      |
+|    disc/disc_acc_expert | 0        |
+|    disc/disc_acc_gen    | 1        |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.681    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 5        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 44.3     |
+|    gen/rollout/ep_re... | 20.8     |
+|    gen/time/fps         | 2.56e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 1.02e+04 |
+|    gen/train/approx_kl  | 0.0168   |
+|    gen/train/clip_fr... | 0.203    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.36    |
+|    gen/train/explain... | 0.693    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0905   |
+|    gen/train/n_updates  | 50       |
+|    gen/train/policy_... | -0.0327  |
+|    gen/train/std        | 0.972    |
+|    gen/train/value_loss | 0.295    |
+--------------------------------------

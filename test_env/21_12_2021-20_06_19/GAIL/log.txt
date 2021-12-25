@@ -1,0 +1,1393 @@
+Running with `allow_variable_horizon` set to True. Some algorithms are biased towards shorter or longer episodes, which may significantly confound results. Additionally, even unbiased algorithms can exploit the information leak from the termination condition, producing spuriously high performance. See https://imitation.readthedocs.io/en/latest/guide/variable_horizon.html for more information.
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.289    |
+|    disc/disc_acc_expert | 0.422    |
+|    disc/disc_acc_gen    | 0.156    |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.734    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 1        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 18.1     |
+|    gen/rollout/ep_re... | -0.794   |
+|    gen/time/fps         | 520      |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 2.05e+03 |
+|    gen/train/approx_kl  | 0.0133   |
+|    gen/train/clip_fr... | 0.128    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.52    |
+|    gen/train/explain... | -0.702   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0784   |
+|    gen/train/n_updates  | 10       |
+|    gen/train/policy_... | -0.0205  |
+|    gen/train/std        | 0.999    |
+|    gen/train/value_loss | 0.809    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.273    |
+|    disc/disc_acc_expert | 0.422    |
+|    disc/disc_acc_gen    | 0.125    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.731    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 2        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 18.8     |
+|    gen/rollout/ep_re... | 13.5     |
+|    gen/time/fps         | 1.03e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 4.1e+03  |
+|    gen/train/approx_kl  | 0.0197   |
+|    gen/train/clip_fr... | 0.203    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.5     |
+|    gen/train/explain... | 0.463    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0471   |
+|    gen/train/n_updates  | 20       |
+|    gen/train/policy_... | -0.0336  |
+|    gen/train/std        | 0.996    |
+|    gen/train/value_loss | 0.247    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.273    |
+|    disc/disc_acc_expert | 0.406    |
+|    disc/disc_acc_gen    | 0.141    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.728    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 3        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 24       |
+|    gen/rollout/ep_re... | 13.9     |
+|    gen/time/fps         | 1.53e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 4        |
+|    gen/time/total_ti... | 6.14e+03 |
+|    gen/train/approx_kl  | 0.0237   |
+|    gen/train/clip_fr... | 0.241    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.46    |
+|    gen/train/explain... | 0.572    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0877   |
+|    gen/train/n_updates  | 30       |
+|    gen/train/policy_... | -0.0357  |
+|    gen/train/std        | 0.989    |
+|    gen/train/value_loss | 0.329    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.297    |
+|    disc/disc_acc_expert | 0.375    |
+|    disc/disc_acc_gen    | 0.219    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.719    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 4        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 31.6     |
+|    gen/rollout/ep_re... | 17.6     |
+|    gen/time/fps         | 2.13e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 8.19e+03 |
+|    gen/train/approx_kl  | 0.0181   |
+|    gen/train/clip_fr... | 0.208    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.39    |
+|    gen/train/explain... | 0.563    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0838   |
+|    gen/train/n_updates  | 40       |
+|    gen/train/policy_... | -0.0335  |
+|    gen/train/std        | 0.975    |
+|    gen/train/value_loss | 0.368    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.336    |
+|    disc/disc_acc_expert | 0.531    |
+|    disc/disc_acc_gen    | 0.141    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.718    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 5        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 42.6     |
+|    gen/rollout/ep_re... | 23.1     |
+|    gen/time/fps         | 2.64e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 1.02e+04 |
+|    gen/train/approx_kl  | 0.0178   |
+|    gen/train/clip_fr... | 0.209    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.34    |
+|    gen/train/explain... | 0.657    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.134    |
+|    gen/train/n_updates  | 50       |
+|    gen/train/policy_... | -0.033   |
+|    gen/train/std        | 0.969    |
+|    gen/train/value_loss | 0.325    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.289    |
+|    disc/disc_acc_expert | 0.422    |
+|    disc/disc_acc_gen    | 0.156    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.722    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 6        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 51.3     |
+|    gen/rollout/ep_re... | 31       |
+|    gen/time/fps         | 3.2e+03  |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 1.23e+04 |
+|    gen/train/approx_kl  | 0.016    |
+|    gen/train/clip_fr... | 0.178    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.31    |
+|    gen/train/explain... | 0.769    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0158   |
+|    gen/train/n_updates  | 60       |
+|    gen/train/policy_... | -0.028   |
+|    gen/train/std        | 0.964    |
+|    gen/train/value_loss | 0.182    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.32     |
+|    disc/disc_acc_expert | 0.469    |
+|    disc/disc_acc_gen    | 0.172    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.717    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 7        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 63.6     |
+|    gen/rollout/ep_re... | 37.3     |
+|    gen/time/fps         | 3.7e+03  |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 1.43e+04 |
+|    gen/train/approx_kl  | 0.0135   |
+|    gen/train/clip_fr... | 0.157    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.25    |
+|    gen/train/explain... | 0.828    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.00727 |
+|    gen/train/n_updates  | 70       |
+|    gen/train/policy_... | -0.0277  |
+|    gen/train/std        | 0.952    |
+|    gen/train/value_loss | 0.149    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.414    |
+|    disc/disc_acc_expert | 0.547    |
+|    disc/disc_acc_gen    | 0.281    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.708    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 8        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 73.5     |
+|    gen/rollout/ep_re... | 46.3     |
+|    gen/time/fps         | 4.29e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 1.64e+04 |
+|    gen/train/approx_kl  | 0.0147   |
+|    gen/train/clip_fr... | 0.196    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.2     |
+|    gen/train/explain... | 0.842    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0237   |
+|    gen/train/n_updates  | 80       |
+|    gen/train/policy_... | -0.0306  |
+|    gen/train/std        | 0.949    |
+|    gen/train/value_loss | 0.143    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.414    |
+|    disc/disc_acc_expert | 0.641    |
+|    disc/disc_acc_gen    | 0.188    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.709    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 9        |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 83.9     |
+|    gen/rollout/ep_re... | 53.5     |
+|    gen/time/fps         | 4.68e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 1.84e+04 |
+|    gen/train/approx_kl  | 0.0143   |
+|    gen/train/clip_fr... | 0.166    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.17    |
+|    gen/train/explain... | 0.862    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0109   |
+|    gen/train/n_updates  | 90       |
+|    gen/train/policy_... | -0.0248  |
+|    gen/train/std        | 0.94     |
+|    gen/train/value_loss | 0.104    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.344    |
+|    disc/disc_acc_expert | 0.516    |
+|    disc/disc_acc_gen    | 0.172    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.72     |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 10       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 92.4     |
+|    gen/rollout/ep_re... | 61.1     |
+|    gen/time/fps         | 5.30e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 2.05e+04 |
+|    gen/train/approx_kl  | 0.0131   |
+|    gen/train/clip_fr... | 0.126    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.12    |
+|    gen/train/explain... | 0.888    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.00232 |
+|    gen/train/n_updates  | 100      |
+|    gen/train/policy_... | -0.022   |
+|    gen/train/std        | 0.934    |
+|    gen/train/value_loss | 0.0916   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.367    |
+|    disc/disc_acc_expert | 0.547    |
+|    disc/disc_acc_gen    | 0.188    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.715    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 11       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 98       |
+|    gen/rollout/ep_re... | 67.3     |
+|    gen/time/fps         | 5.63e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 2.25e+04 |
+|    gen/train/approx_kl  | 0.0131   |
+|    gen/train/clip_fr... | 0.144    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.08    |
+|    gen/train/explain... | 0.91     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0058   |
+|    gen/train/n_updates  | 110      |
+|    gen/train/policy_... | -0.022   |
+|    gen/train/std        | 0.928    |
+|    gen/train/value_loss | 0.0638   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.406    |
+|    disc/disc_acc_expert | 0.609    |
+|    disc/disc_acc_gen    | 0.203    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.707    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 12       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 106      |
+|    gen/rollout/ep_re... | 71.4     |
+|    gen/time/fps         | 6.47e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 2.46e+04 |
+|    gen/train/approx_kl  | 0.0144   |
+|    gen/train/clip_fr... | 0.163    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.04    |
+|    gen/train/explain... | 0.912    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0267  |
+|    gen/train/n_updates  | 120      |
+|    gen/train/policy_... | -0.0258  |
+|    gen/train/std        | 0.921    |
+|    gen/train/value_loss | 0.053    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.391    |
+|    disc/disc_acc_expert | 0.531    |
+|    disc/disc_acc_gen    | 0.25     |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.711    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 13       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 112      |
+|    gen/rollout/ep_re... | 77.2     |
+|    gen/time/fps         | 6.94e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 2.66e+04 |
+|    gen/train/approx_kl  | 0.0114   |
+|    gen/train/clip_fr... | 0.121    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.02    |
+|    gen/train/explain... | 0.907    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0146  |
+|    gen/train/n_updates  | 130      |
+|    gen/train/policy_... | -0.0243  |
+|    gen/train/std        | 0.923    |
+|    gen/train/value_loss | 0.0487   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.406    |
+|    disc/disc_acc_expert | 0.578    |
+|    disc/disc_acc_gen    | 0.234    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.702    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 14       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 122      |
+|    gen/rollout/ep_re... | 81.8     |
+|    gen/time/fps         | 7.4e+03  |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 2.87e+04 |
+|    gen/train/approx_kl  | 0.0138   |
+|    gen/train/clip_fr... | 0.165    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8.01    |
+|    gen/train/explain... | 0.945    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0102  |
+|    gen/train/n_updates  | 140      |
+|    gen/train/policy_... | -0.0254  |
+|    gen/train/std        | 0.917    |
+|    gen/train/value_loss | 0.0414   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.414    |
+|    disc/disc_acc_expert | 0.656    |
+|    disc/disc_acc_gen    | 0.172    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.703    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 15       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 130      |
+|    gen/rollout/ep_re... | 89       |
+|    gen/time/fps         | 8.06e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 3.07e+04 |
+|    gen/train/approx_kl  | 0.0134   |
+|    gen/train/clip_fr... | 0.155    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -8       |
+|    gen/train/explain... | 0.951    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.00384 |
+|    gen/train/n_updates  | 150      |
+|    gen/train/policy_... | -0.0251  |
+|    gen/train/std        | 0.919    |
+|    gen/train/value_loss | 0.0318   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.5      |
+|    disc/disc_acc_expert | 0.641    |
+|    disc/disc_acc_gen    | 0.359    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.696    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 16       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 139      |
+|    gen/rollout/ep_re... | 94.8     |
+|    gen/time/fps         | 8.22e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 3.28e+04 |
+|    gen/train/approx_kl  | 0.0153   |
+|    gen/train/clip_fr... | 0.182    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.98    |
+|    gen/train/explain... | 0.937    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0339  |
+|    gen/train/n_updates  | 160      |
+|    gen/train/policy_... | -0.0279  |
+|    gen/train/std        | 0.914    |
+|    gen/train/value_loss | 0.0355   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.461    |
+|    disc/disc_acc_expert | 0.688    |
+|    disc/disc_acc_gen    | 0.234    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.707    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 17       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 146      |
+|    gen/rollout/ep_re... | 101      |
+|    gen/time/fps         | 8.94e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 3.48e+04 |
+|    gen/train/approx_kl  | 0.0121   |
+|    gen/train/clip_fr... | 0.131    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.94    |
+|    gen/train/explain... | 0.937    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0181  |
+|    gen/train/n_updates  | 170      |
+|    gen/train/policy_... | -0.023   |
+|    gen/train/std        | 0.906    |
+|    gen/train/value_loss | 0.0355   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.328    |
+|    disc/disc_acc_expert | 0.531    |
+|    disc/disc_acc_gen    | 0.125    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.711    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 18       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 152      |
+|    gen/rollout/ep_re... | 106      |
+|    gen/time/fps         | 9.32e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 3.69e+04 |
+|    gen/train/approx_kl  | 0.0123   |
+|    gen/train/clip_fr... | 0.149    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.9     |
+|    gen/train/explain... | 0.942    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.00162  |
+|    gen/train/n_updates  | 180      |
+|    gen/train/policy_... | -0.0259  |
+|    gen/train/std        | 0.902    |
+|    gen/train/value_loss | 0.0328   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.398    |
+|    disc/disc_acc_expert | 0.594    |
+|    disc/disc_acc_gen    | 0.203    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.699    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 19       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 163      |
+|    gen/rollout/ep_re... | 110      |
+|    gen/time/fps         | 9.74e+03 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 3.89e+04 |
+|    gen/train/approx_kl  | 0.0155   |
+|    gen/train/clip_fr... | 0.168    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.86    |
+|    gen/train/explain... | 0.961    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0515  |
+|    gen/train/n_updates  | 190      |
+|    gen/train/policy_... | -0.0272  |
+|    gen/train/std        | 0.895    |
+|    gen/train/value_loss | 0.0264   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.438    |
+|    disc/disc_acc_expert | 0.641    |
+|    disc/disc_acc_gen    | 0.234    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.707    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 20       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 166      |
+|    gen/rollout/ep_re... | 118      |
+|    gen/time/fps         | 1.06e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 4.1e+04  |
+|    gen/train/approx_kl  | 0.0134   |
+|    gen/train/clip_fr... | 0.149    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.82    |
+|    gen/train/explain... | 0.947    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.00897 |
+|    gen/train/n_updates  | 200      |
+|    gen/train/policy_... | -0.0229  |
+|    gen/train/std        | 0.89     |
+|    gen/train/value_loss | 0.0301   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.406    |
+|    disc/disc_acc_expert | 0.672    |
+|    disc/disc_acc_gen    | 0.141    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.704    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 21       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 174      |
+|    gen/rollout/ep_re... | 120      |
+|    gen/time/fps         | 1.13e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 4.3e+04  |
+|    gen/train/approx_kl  | 0.0138   |
+|    gen/train/clip_fr... | 0.155    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.8     |
+|    gen/train/explain... | 0.97     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0279  |
+|    gen/train/n_updates  | 210      |
+|    gen/train/policy_... | -0.0238  |
+|    gen/train/std        | 0.887    |
+|    gen/train/value_loss | 0.0185   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.453    |
+|    disc/disc_acc_expert | 0.75     |
+|    disc/disc_acc_gen    | 0.156    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.699    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 22       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 178      |
+|    gen/rollout/ep_re... | 126      |
+|    gen/time/fps         | 1.2e+04  |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 4.51e+04 |
+|    gen/train/approx_kl  | 0.0113   |
+|    gen/train/clip_fr... | 0.132    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.8     |
+|    gen/train/explain... | 0.968    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0136   |
+|    gen/train/n_updates  | 220      |
+|    gen/train/policy_... | -0.0222  |
+|    gen/train/std        | 0.889    |
+|    gen/train/value_loss | 0.021    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.43     |
+|    disc/disc_acc_expert | 0.688    |
+|    disc/disc_acc_gen    | 0.172    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.697    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 23       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 186      |
+|    gen/rollout/ep_re... | 129      |
+|    gen/time/fps         | 1.21e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 4.71e+04 |
+|    gen/train/approx_kl  | 0.014    |
+|    gen/train/clip_fr... | 0.153    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.79    |
+|    gen/train/explain... | 0.954    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0213  |
+|    gen/train/n_updates  | 230      |
+|    gen/train/policy_... | -0.0197  |
+|    gen/train/std        | 0.885    |
+|    gen/train/value_loss | 0.0278   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.555    |
+|    disc/disc_acc_expert | 0.781    |
+|    disc/disc_acc_gen    | 0.328    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.693    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 24       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 190      |
+|    gen/rollout/ep_re... | 135      |
+|    gen/time/fps         | 1.26e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 4.92e+04 |
+|    gen/train/approx_kl  | 0.0145   |
+|    gen/train/clip_fr... | 0.157    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.75    |
+|    gen/train/explain... | 0.965    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0408  |
+|    gen/train/n_updates  | 240      |
+|    gen/train/policy_... | -0.0275  |
+|    gen/train/std        | 0.878    |
+|    gen/train/value_loss | 0.0206   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.352    |
+|    disc/disc_acc_expert | 0.531    |
+|    disc/disc_acc_gen    | 0.172    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.715    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 25       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 192      |
+|    gen/rollout/ep_re... | 137      |
+|    gen/time/fps         | 1.31e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 5.12e+04 |
+|    gen/train/approx_kl  | 0.0121   |
+|    gen/train/clip_fr... | 0.15     |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.72    |
+|    gen/train/explain... | 0.973    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0333  |
+|    gen/train/n_updates  | 250      |
+|    gen/train/policy_... | -0.0246  |
+|    gen/train/std        | 0.876    |
+|    gen/train/value_loss | 0.016    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.414    |
+|    disc/disc_acc_expert | 0.734    |
+|    disc/disc_acc_gen    | 0.0938   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.697    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 26       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 196      |
+|    gen/rollout/ep_re... | 139      |
+|    gen/time/fps         | 1.36e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 5.32e+04 |
+|    gen/train/approx_kl  | 0.012    |
+|    gen/train/clip_fr... | 0.136    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.72    |
+|    gen/train/explain... | 0.964    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0202  |
+|    gen/train/n_updates  | 260      |
+|    gen/train/policy_... | -0.0204  |
+|    gen/train/std        | 0.876    |
+|    gen/train/value_loss | 0.0164   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.406    |
+|    disc/disc_acc_expert | 0.656    |
+|    disc/disc_acc_gen    | 0.156    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.701    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 27       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 199      |
+|    gen/rollout/ep_re... | 142      |
+|    gen/time/fps         | 1.41e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 5.53e+04 |
+|    gen/train/approx_kl  | 0.0123   |
+|    gen/train/clip_fr... | 0.152    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.71    |
+|    gen/train/explain... | 0.968    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0315  |
+|    gen/train/n_updates  | 270      |
+|    gen/train/policy_... | -0.0248  |
+|    gen/train/std        | 0.875    |
+|    gen/train/value_loss | 0.0166   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.453    |
+|    disc/disc_acc_expert | 0.781    |
+|    disc/disc_acc_gen    | 0.125    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.697    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 28       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 210      |
+|    gen/rollout/ep_re... | 145      |
+|    gen/time/fps         | 1.46e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 5.73e+04 |
+|    gen/train/approx_kl  | 0.0118   |
+|    gen/train/clip_fr... | 0.145    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.69    |
+|    gen/train/explain... | 0.961    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0378  |
+|    gen/train/n_updates  | 280      |
+|    gen/train/policy_... | -0.0238  |
+|    gen/train/std        | 0.872    |
+|    gen/train/value_loss | 0.0142   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.438    |
+|    disc/disc_acc_expert | 0.641    |
+|    disc/disc_acc_gen    | 0.234    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.703    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 29       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 214      |
+|    gen/rollout/ep_re... | 152      |
+|    gen/time/fps         | 1.53e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 5.94e+04 |
+|    gen/train/approx_kl  | 0.0139   |
+|    gen/train/clip_fr... | 0.167    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.69    |
+|    gen/train/explain... | 0.98     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0284  |
+|    gen/train/n_updates  | 290      |
+|    gen/train/policy_... | -0.0241  |
+|    gen/train/std        | 0.872    |
+|    gen/train/value_loss | 0.0106   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.43     |
+|    disc/disc_acc_expert | 0.766    |
+|    disc/disc_acc_gen    | 0.0938   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.7      |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 30       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 216      |
+|    gen/rollout/ep_re... | 156      |
+|    gen/time/fps         | 1.59e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 6.14e+04 |
+|    gen/train/approx_kl  | 0.0152   |
+|    gen/train/clip_fr... | 0.176    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.66    |
+|    gen/train/explain... | 0.976    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0318  |
+|    gen/train/n_updates  | 300      |
+|    gen/train/policy_... | -0.0254  |
+|    gen/train/std        | 0.866    |
+|    gen/train/value_loss | 0.0108   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.414    |
+|    disc/disc_acc_expert | 0.75     |
+|    disc/disc_acc_gen    | 0.0781   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.701    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 31       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 224      |
+|    gen/rollout/ep_re... | 157      |
+|    gen/time/fps         | 1.66e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 6.35e+04 |
+|    gen/train/approx_kl  | 0.0148   |
+|    gen/train/clip_fr... | 0.179    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.63    |
+|    gen/train/explain... | 0.972    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0491  |
+|    gen/train/n_updates  | 310      |
+|    gen/train/policy_... | -0.0248  |
+|    gen/train/std        | 0.863    |
+|    gen/train/value_loss | 0.0139   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.422    |
+|    disc/disc_acc_expert | 0.734    |
+|    disc/disc_acc_gen    | 0.109    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.698    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 32       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 227      |
+|    gen/rollout/ep_re... | 163      |
+|    gen/time/fps         | 1.7e+04  |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 6.55e+04 |
+|    gen/train/approx_kl  | 0.0151   |
+|    gen/train/clip_fr... | 0.178    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.61    |
+|    gen/train/explain... | 0.974    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0431  |
+|    gen/train/n_updates  | 320      |
+|    gen/train/policy_... | -0.0245  |
+|    gen/train/std        | 0.86     |
+|    gen/train/value_loss | 0.0164   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.438    |
+|    disc/disc_acc_expert | 0.672    |
+|    disc/disc_acc_gen    | 0.203    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.703    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 33       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 226      |
+|    gen/rollout/ep_re... | 165      |
+|    gen/time/fps         | 1.78e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 6.76e+04 |
+|    gen/train/approx_kl  | 0.0137   |
+|    gen/train/clip_fr... | 0.179    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.6     |
+|    gen/train/explain... | 0.981    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0474  |
+|    gen/train/n_updates  | 330      |
+|    gen/train/policy_... | -0.0269  |
+|    gen/train/std        | 0.861    |
+|    gen/train/value_loss | 0.0103   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.484    |
+|    disc/disc_acc_expert | 0.766    |
+|    disc/disc_acc_gen    | 0.203    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.699    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 34       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 225      |
+|    gen/rollout/ep_re... | 165      |
+|    gen/time/fps         | 1.8e+04  |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 6.96e+04 |
+|    gen/train/approx_kl  | 0.0123   |
+|    gen/train/clip_fr... | 0.143    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.58    |
+|    gen/train/explain... | 0.979    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0119  |
+|    gen/train/n_updates  | 340      |
+|    gen/train/policy_... | -0.0203  |
+|    gen/train/std        | 0.855    |
+|    gen/train/value_loss | 0.0113   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.398    |
+|    disc/disc_acc_expert | 0.625    |
+|    disc/disc_acc_gen    | 0.172    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.702    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 35       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 232      |
+|    gen/rollout/ep_re... | 164      |
+|    gen/time/fps         | 1.81e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 7.17e+04 |
+|    gen/train/approx_kl  | 0.0175   |
+|    gen/train/clip_fr... | 0.187    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.55    |
+|    gen/train/explain... | 0.964    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.00758  |
+|    gen/train/n_updates  | 350      |
+|    gen/train/policy_... | -0.0255  |
+|    gen/train/std        | 0.852    |
+|    gen/train/value_loss | 0.0171   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.484    |
+|    disc/disc_acc_expert | 0.812    |
+|    disc/disc_acc_gen    | 0.156    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.693    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 36       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 236      |
+|    gen/rollout/ep_re... | 169      |
+|    gen/time/fps         | 1.89e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 7.37e+04 |
+|    gen/train/approx_kl  | 0.0142   |
+|    gen/train/clip_fr... | 0.173    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.51    |
+|    gen/train/explain... | 0.964    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0246  |
+|    gen/train/n_updates  | 360      |
+|    gen/train/policy_... | -0.0232  |
+|    gen/train/std        | 0.844    |
+|    gen/train/value_loss | 0.0135   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.422    |
+|    disc/disc_acc_expert | 0.75     |
+|    disc/disc_acc_gen    | 0.0938   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.696    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 37       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 246      |
+|    gen/rollout/ep_re... | 173      |
+|    gen/time/fps         | 1.96e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 7.58e+04 |
+|    gen/train/approx_kl  | 0.0151   |
+|    gen/train/clip_fr... | 0.179    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.46    |
+|    gen/train/explain... | 0.982    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0422  |
+|    gen/train/n_updates  | 370      |
+|    gen/train/policy_... | -0.0266  |
+|    gen/train/std        | 0.837    |
+|    gen/train/value_loss | 0.00714  |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.336    |
+|    disc/disc_acc_expert | 0.609    |
+|    disc/disc_acc_gen    | 0.0625   |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.712    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 38       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 262      |
+|    gen/rollout/ep_re... | 180      |
+|    gen/time/fps         | 1.98e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 7.78e+04 |
+|    gen/train/approx_kl  | 0.0171   |
+|    gen/train/clip_fr... | 0.205    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.41    |
+|    gen/train/explain... | 0.97     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0446  |
+|    gen/train/n_updates  | 380      |
+|    gen/train/policy_... | -0.027   |
+|    gen/train/std        | 0.831    |
+|    gen/train/value_loss | 0.0101   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.477    |
+|    disc/disc_acc_expert | 0.75     |
+|    disc/disc_acc_gen    | 0.203    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.699    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 39       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 268      |
+|    gen/rollout/ep_re... | 192      |
+|    gen/time/fps         | 2.03e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 7.99e+04 |
+|    gen/train/approx_kl  | 0.014    |
+|    gen/train/clip_fr... | 0.154    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.35    |
+|    gen/train/explain... | 0.965    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0124  |
+|    gen/train/n_updates  | 390      |
+|    gen/train/policy_... | -0.0193  |
+|    gen/train/std        | 0.821    |
+|    gen/train/value_loss | 0.0145   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.438    |
+|    disc/disc_acc_expert | 0.797    |
+|    disc/disc_acc_gen    | 0.0781   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.697    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 40       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 282      |
+|    gen/rollout/ep_re... | 195      |
+|    gen/time/fps         | 2.1e+04  |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 8.19e+04 |
+|    gen/train/approx_kl  | 0.015    |
+|    gen/train/clip_fr... | 0.174    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.31    |
+|    gen/train/explain... | 0.973    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0399  |
+|    gen/train/n_updates  | 400      |
+|    gen/train/policy_... | -0.0244  |
+|    gen/train/std        | 0.82     |
+|    gen/train/value_loss | 0.0113   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.383    |
+|    disc/disc_acc_expert | 0.703    |
+|    disc/disc_acc_gen    | 0.0625   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.704    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 41       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 291      |
+|    gen/rollout/ep_re... | 206      |
+|    gen/time/fps         | 2.15e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 8.4e+04  |
+|    gen/train/approx_kl  | 0.0148   |
+|    gen/train/clip_fr... | 0.175    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.31    |
+|    gen/train/explain... | 0.972    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0316  |
+|    gen/train/n_updates  | 410      |
+|    gen/train/policy_... | -0.0208  |
+|    gen/train/std        | 0.82     |
+|    gen/train/value_loss | 0.0126   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.375    |
+|    disc/disc_acc_expert | 0.719    |
+|    disc/disc_acc_gen    | 0.0312   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.703    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 42       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 303      |
+|    gen/rollout/ep_re... | 213      |
+|    gen/time/fps         | 2.24e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 8.6e+04  |
+|    gen/train/approx_kl  | 0.0142   |
+|    gen/train/clip_fr... | 0.175    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.33    |
+|    gen/train/explain... | 0.976    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.00313  |
+|    gen/train/n_updates  | 420      |
+|    gen/train/policy_... | -0.021   |
+|    gen/train/std        | 0.825    |
+|    gen/train/value_loss | 0.0161   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.445    |
+|    disc/disc_acc_expert | 0.812    |
+|    disc/disc_acc_gen    | 0.0781   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.7      |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 43       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 309      |
+|    gen/rollout/ep_re... | 221      |
+|    gen/time/fps         | 2.28e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 8.81e+04 |
+|    gen/train/approx_kl  | 0.0153   |
+|    gen/train/clip_fr... | 0.18     |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.34    |
+|    gen/train/explain... | 0.843    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.018   |
+|    gen/train/n_updates  | 430      |
+|    gen/train/policy_... | -0.0208  |
+|    gen/train/std        | 0.825    |
+|    gen/train/value_loss | 0.0335   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.383    |
+|    disc/disc_acc_expert | 0.688    |
+|    disc/disc_acc_gen    | 0.0781   |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.706    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 44       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 321      |
+|    gen/rollout/ep_re... | 226      |
+|    gen/time/fps         | 2.33e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 9.01e+04 |
+|    gen/train/approx_kl  | 0.0127   |
+|    gen/train/clip_fr... | 0.13     |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.33    |
+|    gen/train/explain... | 0.932    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.00537 |
+|    gen/train/n_updates  | 440      |
+|    gen/train/policy_... | -0.0202  |
+|    gen/train/std        | 0.821    |
+|    gen/train/value_loss | 0.013    |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.43     |
+|    disc/disc_acc_expert | 0.797    |
+|    disc/disc_acc_gen    | 0.0625   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.701    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 45       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 336      |
+|    gen/rollout/ep_re... | 235      |
+|    gen/time/fps         | 2.46e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 9.22e+04 |
+|    gen/train/approx_kl  | 0.0161   |
+|    gen/train/clip_fr... | 0.193    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.32    |
+|    gen/train/explain... | 0.903    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.023   |
+|    gen/train/n_updates  | 450      |
+|    gen/train/policy_... | -0.0235  |
+|    gen/train/std        | 0.822    |
+|    gen/train/value_loss | 0.0239   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.43     |
+|    disc/disc_acc_expert | 0.797    |
+|    disc/disc_acc_gen    | 0.0625   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.697    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 46       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 350      |
+|    gen/rollout/ep_re... | 247      |
+|    gen/time/fps         | 2.42e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 9.42e+04 |
+|    gen/train/approx_kl  | 0.0166   |
+|    gen/train/clip_fr... | 0.204    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.32    |
+|    gen/train/explain... | 0.777    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | 0.0279   |
+|    gen/train/n_updates  | 460      |
+|    gen/train/policy_... | -0.0171  |
+|    gen/train/std        | 0.822    |
+|    gen/train/value_loss | 0.0422   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.445    |
+|    disc/disc_acc_expert | 0.766    |
+|    disc/disc_acc_gen    | 0.125    |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.696    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 47       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 363      |
+|    gen/rollout/ep_re... | 257      |
+|    gen/time/fps         | 2.54e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 9.63e+04 |
+|    gen/train/approx_kl  | 0.0151   |
+|    gen/train/clip_fr... | 0.173    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.33    |
+|    gen/train/explain... | 0.881    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0112  |
+|    gen/train/n_updates  | 470      |
+|    gen/train/policy_... | -0.0212  |
+|    gen/train/std        | 0.823    |
+|    gen/train/value_loss | 0.0337   |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.398    |
+|    disc/disc_acc_expert | 0.719    |
+|    disc/disc_acc_gen    | 0.0781   |
+|    disc/disc_entropy    | 0.692    |
+|    disc/disc_loss       | 0.698    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 48       |
+|    disc/n_expert        | 32       |
+|    disc/n_generated     | 32       |
+|    gen/rollout/ep_le... | 374      |
+|    gen/rollout/ep_re... | 266      |
+|    gen/time/fps         | 2.53e+04 |
+|    gen/time/iterations  | 1        |
+|    gen/time/time_ela... | 3        |
+|    gen/time/total_ti... | 9.83e+04 |
+|    gen/train/approx_kl  | 0.0129   |
+|    gen/train/clip_fr... | 0.164    |
+|    gen/train/clip_range | 0.2      |
+|    gen/train/entropy... | -7.33    |
+|    gen/train/explain... | 0.947    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/loss       | -0.0334  |
+|    gen/train/n_updates  | 480      |
+|    gen/train/policy_... | -0.021   |
+|    gen/train/std        | 0.823    |
+|    gen/train/value_loss | 0.00811  |
+--------------------------------------

@@ -1,0 +1,121 @@
+Running with `allow_variable_horizon` set to True. Some algorithms are biased towards shorter or longer episodes, which may significantly confound results. Additionally, even unbiased algorithms can exploit the information leak from the termination condition, producing spuriously high performance. See https://imitation.readthedocs.io/en/latest/guide/variable_horizon.html for more information.
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.685    |
+|    disc/disc_acc_expert | 0.487    |
+|    disc/disc_acc_gen    | 0.882    |
+|    disc/disc_entropy    | 0.691    |
+|    disc/disc_loss       | 0.673    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 1        |
+|    disc/n_expert        | 1.5e+04  |
+|    disc/n_generated     | 1.5e+04  |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 132      |
+|    gen/time/episodes    | 258      |
+|    gen/time/fps         | 46.9     |
+|    gen/time/time_ela... | 1.17e+03 |
+|    gen/time/total_ti... | 5.16e+04 |
+|    gen/train/actor_loss | -8.49    |
+|    gen/train/critic_... | 0.0706   |
+|    gen/train/ent_coef   | 0.0357   |
+|    gen/train/ent_coe... | -7.24    |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 4.92e+04 |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.677    |
+|    disc/disc_acc_expert | 0.517    |
+|    disc/disc_acc_gen    | 0.836    |
+|    disc/disc_entropy    | 0.69     |
+|    disc/disc_loss       | 0.662    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 2        |
+|    disc/n_expert        | 1.5e+04  |
+|    disc/n_generated     | 1.5e+04  |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 133      |
+|    gen/time/episodes    | 770      |
+|    gen/time/fps         | 260      |
+|    gen/time/time_ela... | 1.3e+03  |
+|    gen/time/total_ti... | 1.54e+05 |
+|    gen/train/actor_loss | -6.32    |
+|    gen/train/critic_... | 0.0987   |
+|    gen/train/ent_coef   | 0.00372  |
+|    gen/train/ent_coe... | 0.05     |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 1.5e+05  |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.613    |
+|    disc/disc_acc_expert | 0.529    |
+|    disc/disc_acc_gen    | 0.697    |
+|    disc/disc_entropy    | 0.689    |
+|    disc/disc_loss       | 0.658    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 3        |
+|    disc/n_expert        | 1.5e+04  |
+|    disc/n_generated     | 1.5e+04  |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 135      |
+|    gen/time/episodes    | 1.28e+03 |
+|    gen/time/fps         | 501      |
+|    gen/time/time_ela... | 1.3e+03  |
+|    gen/time/total_ti... | 2.56e+05 |
+|    gen/train/actor_loss | -10.7    |
+|    gen/train/critic_... | 0.386    |
+|    gen/train/ent_coef   | 0.00601  |
+|    gen/train/ent_coe... | 0.0265   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 2.52e+05 |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.574    |
+|    disc/disc_acc_expert | 0.546    |
+|    disc/disc_acc_gen    | 0.603    |
+|    disc/disc_entropy    | 0.688    |
+|    disc/disc_loss       | 0.652    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 4        |
+|    disc/n_expert        | 1.5e+04  |
+|    disc/n_generated     | 1.5e+04  |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 137      |
+|    gen/time/episodes    | 1.79e+03 |
+|    gen/time/fps         | 743      |
+|    gen/time/time_ela... | 1.35e+03 |
+|    gen/time/total_ti... | 3.59e+05 |
+|    gen/train/actor_loss | -8.61    |
+|    gen/train/critic_... | 0.358    |
+|    gen/train/ent_coef   | 0.00434  |
+|    gen/train/ent_coe... | -0.139   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 3.54e+05 |
+--------------------------------------
+--------------------------------------
+| mean/                   |          |
+|    disc/disc_acc        | 0.569    |
+|    disc/disc_acc_expert | 0.577    |
+|    disc/disc_acc_gen    | 0.56     |
+|    disc/disc_entropy    | 0.686    |
+|    disc/disc_loss       | 0.645    |
+|    disc/disc_proport... | 0.5      |
+|    disc/global_step     | 5        |
+|    disc/n_expert        | 1.5e+04  |
+|    disc/n_generated     | 1.5e+04  |
+|    gen/rollout/ep_le... | 200      |
+|    gen/rollout/ep_re... | 138      |
+|    gen/time/episodes    | 2.31e+03 |
+|    gen/time/fps         | 984      |
+|    gen/time/time_ela... | 1.34e+03 |
+|    gen/time/total_ti... | 4.61e+05 |
+|    gen/train/actor_loss | -2.62    |
+|    gen/train/critic_... | 0.0376   |
+|    gen/train/ent_coef   | 0.000939 |
+|    gen/train/ent_coe... | -0.239   |
+|    gen/train/learnin... | 0.0003   |
+|    gen/train/n_updates  | 4.57e+05 |
+--------------------------------------

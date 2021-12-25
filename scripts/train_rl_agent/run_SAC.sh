@@ -12,10 +12,10 @@
 
 
 
-# python -m tools.run_rl configs/sac/sac_mani_skill_state_1M_train.py --evaluation --gpu-ids=0 \
-# --work-dir=./test/sac_transformer_drawer/ \
-# --resume-from ./work_dirs/sac_transformer_drawer/SAC/models/model_2000000.ckpt \
-# --cfg-options "env_cfg.env_name=OpenCabinetDrawer_1000-v0" "eval_cfg.num=100" "eval_cfg.num_procs=1" "eval_cfg.use_log=True" "eval_cfg.save_traj=False"
+python -m tools.run_rl configs/sac/sac_mani_skill_state_1M_train.py --evaluation --gpu-ids=0 \
+--work-dir=./test/sac_transformer_drawer/v0/env1000_link0/ \
+--resume-from ./work_dirs/sac_transformer_drawer/env1000/SAC/models/model_2000000.ckpt \
+--cfg-options "env_cfg.env_name=OpenCabinetDrawer_1000_link_0-v0" "eval_cfg.num=1000" "eval_cfg.num_procs=1" "eval_cfg.use_log=True" "eval_cfg.save_traj=True"
 
 
 # python -m tools.run_rl configs/sac/sac_mani_skill_state_1M_train.py --gpu-ids=0 \
@@ -23,6 +23,6 @@
 # 	--cfg-options "env_cfg.env_name=OpenCabinetDrawer_1000-v0" "eval_cfg.save_video=True" 
 
 
-python -m tools.run_rl configs/sac/sac_mani_skill_state_1M_train.py --gpu-ids=0 \
-	--work-dir=./work_dirs/sac_transformer_drawer/env1000_link0/ \
-	--cfg-options "env_cfg.env_name=OpenCabinetDoor_1000_link_0-v0" "eval_cfg.save_video=True" 
+# python -m tools.run_rl configs/sac/sac_mani_skill_state_1M_train.py --gpu-ids=0 \
+# 	--work-dir=./work_dirs/sac_transformer_drawer/env1000_link0/ \
+# 	--cfg-options "env_cfg.env_name=OpenCabinetDoor_1000_link_0-v0" "eval_cfg.save_video=True" 
