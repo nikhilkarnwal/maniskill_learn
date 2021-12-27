@@ -1,9 +1,0 @@
---------------------------------------
-| raw/                    |          |
-|    gen/rollout/ep_le... | 21.3     |
-|    gen/rollout/ep_re... | 21.3     |
-|    gen/time/fps         | 479      |
-|    gen/time/iterations  | 1        |
-|    gen/time/time_ela... | 4        |
-|    gen/time/total_ti... | 2048     |
---------------------------------------

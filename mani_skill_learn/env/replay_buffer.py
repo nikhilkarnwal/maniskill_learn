@@ -19,6 +19,7 @@ from mani_skill_learn.utils.data import (dict_to_seq, recursive_init_dict_array,
 from mani_skill_learn.utils.data.converter import to_np, to_torch
 from mani_skill_learn.utils.fileio import load_h5s_as_list_dict_array, load, check_md5sum
 from mani_skill_learn.utils.fileio.h5_utils import load_h5_as_dict_array
+from mani_skill_learn.utils.meta.v2_utils import add_absorbing_state, add_action_for_absorbing_states
 from .builder import REPLAYS
 
 
@@ -305,5 +306,26 @@ class TrajReplayState(TrajReplay):
             self.main_memory[i] = TrajectoryWithRew(obs=self.main_memory[i]['obs'],
                                                     acts=self.main_memory[i]['actions'],
                                                     rews=self.main_memory[i]['rewards'], infos=None, terminal=True)
+
+        print(f'Processed-{self.main_memory.shape} trajs using backbone')
+
+
+class TrajReplayStateABS(TrajReplay):
+
+    def __init__(self, capacity, horizon):
+        super().__init__(capacity);
+        self.horizon = horizon
+
+    def process(self, backbone = None, device = None):
+        if self.processed:
+            return
+        self.processed = True
+        for i in range(self.main_memory.shape[0]):
+            final_obs = add_absorbing_state(self.main_memory[i]['obs'], self.horizon+1)
+            final_actions = add_action_for_absorbing_states(self.main_memory[i]['actions'], self.horizon)
+
+            self.main_memory[i] = TrajectoryWithRew(obs=final_obs,
+                                                    acts=final_actions,
+                                                    rews=self.main_memory[i]['rewards'], infos=None, terminal=False)
 
         print(f'Processed-{self.main_memory.shape} trajs using backbone')

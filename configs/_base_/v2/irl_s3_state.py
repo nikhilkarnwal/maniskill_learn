@@ -28,7 +28,7 @@ agent = dict(
             ),
             irl_algo = dict(
                 demo_batch_size = 15*1000,#15*num_of_traj
-                n_disc_updates_per_round=10,
+                n_disc_updates_per_round=1,
                 init_tensorboard = True,
                 gen_train_timesteps = 50*1024,
                 init_tensorboard_graph = True,

@@ -16,7 +16,7 @@ dist/
 *.pth
 *.pkl
 *.log
-
+*log.txt
 # Editor temporaries
 *.swn
 *.swo
