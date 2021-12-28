@@ -190,6 +190,8 @@ from imitation.data import rollout
 from imitation.util import logger, util
 import stable_baselines3.common.utils as s3utils
 
+from mani_skill_learn.utils.meta.config import Config
+
 
 def run_gail(name, transitions, args, work_dir):
     # # Load pickled test demonstrations.
@@ -425,7 +427,16 @@ def main():
         run_gail(name, trajs, args, work_dir)
 
 
-main()
+# main()
+# from mani_skill_learn.env.env_utils import build_env
+# if __name__ == "__main__":
+#     cfg = Config.fromfile("configs/v2/irl_s3_state_as.py")
+#     # print(cfg['env_cfg'])
+#     env_cfg = cfg['env_cfg']
+#     env = build_env(env_cfg)
+#     obs = env.reset()
+#     print(obs.shape)
+#     print(env.step(np.zeros(13))[0])
 
 
 # sac_algo = dict(

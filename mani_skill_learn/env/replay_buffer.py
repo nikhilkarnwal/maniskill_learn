@@ -309,7 +309,7 @@ class TrajReplayState(TrajReplay):
 
         print(f'Processed-{self.main_memory.shape} trajs using backbone')
 
-
+@REPLAYS.register_module()
 class TrajReplayStateABS(TrajReplay):
 
     def __init__(self, capacity, horizon):
@@ -323,9 +323,11 @@ class TrajReplayStateABS(TrajReplay):
         for i in range(self.main_memory.shape[0]):
             final_obs = add_absorbing_state(self.main_memory[i]['obs'], self.horizon+1)
             final_actions = add_action_for_absorbing_states(self.main_memory[i]['actions'], self.horizon)
+            final_rewards = np.zeros(self.horizon, dtype=self.main_memory[i]['rewards'].dtype)
+            final_rewards[:self.main_memory[i]['rewards'].shape[0]]=self.main_memory[i]['rewards']
 
             self.main_memory[i] = TrajectoryWithRew(obs=final_obs,
                                                     acts=final_actions,
-                                                    rews=self.main_memory[i]['rewards'], infos=None, terminal=False)
+                                                    rews=final_rewards, infos=None, terminal=False)
 
         print(f'Processed-{self.main_memory.shape} trajs using backbone')

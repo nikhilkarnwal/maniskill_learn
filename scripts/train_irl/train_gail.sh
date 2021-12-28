@@ -39,12 +39,18 @@ echo $1 > ./work_dirs/irl_drawer/irl/v0/gail_sac_env1000/$c_t/desc.txt
 # 	"agent.policy_cfg.gail_cfg.algo=airl"
 # 	# "train_mfrl_cfg.init_replay_with_split=[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/\",\"$model_list\"]" \
 
-# train gail
-python -m tools.run_rl configs/v2/irl_s3_state.py --gpu-ids=0 \
+# # train gail
+# python -m tools.run_rl configs/v2/irl_s3_state.py --gpu-ids=0 \
+# 	--work-dir=./work_dirs/irl_drawer/irl/v0/gail_sac_env1000/$c_t/ \
+# 	--cfg-options "train_mfrl_cfg.total_steps=1" \
+# 	"env_cfg.env_name=OpenCabinetDrawer_1000_link_0-v0" "train_mfrl_cfg.init_replay_buffers=[$replay_buff]" \
+# 	"agent.policy_cfg.gail_cfg.algo=gail"
+# 	# "train_mfrl_cfg.init_replay_with_split=[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/\",\"$model_list\"]" \
+
+
+# train gail with as
+python -m tools.run_rl configs/v2/irl_s3_state_as.py --gpu-ids=0 \
 	--work-dir=./work_dirs/irl_drawer/irl/v0/gail_sac_env1000/$c_t/ \
 	--cfg-options "train_mfrl_cfg.total_steps=1" \
 	"env_cfg.env_name=OpenCabinetDrawer_1000_link_0-v0" "train_mfrl_cfg.init_replay_buffers=[$replay_buff]" \
 	"agent.policy_cfg.gail_cfg.algo=gail"
-	# "train_mfrl_cfg.init_replay_with_split=[\"./full_mani_skill_state_data/OpenCabinetDrawer_state/\",\"$model_list\"]" \
-
-

@@ -3,7 +3,7 @@ from gym.core import Wrapper, ObservationWrapper
 from mani_skill_learn.utils.data.converter import to_np, to_torch
 from mani_skill_learn.utils.meta import Registry, build_from_cfg
 from mani_skill_learn.utils.data import dict_to_seq, concat_dict_of_list_array
-from .observation_process import process_mani_skill_base
+from mani_skill_learn.env.observation_process import process_mani_skill_base
 from collections import deque
 import numpy as np
 
@@ -194,6 +194,54 @@ class IRLWrapper(ObservationWrapper):
     @property
     def _max_episode_steps(self):
         return self.env._max_episode_steps
+
+@WRAPPERS.register_module()
+class IRLASWrapper(ObservationWrapper):
+
+    def __init__(self, env) -> None:
+        super().__init__(env)
+        obs_space = self.observation_space
+        self.observation_space = gym.spaces.Box(
+            shape=(obs_space.shape[0] + 1,),
+            low=obs_space.low[0],
+            high=obs_space.high[0])
+        self.reset_done = False
+        self.curr_len = 0
+
+    def step(self, action):
+        self.curr_len+=1
+        if self.reset_done:
+            return self.get_absorbing_state(), 0, self.curr_len == self._max_episode_steps, {}
+        observation, reward, done, info = super().step(action)
+        self.reset_done = done
+        return observation, reward, self.curr_len == self._max_episode_steps, info
+
+    def observation(self,obs):
+        return self.get_non_abosrbing_state(obs)
+
+    def get_non_abosrbing_state(self, obs):
+        return np.concatenate([obs, [0]], -1)
+
+    def get_absorbing_state(self):
+        obs = np.zeros(self.observation_space.shape)
+        obs[-1] = 1
+        return obs
+
+    def reset(self, **kwargs):
+        self.reset_done = False
+        self.curr_len = 0
+        return super().reset(**kwargs)
+
+    @property
+    def _max_episode_steps(self):
+        return self.env._max_episode_steps
+
+    def get_state(self):
+        return self.env.get_state()
+
+    def get_obs(self):
+        return self.observation(self.env._get_obs())
+    
 
 
 def build_wrapper(cfg, default_args=None):
