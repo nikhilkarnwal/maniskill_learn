@@ -207,11 +207,13 @@ class IRLASWrapper(ObservationWrapper):
             high=obs_space.high[0])
         self.reset_done = False
         self.curr_len = 0
+        self.absorbing_cnt=0
 
     def step(self, action):
         self.curr_len+=1
         if self.reset_done:
-            return self.get_absorbing_state(), 0, self.curr_len == self._max_episode_steps, {}
+            self.absorbing_cnt +=1
+            return self.get_absorbing_state(), 1, self.absorbing_cnt==2, {}
         observation, reward, done, info = super().step(action)
         self.reset_done = done
         return observation, reward, self.curr_len == self._max_episode_steps, info
@@ -230,6 +232,7 @@ class IRLASWrapper(ObservationWrapper):
     def reset(self, **kwargs):
         self.reset_done = False
         self.curr_len = 0
+        self.absorbing_cnt=0
         return super().reset(**kwargs)
 
     @property

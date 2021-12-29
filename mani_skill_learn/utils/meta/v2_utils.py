@@ -5,7 +5,7 @@ def add_absorbing_state(obs, horizon):
     obs_shape = list(obs.shape)
     new_obs_shape = obs_shape.copy()
     #expand horizon and one dim for absorbing condition
-    new_obs_shape[0]=horizon
+    new_obs_shape[0]+=2
     new_obs_shape[-1]+=1
     final_obs = np.zeros(new_obs_shape)
 
@@ -20,14 +20,14 @@ def add_absorbing_state(obs, horizon):
 
 def add_action_for_absorbing_states(actions, horizon):
     new_shape = list(actions.shape)
-    new_shape[0] = horizon
+    new_shape[0]+=1
     final_actions = np.zeros(new_shape)
     final_actions[:actions.shape[0],:] = actions
     return final_actions
 
 def test_add_absorbing_state():
     obs = np.array([[1,2,3],[2,3,4]])
-    expected_ret =  np.array([[1,2,3,0],[2,3,4,0],[0,0,0,1]])
+    expected_ret =  np.array([[1,2,3,0],[2,3,4,0],[0,0,0,1],[0,0,0,1]])
     actual_ret = add_absorbing_state(obs,3)
 
     # print(expected_ret.shape, actual_ret.shape)

@@ -323,7 +323,7 @@ class TrajReplayStateABS(TrajReplay):
         for i in range(self.main_memory.shape[0]):
             final_obs = add_absorbing_state(self.main_memory[i]['obs'], self.horizon+1)
             final_actions = add_action_for_absorbing_states(self.main_memory[i]['actions'], self.horizon)
-            final_rewards = np.zeros(self.horizon, dtype=self.main_memory[i]['rewards'].dtype)
+            final_rewards = np.ones(self.main_memory[i]['obs'].shape[0]+1, dtype=self.main_memory[i]['rewards'].dtype)
             final_rewards[:self.main_memory[i]['rewards'].shape[0]]=self.main_memory[i]['rewards']
 
             self.main_memory[i] = TrajectoryWithRew(obs=final_obs,
