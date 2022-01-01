@@ -19,7 +19,7 @@ agent = dict(
             sac_algo = dict(
                 buffer_size = 2000000,
                 learning_rate = 0.0003,
-                learning_starts = 4000,
+                learning_starts = 5*1024,
                 batch_size = 1024,
                 gamma = 0.95,
                 verbose = 1,
@@ -27,8 +27,8 @@ agent = dict(
                 policy = 'MlpPolicy'
             ),
             irl_algo = dict(
-                demo_batch_size = 15*1000,#15*num_of_traj
-                n_disc_updates_per_round=1,
+                demo_batch_size = 25*1000,#15*num_of_traj
+                n_disc_updates_per_round=5,
                 init_tensorboard = True,
                 gen_train_timesteps = 50*1024,
                 init_tensorboard_graph = True,
@@ -36,7 +36,8 @@ agent = dict(
                 normalize_obs=True,
                 normalize_reward=True,
                 disc_opt_kwargs=dict(
-                    lr= 1e-3
+                    lr= 5e-4,
+                    betas=(0.95, 0.999)
                     ),
             )
         ),

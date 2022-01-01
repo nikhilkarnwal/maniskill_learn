@@ -190,7 +190,6 @@ from imitation.data import rollout
 from imitation.util import logger, util
 import stable_baselines3.common.utils as s3utils
 
-from mani_skill_learn.utils.meta.config import Config
 
 
 def run_gail(name, transitions, args, work_dir):
@@ -256,7 +255,7 @@ def run_gail(name, transitions, args, work_dir):
         # disc_opt_kwargs={'lr': 3e-5},
     )
     gail_trainer.allow_variable_horizon = True
-    gail_trainer.train(total_timesteps=100000)
+    gail_trainer.train(total_timesteps=500000)
 
     # Train AIRL on expert data.
     # airl_logger = logger.configure(tempdir_path / "AIRL/")
@@ -323,7 +322,7 @@ def run_gen(name,args , work_dir="temp"):
             buffer_size=1000000,
             learning_rate=0.0003,
             learning_starts=4000,
-            batch_size=1024,
+            batch_size=1024*10,
             gamma=0.95,
             verbose=1,
             seed=101,
@@ -426,8 +425,46 @@ def main():
     if args.irl:
         run_gail(name, trajs, args, work_dir)
 
+def run_trajs():
+    import gym
+    import mani_skill.env
+    from h5py import File
+    import time
+
+    f = File('./full_mani_skill_state_data/OpenCabinetDrawer_state/custom_1000_link0_v0.h5', 'r')
+    env = gym.make('OpenCabinetDrawer_1000_link_0-v0')
+    # # full environment list can be found in available_environments.txt
+
+    env.set_env_mode(obs_mode='state', reward_type='dense')
+    # # obs_mode can be 'state', 'pointcloud' or 'rgbd'
+    # # reward_type can be 'sparse' or 'dense'
+    # print(env.observation_space) # this shows the structure of the observation, openai gym's format
+    # print(env.action_space) # this shows the action space, openai gym's format
+
+    traj = "traj_" +str(100)
+    actions = f[traj]['actions'][:]
+    env_states = f[traj]['env_states'][:]
+    env_levels = f[traj]['env_levels'][:]
+    obs_list = f[traj]['obs'][:]
+    rewards_list = f[traj]['rewards'][:]
+    obs = env.reset(level=env_levels[0])
+
+    for i_step in range(len(actions)):
+        # env.set_state(env_states[i_step])
+        env.render('human') # a display is required to use this function, rendering will slower the running speed
+        action = actions[i_step] #env.action_space.sample()
+        obs, reward, done, info = env.step(action) # take a random action
+        if round(reward,2) != round(rewards_list[i_step],2):
+            print("WARN: Different reward: \n"+"got: "+ str(reward)+"\t Expected: "+str(rewards_list[i_step]))
+        print('{:d}: reward {:.4f}, done {}'.format(i_step, reward, done))
+        if done:
+            break
+        time.sleep(0.5)
+    env.close()
 
 # main()
+run_trajs()
+
 # from mani_skill_learn.env.env_utils import build_env
 # if __name__ == "__main__":
 #     cfg = Config.fromfile("configs/v2/irl_s3_state_as.py")

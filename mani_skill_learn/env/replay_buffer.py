@@ -1,5 +1,5 @@
 from logging import info
-from typing import ItemsView
+from typing import Any, Dict, ItemsView, List
 from h5py import File
 from argparse import Action
 import glob
@@ -12,6 +12,7 @@ from imitation.algorithms.base import AnyTransitions
 from imitation.data.types import Trajectory, TrajectoryWithRew
 import numpy as np
 from pynvml.nvml import nvmlShutdown
+from stable_baselines3.common.buffers import ReplayBuffer
 
 from mani_skill_learn.utils.data import (dict_to_seq, recursive_init_dict_array, map_func_to_dict_array,
                                          store_dict_array_to_h5,
@@ -331,3 +332,12 @@ class TrajReplayStateABS(TrajReplay):
                                                     rews=final_rewards, infos=None, terminal=False)
 
         print(f'Processed-{self.main_memory.shape} trajs using backbone')
+
+class ReplayBufferAS(ReplayBuffer):
+
+    def add(self, obs: np.ndarray, next_obs: np.ndarray, action: np.ndarray, reward: np.ndarray, done: np.ndarray, infos: List[Dict[str, Any]]) -> None:
+        if done[0]:
+            action = np.zeros_like(action)
+        return super().add(obs, next_obs, action, reward, done, infos)
+
+    

@@ -4,6 +4,7 @@ import abc
 import torch
 import torch.nn.functional as F
 from mani_skill_learn.env.env_utils import build_env
+from mani_skill_learn.env.replay_buffer import ReplayBufferAS
 from mani_skill_learn.env.wrappers import build_wrapper
 from mani_skill_learn.methods.builder import BRL
 
@@ -36,6 +37,23 @@ class IRLStateSB(BaseAgent):
     def set_evaluate(self):
         self.gen_algo.evaluate_actions = self.gen_algo.get
 
+    def update_learning_rate(self, optimizer: torch.optim.Optimizer, learning_rate: float) -> None:
+        """
+        Update the learning rate for a given optimizer.
+        Useful when doing linear schedule.
+
+        :param optimizer:
+        :param learning_rate:
+        """
+        for param_group in optimizer.param_groups:
+            param_group["lr"] *= learning_rate
+
+    def gail_callable(self,round):
+        n_round = self.gail_config['total_timesteps'] // self.model.gen_train_timesteps
+        lr = 1 - round/n_round
+        self.update_learning_rate(self.model._disc_opt, lr)
+
+            
     def setup_model(self):
         env = build_env(self.env_cfg)
         self.env = env
@@ -44,7 +62,7 @@ class IRLStateSB(BaseAgent):
                                 self.gail_config["ppo_algo"])
         elif self.gail_config['gen_algo'] == 'sac':
             self.gen_algo = SAC(env=env, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
-                                self.gail_config["sac_algo"])
+                                self.gail_config["sac_algo"], replay_buffer_class=ReplayBufferAS)
         self.gail_config["policy_model"] = self.gail_config["gen_algo"] + \
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:
@@ -91,7 +109,7 @@ class IRLStateSB(BaseAgent):
             self.gen_algo.set_env(curr_env)
             print("Pretraining done!")
         self.model.train(
-            total_timesteps=self.gail_config['total_timesteps'])
+            total_timesteps=self.gail_config['total_timesteps'], callback=self.gail_callable)
         print(self.model.gen_train_timesteps)
 
         if self.gail_config['save']:
