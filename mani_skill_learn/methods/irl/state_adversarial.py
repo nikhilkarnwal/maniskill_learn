@@ -51,7 +51,8 @@ class IRLStateSB(BaseAgent):
     def gail_callable(self,round):
         n_round = self.gail_config['total_timesteps'] // self.model.gen_train_timesteps
         lr = 1 - round/n_round
-        self.update_learning_rate(self.model._disc_opt, lr)
+        if self.gail_config['lr_update']:
+            self.update_learning_rate(self.model._disc_opt, lr)
 
             
     def setup_model(self):
@@ -109,7 +110,11 @@ class IRLStateSB(BaseAgent):
             self.gen_algo.set_env(curr_env)
             print("Pretraining done!")
         self.model.train(
-            total_timesteps=self.gail_config['total_timesteps'], callback=self.gail_callable)
+            total_timesteps=self.gail_config['irl_timesteps'], callback=self.gail_callable)
+        print(f"IRL trained for {self.gail_config['irl_timesteps']}")
+        if (self.gail_config['total_timesteps'] - self.gail_config['irl_timesteps']) > 0:
+            print(f"Learning Gen algo for {self.gail_config['total_timesteps']-self.gail_config['irl_timesteps']}")
+            self.gen_algo.learn(self.gail_config['total_timesteps']-self.gail_config['irl_timesteps'])
         print(self.model.gen_train_timesteps)
 
         if self.gail_config['save']:
