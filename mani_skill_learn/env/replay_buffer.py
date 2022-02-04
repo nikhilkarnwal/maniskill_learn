@@ -1,5 +1,5 @@
 from logging import info
-from typing import Any, Dict, ItemsView, List
+from typing import Any, Dict, ItemsView, List, Sequence, Union
 from h5py import File
 from argparse import Action
 import glob
@@ -9,10 +9,12 @@ from random import shuffle
 import h5py
 from h5py._hl.selections2 import select_read
 from imitation.algorithms.base import AnyTransitions
+from imitation.data import types
 from imitation.data.types import Trajectory, TrajectoryWithRew
 import numpy as np
 from pynvml.nvml import nvmlShutdown
 from stable_baselines3.common.buffers import ReplayBuffer
+import torch
 
 from mani_skill_learn.utils.data import (dict_to_seq, recursive_init_dict_array, map_func_to_dict_array,
                                          store_dict_array_to_h5,
@@ -300,44 +302,131 @@ class TrajReplayState(TrajReplay):
         if self.processed:
             return
         self.processed = True
+        temp_mem = []
         for i in range(self.main_memory.shape[0]):
             final_obs = self.main_memory[i]['obs']
             final_next_obs = self.main_memory[i]['next_obs']
             self.main_memory[i]['obs'] = np.append(final_obs,[final_next_obs[-1]],axis=0)
-            self.main_memory[i] = TrajectoryWithRew(obs=self.main_memory[i]['obs'],
+            if np.sum(self.main_memory[i]['rewards']) < -1500:
+                continue
+            temp_mem.append(TrajectoryWithRew(obs=self.main_memory[i]['obs'],
                                                     acts=self.main_memory[i]['actions'],
-                                                    rews=self.main_memory[i]['rewards'], infos=None, terminal=True)
+                                                    rews=self.main_memory[i]['rewards'], infos=None, terminal=True))
+        self.main_memory = temp_mem
 
-        print(f'Processed-{self.main_memory.shape} trajs using backbone')
+        print(f'Processed-{len(self.main_memory)} trajs using backbone')
 
 @REPLAYS.register_module()
 class TrajReplayStateABS(TrajReplay):
 
-    def __init__(self, capacity, horizon):
+    def __init__(self, capacity, horizon=1):
         super().__init__(capacity);
         self.horizon = horizon
+
+    def flatten_trajectories(self,
+    trajectories: Sequence[types.Trajectory],) -> types.Transitions:
+        """Flatten a series of trajectory dictionaries into arrays.
+
+        Args:
+            trajectories: list of trajectories.
+
+        Returns:
+            The trajectories flattened into a single batch of Transitions.
+        """
+        keys = ["obs", "next_obs", "acts", "dones", "infos"]
+        parts = {key: [] for key in keys}
+        for traj in trajectories:
+            parts["acts"].append(traj.acts)
+
+            obs = traj.obs
+            parts["obs"].append(obs[:-1])
+            parts["next_obs"].append(obs[1:])
+
+            dones = np.zeros(len(traj.acts), dtype=bool)
+            dones[traj.infos[0]['len']] = traj.terminal
+            parts["dones"].append(dones)
+
+            if traj.infos is None:
+                infos = np.array([{}] * len(traj))
+            else:
+                infos = traj.infos
+            parts["infos"].append(infos)
+
+        cat_parts = {
+            key: np.concatenate(part_list, axis=0) for key, part_list in parts.items()
+        }
+        lengths = set(map(len, cat_parts.values()))
+        assert len(lengths) == 1, f"expected one length, got {lengths}"
+        return types.Transitions(**cat_parts)
 
     def process(self, backbone = None, device = None):
         if self.processed:
             return
         self.processed = True
+        traj_len = []
+        traj_mem = []
         for i in range(self.main_memory.shape[0]):
+            if self.main_memory[i]['obs'].shape[0] == 200:
+                continue
+            if self.horizon < self.main_memory[i]['obs'].shape[0]:
+                self.horizon += self.main_memory[i]['obs'].shape[0]
             final_obs = add_absorbing_state(self.main_memory[i]['obs'], self.horizon+1)
             final_actions = add_action_for_absorbing_states(self.main_memory[i]['actions'], self.horizon)
-            final_rewards = np.ones(self.main_memory[i]['obs'].shape[0]+1, dtype=self.main_memory[i]['rewards'].dtype)
+            final_rewards = np.zeros(self.horizon, dtype=self.main_memory[i]['rewards'].dtype)
             final_rewards[:self.main_memory[i]['rewards'].shape[0]]=self.main_memory[i]['rewards']
-
-            self.main_memory[i] = TrajectoryWithRew(obs=final_obs,
+            traj_len.append(self.main_memory[i]['obs'].shape[0])
+            traj_mem.append(TrajectoryWithRew(obs=final_obs,
                                                     acts=final_actions,
-                                                    rews=final_rewards, infos=None, terminal=False)
+                                                    rews=final_rewards, 
+                                                    infos=np.array([{'len':self.main_memory[i]['obs'].shape[0]}]*final_actions.shape[0]), 
+                                                    terminal=True))
 
-        print(f'Processed-{self.main_memory.shape} trajs using backbone')
+        print(f'Processed-{self.main_memory.shape} trajs using backbone, mean len -{np.mean(traj_len)}, max len-{np.max(traj_len)}')
+        self.main_memory = self.flatten_trajectories(traj_mem)
 
 class ReplayBufferAS(ReplayBuffer):
 
+    def __init__(self, buffer_size: int, observation_space, action_space, device: Union[torch.device, str] = "cpu", n_envs: int = 1, optimize_memory_usage: bool = False, handle_timeout_termination: bool = True,ep_max_len=200):
+        super().__init__(buffer_size, observation_space, action_space, device=device, n_envs=n_envs, optimize_memory_usage=optimize_memory_usage, handle_timeout_termination=handle_timeout_termination)
+        self.max_len = ep_max_len
+        self.episode_ts = 0
+
     def add(self, obs: np.ndarray, next_obs: np.ndarray, action: np.ndarray, reward: np.ndarray, done: np.ndarray, infos: List[Dict[str, Any]]) -> None:
-        if done[0]:
-            action = np.zeros_like(action)
+        # print(obs.shape)
+        self.episode_ts +=1
+        if done[0] and (self.episode_ts+1)<=self.max_len:
+            ab_state = np.zeros_like(obs)
+            ab_state[:,-1]=1
+            # add (T-1) to (Abs)
+            super().add(obs, ab_state, action, reward, done, infos)
+            # add (Abs) to (Abs)
+            super().add(ab_state, ab_state, np.zeros_like(action), np.zeros_like(reward), np.zeros_like(done), infos)
+            #reset current episode len to 0
+            self.episode_ts=0
+            return
         return super().add(obs, next_obs, action, reward, done, infos)
 
     
+class ReplayBufferFHAS(ReplayBuffer):
+
+    def __init__(self, buffer_size: int, observation_space, action_space, device: Union[torch.device, str] = "cpu", n_envs: int = 1, optimize_memory_usage: bool = False, handle_timeout_termination: bool = True,ep_max_len=200):
+        super().__init__(buffer_size, observation_space, action_space, device=device, n_envs=n_envs, optimize_memory_usage=optimize_memory_usage, handle_timeout_termination=handle_timeout_termination)
+        self.max_len = ep_max_len
+        self.episode_ts = 0
+
+    def add(self, obs: np.ndarray, next_obs: np.ndarray, action: np.ndarray, reward: np.ndarray, done: np.ndarray, infos: List[Dict[str, Any]]) -> None:
+        # print(obs.shape)
+        self.episode_ts +=1
+        if done[0] and (self.episode_ts+1)<=self.max_len:
+            ab_state = np.zeros_like(obs)
+            ab_state[:,-1]=1
+            # add (T-1) to (Abs)
+            super().add(obs, ab_state, action, reward, done, infos)
+            # add (Abs) to (Abs)
+            while (self.episode_ts+1)<=self.max_len:
+                super().add(ab_state, ab_state, np.zeros_like(action), np.zeros_like(reward), np.zeros_like(done), infos)
+                self.episode_ts+=1
+            #reset current episode len to 0
+            self.episode_ts=0
+            return 
+        return super().add(obs, next_obs, action, reward, done, infos)

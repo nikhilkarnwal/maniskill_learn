@@ -43,7 +43,7 @@ class RLSB(BaseAgent):
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:
             print(f'Loading policy from -{self.gail_config["resume_model"]}')
-            self.gen_algo.load(self.gail_config['resume_model'])
+            self.gen_algo = self.gen_algo.load(self.gail_config['resume_model'],env,'cuda', print_system_info=True)
 
     def update_parameters(self, re, **kvargs):
         if self.gen_algo == None:

@@ -189,6 +189,10 @@ from imitation.algorithms.adversarial import airl, gail
 from imitation.data import rollout
 from imitation.util import logger, util
 import stable_baselines3.common.utils as s3utils
+from stable_baselines3.sac.sac import SAC
+# from mani_skill_learn import env
+
+# from mani_skill_learn.env.replay_buffer import ReplayBufferFHAS, TrajReplayStateABS
 
 
 
@@ -215,7 +219,7 @@ def run_gail(name, transitions, args, work_dir):
     # Train BC on expert data.
     # BC also accepts as `demonstrations` any PyTorch-style DataLoader that iterates over
     # dictionaries containing observations and actions.
-    # bc_logger = logger.configure(tempdir_path / "BC/")
+    bc_logger = logger.configure(tempdir_path / "BC/")
     # bc_trainer = bc.BC(
     #     observation_space=venv.observation_space,
     #     action_space=venv.action_space,
@@ -230,6 +234,7 @@ def run_gail(name, transitions, args, work_dir):
     gail_logger = logger.configure(tempdir_path / "GAIL/")
     if args.gen == 'ppo':
         gen_algo = sb3.PPO("MlpPolicy", venv, verbose=1, n_steps=2048)
+        gen_algo.policy
     else:
         sac_algo = dict(
             buffer_size=1000000,
@@ -242,9 +247,11 @@ def run_gail(name, transitions, args, work_dir):
             policy='MlpPolicy'
         )
         gen_algo = sb3.SAC(env=venv, **sac_algo)
+        gen_algo.policy.evaluate_actions = gen_algo.policy.actor.action_dist.log_prob()
     # gen_algo.learn(100000)
     # gen_algo.collect_rollouts()
-    gail_trainer = gail.GAIL(
+
+    gail_trainer = airl.AIRL(
         venv=venv,
         demonstrations=transitions,
         demo_batch_size=32,
@@ -254,8 +261,19 @@ def run_gail(name, transitions, args, work_dir):
         allow_variable_horizon=True,gen_train_timesteps = 1*1024,
         # disc_opt_kwargs={'lr': 3e-5},
     )
+    
+    # gail_trainer = gail.GAIL(
+    #     venv=venv,
+    #     demonstrations=transitions,
+    #     demo_batch_size=32,
+    #     gen_algo=gen_algo,
+    #     custom_logger=gail_logger, n_disc_updates_per_round=2, normalize_reward=True, normalize_obs=True,
+    #     init_tensorboard_graph=True,
+    #     allow_variable_horizon=True,gen_train_timesteps = 1*1024,
+    #     # disc_opt_kwargs={'lr': 3e-5},
+    # )
     gail_trainer.allow_variable_horizon = True
-    gail_trainer.train(total_timesteps=500000)
+    gail_trainer.train(total_timesteps=1024)
 
     # Train AIRL on expert data.
     # airl_logger = logger.configure(tempdir_path / "AIRL/")
@@ -329,7 +347,7 @@ def run_gen(name,args , work_dir="temp"):
             policy='MlpPolicy'
         )
         model = sb3.SAC(env=env,tensorboard_log=work_dir, **sac_algo)
-    model.learn(total_timesteps=500000)
+    model.learn(total_timesteps=1024)
     model.save(f"{work_dir}/model")
     return model
 
@@ -462,8 +480,8 @@ def run_trajs():
         time.sleep(0.5)
     env.close()
 
-# main()
-run_trajs()
+main()
+# run_trajs()
 
 # from mani_skill_learn.env.env_utils import build_env
 # if __name__ == "__main__":
@@ -499,3 +517,42 @@ run_trajs()
 #     allow_variable_horizon=True,
 #     disc_opt_kwargs={'lr': 3e-5},
 # )
+
+def check_replayb_FHAS():
+    import gym
+    import mani_skill.env
+    env = gym.make('Pendulum-v0')
+    # # full environment list can be found in available_environments.txt
+
+    gen_algo = sb3.SAC(
+        'MlpPolicy',env=env,
+        replay_buffer_class=ReplayBufferFHAS,
+        replay_buffer_kwargs={'ep_max_len': env._max_episode_steps})
+    obs = env.reset()
+    obs = np.expand_dims(obs,axis=0)
+    gen_algo.replay_buffer.add(obs,obs,np.array([1]),np.array([1]),np.array([1]),[{}])
+    print(obs)
+    print(gen_algo.replay_buffer.observations[:200])
+    print(gen_algo.replay_buffer.dones[:200])
+    print(env._max_episode_steps)
+
+# check_replayb_FHAS()
+
+
+def check_traj_replay():
+    from h5py import File
+    traj_replay  = TrajReplayStateABS(100,200)
+    f = File('./full_mani_skill_state_data/OpenCabinetDrawer_state/custom_1000_link0_v0.h5', 'r')
+
+    # traj = "traj_" +str(100)
+    # actions = f[traj]['actions'][:]
+    # env_states = f[traj]['env_states'][:]
+    # env_levels = f[traj]['env_levels'][:]
+    # obs_list = f[traj]['obs'][:]
+    # rewards_list = f[traj]['rewards'][:]
+    traj_replay.restore('./full_mani_skill_state_data/OpenCabinetDrawer_state/custom_1000_link0_v0.h5',1,4)
+    traj_replay.process()
+    print(traj_replay.get_all().obs)
+    print(traj_replay.get_all().dones[30:50])
+
+# check_traj_replay()

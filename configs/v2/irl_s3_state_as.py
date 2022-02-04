@@ -7,11 +7,35 @@ env_cfg = dict(
     extra_wrappers=dict(type='IRLASWrapper',env=None)
 )
 
+# For single horizon state
+# replay_cfg = dict(
+#     type='TrajReplayStateABS',
+#     capacity=2000000,
+#     horizon=1
+# )
+
+# For finite horizon state
 replay_cfg = dict(
     type='TrajReplayStateABS',
     capacity=2000000,
-    horizon=200
+    horizon=1
 )
+
+finiteH_as = 2
+
+if finiteH_as > 0:
+    agent = dict(
+    policy_cfg=dict(
+        gail_cfg = dict(
+            finiteH_as=2,
+        ),
+        )
+    )
+    replay_cfg = dict(
+        type='TrajReplayStateABS',
+        capacity=2000000,
+        horizon=200
+    )
 
 train_mfrl_cfg = dict(
     total_steps=1,

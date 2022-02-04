@@ -6,6 +6,8 @@ import shutil
 import time
 from copy import deepcopy
 
+import numpy as np
+
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["MKL_NUM_THREADS"] = "1"
 os.environ["NUMEXPR_NUM_THREADS"] = "1"
@@ -89,9 +91,9 @@ def main_mfrl_brl(cfg, args, rollout, evaluator, logger):
     else:
         raise NotImplementedError("")
 
-    if cfg.get('resume_from', None) is not None:
-        print(f'resume from {cfg.resume_from}')
-        load_checkpoint(agent, cfg.resume_from, map_location='cpu')
+    # if cfg.get('resume_from', None) is not None:
+    #     print(f'resume from {cfg.resume_from}')
+    #     load_checkpoint(agent, cfg.resume_from, map_location='cpu')
 
     if args.gpu_ids is not None and len(args.gpu_ids) > 0:
         agent.to('cuda')
@@ -211,8 +213,10 @@ def main():
     logger.info(f'Config:\n{cfg.pretty_text}')
 
     # Seed random seed
-    logger.info(f'Set random seed to {args.seed}')
+    if args.seed == None:
+        args.seed = np.random.randint(2 ** 32 - 1, dtype="int64").item()
     set_random_seed(args.seed)
+    logger.info(f'Set random seed to {args.seed}')
 
     num_gpus = env_info_dict['Num of GPUs']
     if args.num_gpus is not None and args.gpu_ids is not None:

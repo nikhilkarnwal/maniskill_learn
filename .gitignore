@@ -30,6 +30,9 @@ dist/
 .vscode
 
 # project dirs
+/test_env/*
+/IRLStateSB/*
+/RLSB/*
 /full_mani_skill_state_data/*
 /full_mani_skill_data/*
 /example_mani_skill_data/*

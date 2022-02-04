@@ -210,13 +210,13 @@ class IRLASWrapper(ObservationWrapper):
         self.absorbing_cnt=0
 
     def step(self, action):
-        self.curr_len+=1
-        if self.reset_done:
-            self.absorbing_cnt +=1
-            return self.get_absorbing_state(), 1, self.absorbing_cnt==2, {}
+        # self.curr_len+=1
+        # if self.reset_done:
+        #     self.absorbing_cnt +=1
+        #     return self.get_absorbing_state(), 1, self.absorbing_cnt==2, {}
         observation, reward, done, info = super().step(action)
-        self.reset_done = done
-        return observation, reward, self.curr_len == self._max_episode_steps, info
+        # self.reset_done = done
+        return observation, reward, done, info
 
     def observation(self,obs):
         return self.get_non_abosrbing_state(obs)
@@ -245,7 +245,44 @@ class IRLASWrapper(ObservationWrapper):
     def get_obs(self):
         return self.observation(self.env._get_obs())
     
+@WRAPPERS.register_module()
+class IRLFHWrapper(ObservationWrapper):
 
+    def __init__(self, env) -> None:
+        super().__init__(env)
+        self.curr_len = 0
+        self.finite_horizon = 200
+
+    def step(self, action):
+        self.curr_len+=1
+        # if self.reset_done:
+        #     self.absorbing_cnt +=1
+        #     return self.get_absorbing_state(), 1, self.absorbing_cnt==2, {}
+        observation, reward, _, info = super().step(action)
+        # self.reset_done = done
+        done = False
+        if self.curr_len == self.finite_horizon:
+            done = True
+            self.curr_len = 0
+        return observation, reward, done , info
+
+    def observation(self,obs):
+        return obs
+
+
+    def reset(self, **kwargs):
+        self.curr_len = 0
+        return super().reset(**kwargs)
+
+    @property
+    def _max_episode_steps(self):
+        return self.env._max_episode_steps
+
+    def get_state(self):
+        return self.env.get_state()
+
+    def get_obs(self):
+        return self.observation(self.env._get_obs())
 
 def build_wrapper(cfg, default_args=None):
     return build_from_cfg(cfg, WRAPPERS, default_args)
