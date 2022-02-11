@@ -23,27 +23,28 @@ agent = dict(
             eval_freq=20000,
             explore=True,
             sac_algo = dict(
-                buffer_size = 2000000,
+                buffer_size = 3000000,
                 learning_rate = 0.0003,
                 learning_starts = 1*1024,
-                batch_size = 256,
+                batch_size = 1024,
                 gamma = 0.95,
                 verbose = 1,
-                policy = 'MlpPolicy'
+                policy = 'MlpPolicy',
+                tau = 0.01
             ),
             irl_algo = dict(
-                demo_batch_size = 50*1000,#15*num_of_traj
+                demo_batch_size = 32,#15*num_of_traj
                 n_disc_updates_per_round=2,
                 init_tensorboard = True,
-                gen_train_timesteps = 50*1024,
+                # gen_train_timesteps = 1024,
                 init_tensorboard_graph = True,
                 allow_variable_horizon = True,
                 normalize_obs=False,
                 normalize_reward=False,
                 disc_opt_kwargs=dict(
-                    lr= 3e-3,
-                    betas=(0.95, 0.999),
-                    weight_decay=10,
+                    lr= 1e-3,
+                    # betas=(0.95, 0.999),
+                    # weight_decay=1e-3,
                     ),
             )
         ),

@@ -31,7 +31,8 @@ from imitation.util import util
 from stable_baselines3.common.callbacks import CheckpointCallback, EvalCallback
 
 from stable_baselines3.common.noise import NormalActionNoise
-
+from imitation.rewards import reward_nets
+from torch import nn
 @BRL.register_module()
 class IRLStateSB(BaseAgent):
 
@@ -59,10 +60,12 @@ class IRLStateSB(BaseAgent):
             param_group["lr"] *= learning_rate
 
     def gail_callable(self,round):
-        n_round = self.gail_config['total_timesteps'] // self.model.gen_train_timesteps
-        lr = 1 - round/n_round
-        if self.gail_config['lr_update']:
-            self.update_learning_rate(self.model._disc_opt, lr)
+        if self.scheduler != None:
+            self.scheduler.step(round)
+        # n_round = self.gail_config['total_timesteps'] // self.model.gen_train_timesteps
+        # lr = 1 - round/n_round
+        # if self.gail_config['lr_update']:
+        #     self.update_learning_rate(self.model._disc_opt, lr)
 
             
     def setup_model(self):
@@ -82,7 +85,7 @@ class IRLStateSB(BaseAgent):
         action_noise = None
         n_actions = env.action_space.shape[-1]
         if self.gail_config.get('explore',false):
-            action_noise = NormalActionNoise(mean=np.zeros(n_actions), sigma=0.1 * np.ones(n_actions))
+            action_noise = NormalActionNoise(mean=np.zeros(n_actions), sigma=0.2 * np.ones(n_actions))
         # setting gen algo
         gen_cls = PPO
         if self.gail_config['gen_algo'] == 'ppo':
@@ -93,7 +96,11 @@ class IRLStateSB(BaseAgent):
             self.gen_algo = SAC(env=env, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
                                 self.gail_config["sac_algo"], replay_buffer_class=replay_bf_cls,
                                 action_noise=action_noise, 
-                                replay_buffer_kwargs=replay_buffer_kwargs)
+                                replay_buffer_kwargs=replay_buffer_kwargs,
+                                policy_kwargs={
+                                "activation_fn":nn.Tanh,
+                                "net_arch":[512,512]}
+                                )
         self.gail_config["policy_model"] = self.gail_config["gen_algo"] + \
             "_"+self.gail_config["policy_model"]
         if self.gail_config['resume']:
@@ -103,9 +110,18 @@ class IRLStateSB(BaseAgent):
         
         # self.venv = DummyVecEnv([lambda: env])
         self.venv = self.gen_algo._wrap_env(env)
-
+        reward_net = reward_nets.BasicRewardNet(
+                observation_space=self.venv.observation_space,
+                action_space=self.venv.action_space,
+                **{"hid_sizes": (512,512),"activation":nn.Tanh}
+            )
+        for key in reward_net.mlp._modules.keys():
+            if isinstance(reward_net.mlp._modules[key],nn.Linear):
+                reward_net.mlp._modules[key] = nn.utils.spectral_norm(reward_net.mlp._modules[key])
+        # reward_net = None
         if self.gail_config['algo'] == 'gail':
             self.model = gail.GAIL(demonstrations=None,
+                                   reward_net=reward_net,
                                    venv=self.gen_algo.get_env(), 
                                    custom_logger = logger.configure(self.work_dir),
                                    gen_algo=self.gen_algo, log_dir = self.work_dir,
@@ -116,6 +132,9 @@ class IRLStateSB(BaseAgent):
                                    custom_logger = logger.configure(self.work_dir),
                                    gen_algo=self.gen_algo, log_dir = self.work_dir,
                                    **self.gail_config["irl_algo"])
+
+        self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.model._disc_opt, gamma=0.95)
+        # self.scheduler = None
         #setting callbacks for irl
         self.callbks = []
         self.callbks.append(CheckpointCallback(
