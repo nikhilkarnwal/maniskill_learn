@@ -3,6 +3,7 @@ from copy import copy, deepcopy
 from datetime import datetime
 import abc
 import os
+from tabnanny import verbose
 import numpy as np
 from sqlalchemy import false
 from stable_baselines3.common import vec_env
@@ -96,10 +97,11 @@ class IRLStateSB(BaseAgent):
             self.gen_algo = SAC(env=env, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
                                 self.gail_config["sac_algo"], replay_buffer_class=replay_bf_cls,
                                 action_noise=action_noise, 
-                                replay_buffer_kwargs=replay_buffer_kwargs,
-                                policy_kwargs={
-                                "activation_fn":nn.Tanh,
-                                "net_arch":[512,512]}
+                                replay_buffer_kwargs=replay_buffer_kwargs
+                                # ,
+                                # policy_kwargs={
+                                # "activation_fn":nn.Tanh,
+                                # "net_arch":[512,512]}
                                 )
         self.gail_config["policy_model"] = self.gail_config["gen_algo"] + \
             "_"+self.gail_config["policy_model"]
@@ -110,15 +112,15 @@ class IRLStateSB(BaseAgent):
         
         # self.venv = DummyVecEnv([lambda: env])
         self.venv = self.gen_algo._wrap_env(env)
-        reward_net = reward_nets.BasicRewardNet(
-                observation_space=self.venv.observation_space,
-                action_space=self.venv.action_space,
-                **{"hid_sizes": (512,512),"activation":nn.Tanh}
-            )
-        for key in reward_net.mlp._modules.keys():
-            if isinstance(reward_net.mlp._modules[key],nn.Linear):
-                reward_net.mlp._modules[key] = nn.utils.spectral_norm(reward_net.mlp._modules[key])
-        # reward_net = None
+        # reward_net = reward_nets.BasicRewardNet(
+        #         observation_space=self.venv.observation_space,
+        #         action_space=self.venv.action_space,
+        #         **{"hid_sizes": (512,512),"activation":nn.Tanh}
+        #     )
+        # for key in reward_net.mlp._modules.keys():
+        #     if isinstance(reward_net.mlp._modules[key],nn.Linear):
+        #         reward_net.mlp._modules[key] = nn.utils.spectral_norm(reward_net.mlp._modules[key])
+        reward_net = None
         if self.gail_config['algo'] == 'gail':
             self.model = gail.GAIL(demonstrations=None,
                                    reward_net=reward_net,
@@ -133,7 +135,7 @@ class IRLStateSB(BaseAgent):
                                    gen_algo=self.gen_algo, log_dir = self.work_dir,
                                    **self.gail_config["irl_algo"])
 
-        self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.model._disc_opt, gamma=0.95)
+        self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.model._disc_opt, gamma=0.95, verbose=True)
         # self.scheduler = None
         #setting callbacks for irl
         self.callbks = []
