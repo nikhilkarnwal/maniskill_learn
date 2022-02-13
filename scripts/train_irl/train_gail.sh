@@ -27,7 +27,7 @@ model_list=$(python -c "import mani_skill, os, os.path as osp; print(osp.abspath
 # train using states only
 
 # replay_buff="./full_mani_skill_state_data/OpenCabinetDrawer_state/custom_1000_link0_v0_v1.h5"
-replay_buff="./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_1-v0.h5"
+replay_buff="./full_mani_skill_state_data/OpenCabinetDrawer_state/OpenCabinetDrawer_1000_link_0-v0.h5"
 c_t=$(date "+%d_%m_%Y_%H_%M_%S")
 model_dir="/media/biswas/D/maniskill/IRLStateSB/gail/sac/"
 base_dir="/media/biswas/D/maniskill"
