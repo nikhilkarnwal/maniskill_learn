@@ -33,10 +33,10 @@ agent = dict(
                 tau = 0.01
             ),
             irl_algo = dict(
-                demo_batch_size = 32000,#15*num_of_traj
+                demo_batch_size = 9000,#15*num_of_traj
                 n_disc_updates_per_round=2,
                 init_tensorboard = True,
-                gen_train_timesteps = 32000,
+                gen_train_timesteps = 9000,
                 init_tensorboard_graph = True,
                 allow_variable_horizon = True,
                 normalize_obs=False,
