@@ -49,7 +49,7 @@ python -m tools.run_rl configs/v2/irl_s3_state.py --gpu-ids=0 \
 	--work-dir=$base_dir/$work_dir/$c_t/ \
 	--cfg-options "train_mfrl_cfg.total_steps=1" \
 	"env_cfg.env_name=OpenCabinetDrawer_1000_link_0-v0" "train_mfrl_cfg.init_replay_buffers=[$replay_buff]" \
-	"agent.policy_cfg.gail_cfg.algo=gail"  >  $base_dir/$work_dir/$c_t/temp_log.txt 
+	"agent.policy_cfg.gail_cfg.algo=gail" "replay_cfg.capacity=3000000"  >  $base_dir/$work_dir/$c_t/temp_log.txt 
 	# "agent.policy_cfg.gail_cfg.resume_model=$model_dir/24_12_2021_17_25_56/sac_policy.zip" \
 	# "agent.policy_cfg.gail_cfg.reward_model=$model_dir/24_12_2021_17_25_56/reward" \
 	# "agent.policy_cfg.gail_cfg.resume=1" 
