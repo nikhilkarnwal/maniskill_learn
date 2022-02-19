@@ -135,7 +135,7 @@ class IRLStateSB(BaseAgent):
                                    gen_algo=self.gen_algo, log_dir = self.work_dir,
                                    **self.gail_config["irl_algo"])
 
-        self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.model._disc_opt, gamma=0.95, verbose=True)
+        self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.model._disc_opt, gamma=self.gail_config["disc_lr_exp"], verbose=True)
         # self.scheduler = None
         #setting callbacks for irl
         self.callbks = []

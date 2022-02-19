@@ -33,7 +33,7 @@ model_dir="/media/biswas/D/maniskill/IRLStateSB/gail/sac/"
 base_dir="/media/biswas/D/maniskill"
 work_dir="work_dirs/irl_drawer/irl/v0/gail_sac_env1000"
 
-#replay_buff="$base_dir/rl/v2/sac/env1000_link_0/finite_horizon_data/trajectory.h5"
+replay_buff="$base_dir/rl/v2/sac/env1000_link_0/finite_horizon_data/trajectory.h5"
 mkdir -p $base_dir/$work_dir/$c_t/
 echo $1 > $base_dir/$work_dir/$c_t/desc.txt
 # #train airl
