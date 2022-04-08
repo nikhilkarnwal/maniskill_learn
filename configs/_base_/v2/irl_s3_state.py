@@ -34,19 +34,19 @@ agent = dict(
                 tau = 0.01
             ),
             irl_algo = dict(
-                demo_batch_size = 25000,#15*num_of_traj
+                demo_batch_size = 1024*8,#15*num_of_traj
                 n_disc_updates_per_round=2,
                 init_tensorboard = True,
-                gen_train_timesteps = 25000,
+                gen_train_timesteps = 1024*8,
                 init_tensorboard_graph = True,
                 allow_variable_horizon = True,
-                normalize_obs=False,
-                normalize_reward=False,
-                disc_opt_kwargs=dict(
-                    lr= 1e-3,
-                    # betas=(0.95, 0.999),
-                    # weight_decay=1e-3,
-                    ),
+                # normalize_obs=False,
+                # normalize_reward=False,
+                # disc_opt_kwargs=dict(
+                #     lr= 1e-3,
+                #     # betas=(0.95, 0.999),
+                #     # weight_decay=1e-3,
+                #     ),
             )
         ),
     ),

@@ -4,7 +4,7 @@ _base_ = ['../_base_/v2/irl_s3_state.py']
 env_cfg = dict(
     type='gym',
     env_name='OpenCabinetDrawer_1045_link_0-v0',
-    extra_wrappers=dict(type='IRLFHWrapper',env=None)
+    # extra_wrappers=dict(type='IRLFHWrapper',env=None)
 )
 
 replay_cfg = dict(

@@ -33,7 +33,7 @@ model_dir="/media/biswas/D/maniskill/IRLStateSB/gail/sac/"
 base_dir="/media/biswas/D/maniskill"
 work_dir="work_dirs/irl_drawer/irl/v0/gail_sac_env1000"
 
-replay_buff="$base_dir/rl/v2/sac/env1000_link_0/finite_horizon_data/trajectory.h5"
+# replay_buff="$base_dir/rl/v2/sac/env1000_link_0/finite_horizon_data/trajectory.h5"
 mkdir -p $base_dir/$work_dir/$c_t/
 echo $1 > $base_dir/$work_dir/$c_t/desc.txt
 # #train airl
@@ -54,6 +54,16 @@ python -m tools.run_rl configs/v2/irl_s3_state.py --gpu-ids=0 \
 	# "agent.policy_cfg.gail_cfg.reward_model=$model_dir/24_12_2021_17_25_56/reward" \
 	# "agent.policy_cfg.gail_cfg.resume=1" 
 
+# # Eval gail
+# python -m tools.run_rl configs/v2/irl_s3_state.py --gpu-ids=0 --evaluation \
+# 	--work-dir=$base_dir/$work_dir/$c_t/ \
+# 	--cfg-options "train_mfrl_cfg.total_steps=1" \
+# 	"env_cfg.env_name=OpenCabinetDrawer_1000_link_0-v0" "eval_cfg.num=1000" \
+# 	"eval_cfg.num_procs=1" "eval_cfg.use_log=True" "eval_cfg.save_traj=True" \
+# 	"agent.policy_cfg.gail_cfg.algo=gail" "replay_cfg.capacity=3000000"  \
+# 	"agent.policy_cfg.gail_cfg.resume_model=$model_dir/22_02_2022_16_56_32/rl_model_300000_steps.zip" \
+# 	"agent.policy_cfg.gail_cfg.resume=1" \
+# 	--resume-from ./full_mani_skill_data/models/OpenCabinetDrawer-v0_PN_Transformer.ckpt 
 
 
 # # train gail with as

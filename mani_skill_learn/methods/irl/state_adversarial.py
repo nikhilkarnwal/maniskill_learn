@@ -112,15 +112,14 @@ class IRLStateSB(BaseAgent):
         
         # self.venv = DummyVecEnv([lambda: env])
         self.venv = self.gen_algo._wrap_env(env)
-        # reward_net = reward_nets.BasicRewardNet(
-        #         observation_space=self.venv.observation_space,
-        #         action_space=self.venv.action_space,
-        #         **{"hid_sizes": (512,512),"activation":nn.Tanh}
-        #     )
-        # for key in reward_net.mlp._modules.keys():
-        #     if isinstance(reward_net.mlp._modules[key],nn.Linear):
-        #         reward_net.mlp._modules[key] = nn.utils.spectral_norm(reward_net.mlp._modules[key])
-        reward_net = None
+        reward_net = reward_nets.BasicRewardNet(
+                observation_space=self.venv.observation_space,
+                action_space=self.venv.action_space
+            )
+        for key in reward_net.mlp._modules.keys():
+            if isinstance(reward_net.mlp._modules[key],nn.Linear):
+                reward_net.mlp._modules[key] = nn.utils.spectral_norm(reward_net.mlp._modules[key])
+        # reward_net = None
         if self.gail_config['algo'] == 'gail':
             self.model = gail.GAIL(demonstrations=None,
                                    reward_net=reward_net,
@@ -156,11 +155,12 @@ class IRLStateSB(BaseAgent):
 
         if self.gail_config['true_reward']:
             self.gen_algo.set_env(env)
+        self.obs = None
 
-        if self.gail_config['resume'] and self.gail_config['algo'] == 'gail' and os.path.exists(self.gail_config['reward_model']):
-            print(f'Loading reward from -{self.gail_config["reward_model"]}')
-            self.model._reward_net.load_state_dict(
-                torch.load(self.gail_config['reward_model']))
+        # if self.gail_config['resume'] and self.gail_config['algo'] == 'gail' and self.gail_config['reward_model']!=None and os.path.exists(self.gail_config['reward_model']):
+        #     print(f'Loading reward from -{self.gail_config["reward_model"]}')
+        #     self.model._reward_net.load_state_dict(
+        #         torch.load(self.gail_config['reward_model']))
             # self.model._reward_net.to(self.device)
 
     def update_demo(self, demo):
@@ -210,8 +210,21 @@ class IRLStateSB(BaseAgent):
         }
 
     def forward(self, obs, **kwargs):
+        mean = np.zeros_like(obs)
+        std = np.ones_like(obs)
         if self.gen_algo == None:
             self.setup_model()
+        # if self.obs == None:
+        #     self.obs = []
+        # elif len(self.obs) >= 100:
+        #     mean = np.mean(self.obs,axis=0)
+        #     std = np.std(self.obs,axis=0)
+        #     self.obs.append(obs[0])
+        # obs[0] = (obs[0] - mean)/(std+1e-5)
+            # print(obs)
+
+        self.gen_algo.env.obs_rms.update(obs)
+        obs = self.gen_algo.env.normalize_obs(obs)
         x = self.gen_algo.predict(obs)[0]
         # print(x)
         return x
