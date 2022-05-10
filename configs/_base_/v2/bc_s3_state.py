@@ -13,8 +13,8 @@ agent = dict(
             save = True,
             policy_model = "policy",
             reward_model = "reward",
-            algo = "gail",
-            gen_algo = 'sac',
+            algo = "airl",
+            gen_algo = 'ppo',
             true_reward = False,
             pretrain = False,
             pretrain_ts = 100000,
@@ -40,11 +40,20 @@ agent = dict(
                 verbose = 1,
                 policy = 'MlpPolicy',
             ),
+            bc_config = dict(
+                init=dict(
+                    batch_size = 32,
+                ),
+                train = dict(
+                    n_epochs = 100,
+                )
+            )
+            ,
             irl_algo = dict(
                 demo_batch_size = 1024,#15*num_of_traj
                 n_disc_updates_per_round=1,
                 init_tensorboard = True,
-                gen_train_timesteps = 1024*4*8,
+                gen_train_timesteps = 1024*4*8*2,
                 init_tensorboard_graph = True,
                 allow_variable_horizon = True,
                 # normalize_obs=False,

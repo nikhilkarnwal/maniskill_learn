@@ -90,8 +90,10 @@ class IRLStateSB(BaseAgent):
         # setting gen algo
         gen_cls = PPO
         if self.gail_config['gen_algo'] == 'ppo':
-            self.gen_algo = PPO(env=env, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
+            venv = util.make_vec_env(self.env_cfg['env_name'], n_envs=16, parallel=True)
+            self.gen_algo = PPO(env=venv, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
                                 self.gail_config["ppo_algo"])
+            print("No of env -",self.gen_algo.n_envs)
         elif self.gail_config['gen_algo'] == 'sac':
             gen_cls = SAC
             self.gen_algo = SAC(env=env, device='cuda', tensorboard_log="IRLStateSB/logs/"+self.current_time, **
@@ -226,41 +228,5 @@ class IRLStateSB(BaseAgent):
         self.gen_algo.env.obs_rms.update(obs)
         obs = self.gen_algo.env.normalize_obs(obs)
         x = self.gen_algo.predict(obs)[0]
-        # print(x)
-        return x
-
-from imitation.algorithms import bc
-
-@BRL.register_module()
-class BCStateSB(IRLStateSB):
-
-    def __init__(self, policy_cfg, obs_shape, action_shape, action_space, env_cfg, batch_size=128):
-        super().__init__(policy_cfg, obs_shape, action_shape, action_space, env_cfg, batch_size=batch_size)
-
-    def setup_model(self):
-        env = build_env(self.env_cfg)
-        self.env = env
-        self.model = bc.BC(
-            demonstrations=None, 
-            observation_space=env.observation_space,
-            action_space=env.action_space,
-            custom_logger=logger.configure(self.work_dir),
-            **self.gail_config['bc_config']['init'])
-
-
-    def save_model(self):
-        self.model.save_policy(f"{self.work_dir}/bc_model.pth")
-
-    def update_parameters(self, re, **kvargs):
-        self.setup_model()
-        self.update_demo(re)
-        self.model.train(**self.gail_config['bc_config']['train'])
-        return {
-            'policy_abs_error': 1,
-            'policy_loss': 1
-        }
-
-    def forward(self, obs, **kwargs):
-        x = self.model.policy.predict(obs)[0]
         # print(x)
         return x

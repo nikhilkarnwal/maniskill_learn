@@ -26,7 +26,6 @@ agent = dict(
                 batch_size = 1024,
                 gamma = 0.95,
                 verbose = 1,
-                seed = 1,
                 policy = 'MlpPolicy'
             )
         ),

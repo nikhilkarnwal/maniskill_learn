@@ -1,35 +1,35 @@
-# from typing import Callable
-# from hashlib import new
-# from botocore import vendored
-# import gym
-# from gym.spaces import space
-# import mani_skill.env
-# from numpy.core.fromnumeric import shape
+from typing import Callable
+from hashlib import new
+from botocore import vendored
+import gym
+from gym.spaces import space
+import mani_skill.env
+from numpy.core.fromnumeric import shape
 
 
-# env = gym.make('OpenCabinetDrawer-v0')
-# # full environment list can be found in available_environments.txt
+env = gym.make('OpenCabinetDoorReach-v0')
+# full environment list can be found in available_environments.txt
 
-# env.set_env_mode(obs_mode='state', reward_type='sparse')
-# # obs_mode can be 'state', 'pointcloud' or 'rgbd'
-# # reward_type can be 'sparse' or 'dense'
-# print(env.observation_space) # this shows the observation structure in Openai Gym's format
-# print(env.action_space) # this shows the action space in Openai Gym's format
-# obs = env.reset()
-# # env.render('human')
-# print(obs['pointcloud']['seg'])
-# for level_idx in range(0, 5): # level_idx is a random seed
-#     obs = env.reset(level=level_idx)
-#     # print('#### Level {:d}'.format(level_idx))
-#     for i_step in range(10000):
-#         # env.render('human') # a display is required to use this function; note that rendering will slow down the running speed
-#         action = env.action_space.sample()
-#         env.render("human")
-#         obs, reward, done, info = env.step(action) # take a random action
-#         print('{:d}: reward {:.4f}, done {}, info {}'.format(i_step, reward, done,info))
-#         if done:
-#             break
-# env.close()
+env.set_env_mode(obs_mode='state', reward_type='dense')
+# obs_mode can be 'state', 'pointcloud' or 'rgbd'
+# reward_type can be 'sparse' or 'dense'
+print(env.observation_space) # this shows the observation structure in Openai Gym's format
+print(env.action_space) # this shows the action space in Openai Gym's format
+obs = env.reset()
+# env.render('human')
+print(obs)
+for level_idx in range(0, 5): # level_idx is a random seed
+    obs = env.reset(level=level_idx)
+    # print('#### Level {:d}'.format(level_idx))
+    for i_step in range(10000):
+        # env.render('human') # a display is required to use this function; note that rendering will slow down the running speed
+        action = env.action_space.sample()
+        env.render("human")
+        obs, reward, done, info = env.step(action) # take a random action
+        print('{:d}: reward {:.4f}, done {}, info {}'.format(i_step, reward, done,info))
+        if done:
+            break
+env.close()
 
 
 # from h5py import File
@@ -480,7 +480,7 @@ def run_trajs():
         time.sleep(0.5)
     env.close()
 
-main()
+# main()
 # run_trajs()
 
 # from mani_skill_learn.env.env_utils import build_env
